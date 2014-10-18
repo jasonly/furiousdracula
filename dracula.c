@@ -4,6 +4,7 @@
 #include <stdlib.h>
 #include <string.h>
 #include <stdio.h>
+#include <time.h>
 #include "Game.h"
 #include "DracView.h"
 #include "Places.h"
@@ -11,14 +12,27 @@
 
 void decideDraculaMove(DracView gameState)
 {
-    
+    /* things we can do:
+       - giveMeTheRound(gameState);
+       - giveMeTheScore(gameState);
+       - howHealthyIs(gameState, player);
+       - whereIs(gameState, player);
+       - lastMove(gameState, player, *start, *end);
+       - whatsThere(gameState, where, *numTraps, *numVamps);
+       - giveMeTheTrail(gameState, player, trail[TRAIL_SIZE]);
+       - *whereCanIgo(gameState, *numLocations, road, sea);
+    */
+       
     LocationID *numLocations = malloc(sizeof(LocationID));
-	//default move to ensure that a move will be made
+    
     LocationID *moveArray = whereCanIgo(gameState,numLocations,TRUE,FALSE);
     
     int numMoves = sizeof(moveArray)/sizeof(LocationID);
-    //sizeof(moveArray)/sizeof(LocationID);
-    //printf("The number of locations is %d\n",numMoves);
+    time_t t;
+   
+    /* Intializes random number generator */
+    srand((unsigned) time(&t));
+
     int moveIndex = rand() % numMoves;
     printf("I want to move to location %d\n",moveIndex);
     
@@ -29,7 +43,7 @@ void decideDraculaMove(DracView gameState)
     
     
 
-        registerBestPlay(idToAbbrev(Move),"I come to suck your blood");
+    registerBestPlay(idToAbbrev(Move),"I come to suck your blood");
 
     
 }
