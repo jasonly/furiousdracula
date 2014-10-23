@@ -147,7 +147,7 @@ Hunter AI compiled OK
 ...........................
 --------------------------------------------------------------------------
 > Running player 0... 
-/tmp/dryrun4769/hunter
+/tmp/dryrun10700/hunter
 Running with input:  {
   "pastPlays": "",
   "messages": []
@@ -168,7 +168,7 @@ Move:  {
 > ---
 --------------------------------------------------------------------------
 > Running player 1... 
-/tmp/dryrun4769/hunter
+/tmp/dryrun10700/hunter
 Running with input:  {
   "pastPlays": "GKL....",
   "messages": [
@@ -191,7 +191,7 @@ Move:  {
 > ---
 --------------------------------------------------------------------------
 > Running player 2... 
-/tmp/dryrun4769/hunter
+/tmp/dryrun10700/hunter
 Running with input:  {
   "pastPlays": "GKL.... SSR....",
   "messages": [
@@ -203,7 +203,7 @@ Program Output:
 Move:  {
   "move": "PA",
   "message": "H PA",
-  "timer": 48
+  "timer": 26
 }
 > Moving from: undefined
 > Life Points: 9
@@ -211,11 +211,11 @@ Move:  {
 > +++
   move: PA
   message: H PA
-  timer: 48
+  timer: 26
 > ---
 --------------------------------------------------------------------------
 > Running player 3... 
-/tmp/dryrun4769/hunter
+/tmp/dryrun10700/hunter
 Running with input:  {
   "pastPlays": "GKL.... SSR.... HPA....",
   "messages": [
@@ -240,7 +240,7 @@ Move:  {
 > ---
 --------------------------------------------------------------------------
 > Running player 4... 
-/tmp/dryrun4769/dracula
+/tmp/dryrun10700/dracula
 Running with input:  {
   "pastPlays": "GKL.... SSR.... HPA.... MMU....",
   "messages": [
@@ -253,22 +253,22 @@ Running with input:  {
 Program Output: 
 Move:  {
   "move": "MU",
-  "message": "I come to suck your blood",
-  "timer": 48
+  "message": "I come to start in the middle of the board",
+  "timer": 28
 }
 > Moving from: undefined
 > Blood Points: 40
 > Player 4 made move:
 > +++
   move: MU
-  message: I come to suck your blood
-  timer: 48
+  message: I come to start in the middle of the board
+  timer: 28
 > ---
 > End of Round:  0
 > Starting Round:  1
 --------------------------------------------------------------------------
 > Running player 0... 
-/tmp/dryrun4769/hunter
+/tmp/dryrun10700/hunter
 Running with input:  {
   "pastPlays": "GKL.... SSR.... HPA.... MMU.... DMU.V..",
   "messages": [
@@ -276,14 +276,14 @@ Running with input:  {
     "S SR",
     "H PA",
     "M MU",
-    "I come to suck your blood"
+    "I come to start in the middle of the board"
   ]
 }
 Program Output: 
 Move:  {
   "move": "KL",
   "message": "G KL",
-  "timer": 47
+  "timer": 45
 }
 > Moving from: KL
 > Life Points: 9
@@ -291,11 +291,11 @@ Move:  {
 > +++
   move: KL
   message: G KL
-  timer: 47
+  timer: 45
 > ---
 --------------------------------------------------------------------------
 > Running player 1... 
-/tmp/dryrun4769/hunter
+/tmp/dryrun10700/hunter
 Running with input:  {
   "pastPlays": "GKL.... SSR.... HPA.... MMU.... DMU.V.. GKL....",
   "messages": [
@@ -303,7 +303,7 @@ Running with input:  {
     "S SR",
     "H PA",
     "M MU",
-    "I come to suck your blood",
+    "I come to start in the middle of the board",
     "G KL"
   ]
 }
@@ -311,7 +311,7 @@ Program Output:
 Move:  {
   "move": "SR",
   "message": "S SR",
-  "timer": 46
+  "timer": 25
 }
 > Moving from: SR
 > Life Points: 9
@@ -319,11 +319,11 @@ Move:  {
 > +++
   move: SR
   message: S SR
-  timer: 46
+  timer: 25
 > ---
 --------------------------------------------------------------------------
 > Running player 2... 
-/tmp/dryrun4769/hunter
+/tmp/dryrun10700/hunter
 Running with input:  {
   "pastPlays": "GKL.... SSR.... HPA.... MMU.... DMU.V.. GKL.... SSR....",
   "messages": [
@@ -331,7 +331,7 @@ Running with input:  {
     "S SR",
     "H PA",
     "M MU",
-    "I come to suck your blood",
+    "I come to start in the middle of the board",
     "G KL",
     "S SR"
   ]
@@ -340,7 +340,7 @@ Program Output:
 Move:  {
   "move": "PA",
   "message": "H PA",
-  "timer": 51
+  "timer": 28
 }
 > Moving from: PA
 > Life Points: 9
@@ -348,11 +348,11 @@ Move:  {
 > +++
   move: PA
   message: H PA
-  timer: 51
+  timer: 28
 > ---
 --------------------------------------------------------------------------
 > Running player 3... 
-/tmp/dryrun4769/hunter
+/tmp/dryrun10700/hunter
 Running with input:  {
   "pastPlays": "GKL.... SSR.... HPA.... MMU.... DMU.V.. GKL.... SSR.... HPA....",
   "messages": [
@@ -360,7 +360,7 @@ Running with input:  {
     "S SR",
     "H PA",
     "M MU",
-    "I come to suck your blood",
+    "I come to start in the middle of the board",
     "G KL",
     "S SR",
     "H PA"
@@ -370,7 +370,7 @@ Program Output:
 Move:  {
   "move": "MU",
   "message": "M MU",
-  "timer": 51
+  "timer": 121
 }
 > Moving from: MU
 > Life Points: 9
@@ -378,11 +378,11 @@ Move:  {
 > +++
   move: MU
   message: M MU
-  timer: 51
+  timer: 121
 > ---
 --------------------------------------------------------------------------
 > Running player 4... 
-/tmp/dryrun4769/dracula
+/tmp/dryrun10700/dracula
 Running with input:  {
   "pastPlays": "GKL.... SSR.... HPA.... MMU.... DMU.V.. GKL.... SSR.... HPA.... MMUVD..",
   "messages": [
@@ -390,7 +390,7 @@ Running with input:  {
     "S SR",
     "H PA",
     "M MU",
-    "I come to suck your blood",
+    "I come to start in the middle of the board",
     "G KL",
     "S SR",
     "H PA",
@@ -399,43 +399,55 @@ Running with input:  {
 }
 Program Output: 
 Move:  {
-  "move": "AS",
-  "message": "hunters are poos",
-  "timer": 6301
+  "move": "MU",
+  "message": "Well this is unfortunate",
+  "timer": 31744
 }
-> Moving from: MU
-> Blood Points: 30
-> Player 4 made move:
-> +++
-  move: AS
-  message: hunters are poos
-  timer: 6301
-> ---
+MU illegal
+Location MU already in trail
+> Player 4 disqualified for illegal move.
+> +++ 
+  move: MU
+  message: Well this is unfortunate
+  timer: 31744
+> --- 
+generating default dracula move
+undefined illegal
+Move undefined
+D2 illegal
+Illegal double-back: not adjacent or is already in trail
+D3 illegal
+Illegal double-back: not adjacent or is already in trail
+D4 illegal
+Illegal double-back: not adjacent or is already in trail
+D5 illegal
+Illegal double-back: not adjacent or is already in trail
+Default Dracula Move: "VE"
 > End of Round:  1
 > Starting Round:  2
 --------------------------------------------------------------------------
 > Running player 0... 
-/tmp/dryrun4769/hunter
+/tmp/dryrun10700/hunter
 Running with input:  {
-  "pastPlays": "GKL.... SSR.... HPA.... MMU.... DMU.V.. GKL.... SSR.... HPA.... MMUVD.. DS?....",
+  "pastPlays": "GKL.... SSR.... HPA.... MMU.... DMU.V.. GKL.... SSR.... HPA.... MMUVD.. DC?T...",
   "messages": [
     "G KL",
     "S SR",
     "H PA",
     "M MU",
-    "I come to suck your blood",
+    "I come to start in the middle of the board",
     "G KL",
     "S SR",
     "H PA",
     "M MU",
-    "hunters are poos"
+    "+++Oneoneoneoneoneoneone+++"
   ]
 }
 Program Output: 
 Move:  {
   "move": "KL",
   "message": "G KL",
-  "timer": 54
+  "timer": 55
 }
 > Moving from: KL
 > Life Points: 9
@@ -443,24 +455,24 @@ Move:  {
 > +++
   move: KL
   message: G KL
-  timer: 54
+  timer: 55
 > ---
 --------------------------------------------------------------------------
 > Running player 1... 
-/tmp/dryrun4769/hunter
+/tmp/dryrun10700/hunter
 Running with input:  {
-  "pastPlays": "GKL.... SSR.... HPA.... MMU.... DMU.V.. GKL.... SSR.... HPA.... MMUVD.. DS?.... GKL....",
+  "pastPlays": "GKL.... SSR.... HPA.... MMU.... DMU.V.. GKL.... SSR.... HPA.... MMUVD.. DC?T... GKL....",
   "messages": [
     "G KL",
     "S SR",
     "H PA",
     "M MU",
-    "I come to suck your blood",
+    "I come to start in the middle of the board",
     "G KL",
     "S SR",
     "H PA",
     "M MU",
-    "hunters are poos",
+    "+++Oneoneoneoneoneoneone+++",
     "G KL"
   ]
 }
@@ -468,7 +480,7 @@ Program Output:
 Move:  {
   "move": "SR",
   "message": "S SR",
-  "timer": 57
+  "timer": 58
 }
 > Moving from: SR
 > Life Points: 9
@@ -476,24 +488,24 @@ Move:  {
 > +++
   move: SR
   message: S SR
-  timer: 57
+  timer: 58
 > ---
 --------------------------------------------------------------------------
 > Running player 2... 
-/tmp/dryrun4769/hunter
+/tmp/dryrun10700/hunter
 Running with input:  {
-  "pastPlays": "GKL.... SSR.... HPA.... MMU.... DMU.V.. GKL.... SSR.... HPA.... MMUVD.. DS?.... GKL.... SSR....",
+  "pastPlays": "GKL.... SSR.... HPA.... MMU.... DMU.V.. GKL.... SSR.... HPA.... MMUVD.. DC?T... GKL.... SSR....",
   "messages": [
     "G KL",
     "S SR",
     "H PA",
     "M MU",
-    "I come to suck your blood",
+    "I come to start in the middle of the board",
     "G KL",
     "S SR",
     "H PA",
     "M MU",
-    "hunters are poos",
+    "+++Oneoneoneoneoneoneone+++",
     "G KL",
     "S SR"
   ]
@@ -502,7 +514,7 @@ Program Output:
 Move:  {
   "move": "PA",
   "message": "H PA",
-  "timer": 55
+  "timer": 31
 }
 > Moving from: PA
 > Life Points: 9
@@ -510,24 +522,24 @@ Move:  {
 > +++
   move: PA
   message: H PA
-  timer: 55
+  timer: 31
 > ---
 --------------------------------------------------------------------------
 > Running player 3... 
-/tmp/dryrun4769/hunter
+/tmp/dryrun10700/hunter
 Running with input:  {
-  "pastPlays": "GKL.... SSR.... HPA.... MMU.... DMU.V.. GKL.... SSR.... HPA.... MMUVD.. DS?.... GKL.... SSR.... HPA....",
+  "pastPlays": "GKL.... SSR.... HPA.... MMU.... DMU.V.. GKL.... SSR.... HPA.... MMUVD.. DC?T... GKL.... SSR.... HPA....",
   "messages": [
     "G KL",
     "S SR",
     "H PA",
     "M MU",
-    "I come to suck your blood",
+    "I come to start in the middle of the board",
     "G KL",
     "S SR",
     "H PA",
     "M MU",
-    "hunters are poos",
+    "+++Oneoneoneoneoneoneone+++",
     "G KL",
     "S SR",
     "H PA"
@@ -537,7 +549,7 @@ Program Output:
 Move:  {
   "move": "MU",
   "message": "M MU",
-  "timer": 57
+  "timer": 32
 }
 > Moving from: MU
 > Life Points: 8
@@ -545,74 +557,50 @@ Move:  {
 > +++
   move: MU
   message: M MU
-  timer: 57
+  timer: 32
 > ---
 --------------------------------------------------------------------------
-> Running player 4... 
-/tmp/dryrun4769/dracula
-Running with input:  {
-  "pastPlays": "GKL.... SSR.... HPA.... MMU.... DMU.V.. GKL.... SSR.... HPA.... MMUVD.. DAS.... GKL.... SSR.... HPA.... MMU....",
-  "messages": [
-    "G KL",
-    "S SR",
-    "H PA",
-    "M MU",
-    "I come to suck your blood",
-    "G KL",
-    "S SR",
-    "H PA",
-    "M MU",
-    "hunters are poos",
-    "G KL",
-    "S SR",
-    "H PA",
-    "M MU"
-  ]
-}
-Program Output: 
-Move:  {
-  "move": "VE",
-  "message": "hunters are poos",
-  "timer": 6507
-}
-> Moving from: AS
-> Blood Points: 28
-> Player 4 made move:
-> +++
-  move: VE
-  message: hunters are poos
-  timer: 6507
-> ---
+Player is currently disqualified. Making a move on their behalf.4
+generating default dracula move
+MU illegal
+Location MU already in trail
+D3 illegal
+Illegal double-back: not adjacent or is already in trail
+D4 illegal
+Illegal double-back: not adjacent or is already in trail
+D5 illegal
+Illegal double-back: not adjacent or is already in trail
+Default Dracula Move: "D2"
 > End of Round:  2
 > Starting Round:  3
 --------------------------------------------------------------------------
 > Running player 0... 
-/tmp/dryrun4769/hunter
+/tmp/dryrun10700/hunter
 Running with input:  {
-  "pastPlays": "GKL.... SSR.... HPA.... MMU.... DMU.V.. GKL.... SSR.... HPA.... MMUVD.. DS?.... GKL.... SSR.... HPA.... MMU.... DC?T...",
+  "pastPlays": "GKL.... SSR.... HPA.... MMU.... DMU.V.. GKL.... SSR.... HPA.... MMUVD.. DC?T... GKL.... SSR.... HPA.... MMU.... DD2T...",
   "messages": [
     "G KL",
     "S SR",
     "H PA",
     "M MU",
-    "I come to suck your blood",
+    "I come to start in the middle of the board",
     "G KL",
     "S SR",
     "H PA",
     "M MU",
-    "hunters are poos",
+    "+++Oneoneoneoneoneoneone+++",
     "G KL",
     "S SR",
     "H PA",
     "M MU",
-    "hunters are poos"
+    "+++MELON MELON MELON+++"
   ]
 }
 Program Output: 
 Move:  {
   "move": "KL",
   "message": "G KL",
-  "timer": 64
+  "timer": 55
 }
 > Moving from: KL
 > Life Points: 9
@@ -620,29 +608,29 @@ Move:  {
 > +++
   move: KL
   message: G KL
-  timer: 64
+  timer: 55
 > ---
 --------------------------------------------------------------------------
 > Running player 1... 
-/tmp/dryrun4769/hunter
+/tmp/dryrun10700/hunter
 Running with input:  {
-  "pastPlays": "GKL.... SSR.... HPA.... MMU.... DMU.V.. GKL.... SSR.... HPA.... MMUVD.. DS?.... GKL.... SSR.... HPA.... MMU.... DC?T... GKL....",
+  "pastPlays": "GKL.... SSR.... HPA.... MMU.... DMU.V.. GKL.... SSR.... HPA.... MMUVD.. DC?T... GKL.... SSR.... HPA.... MMU.... DD2T... GKL....",
   "messages": [
     "G KL",
     "S SR",
     "H PA",
     "M MU",
-    "I come to suck your blood",
+    "I come to start in the middle of the board",
     "G KL",
     "S SR",
     "H PA",
     "M MU",
-    "hunters are poos",
+    "+++Oneoneoneoneoneoneone+++",
     "G KL",
     "S SR",
     "H PA",
     "M MU",
-    "hunters are poos",
+    "+++MELON MELON MELON+++",
     "G KL"
   ]
 }
@@ -650,7 +638,7 @@ Program Output:
 Move:  {
   "move": "SR",
   "message": "S SR",
-  "timer": 63
+  "timer": 60
 }
 > Moving from: SR
 > Life Points: 9
@@ -658,29 +646,29 @@ Move:  {
 > +++
   move: SR
   message: S SR
-  timer: 63
+  timer: 60
 > ---
 --------------------------------------------------------------------------
 > Running player 2... 
-/tmp/dryrun4769/hunter
+/tmp/dryrun10700/hunter
 Running with input:  {
-  "pastPlays": "GKL.... SSR.... HPA.... MMU.... DMU.V.. GKL.... SSR.... HPA.... MMUVD.. DS?.... GKL.... SSR.... HPA.... MMU.... DC?T... GKL.... SSR....",
+  "pastPlays": "GKL.... SSR.... HPA.... MMU.... DMU.V.. GKL.... SSR.... HPA.... MMUVD.. DC?T... GKL.... SSR.... HPA.... MMU.... DD2T... GKL.... SSR....",
   "messages": [
     "G KL",
     "S SR",
     "H PA",
     "M MU",
-    "I come to suck your blood",
+    "I come to start in the middle of the board",
     "G KL",
     "S SR",
     "H PA",
     "M MU",
-    "hunters are poos",
+    "+++Oneoneoneoneoneoneone+++",
     "G KL",
     "S SR",
     "H PA",
     "M MU",
-    "hunters are poos",
+    "+++MELON MELON MELON+++",
     "G KL",
     "S SR"
   ]
@@ -689,7 +677,7 @@ Program Output:
 Move:  {
   "move": "PA",
   "message": "H PA",
-  "timer": 64
+  "timer": 35
 }
 > Moving from: PA
 > Life Points: 9
@@ -697,29 +685,29 @@ Move:  {
 > +++
   move: PA
   message: H PA
-  timer: 64
+  timer: 35
 > ---
 --------------------------------------------------------------------------
 > Running player 3... 
-/tmp/dryrun4769/hunter
+/tmp/dryrun10700/hunter
 Running with input:  {
-  "pastPlays": "GKL.... SSR.... HPA.... MMU.... DMU.V.. GKL.... SSR.... HPA.... MMUVD.. DS?.... GKL.... SSR.... HPA.... MMU.... DC?T... GKL.... SSR.... HPA....",
+  "pastPlays": "GKL.... SSR.... HPA.... MMU.... DMU.V.. GKL.... SSR.... HPA.... MMUVD.. DC?T... GKL.... SSR.... HPA.... MMU.... DD2T... GKL.... SSR.... HPA....",
   "messages": [
     "G KL",
     "S SR",
     "H PA",
     "M MU",
-    "I come to suck your blood",
+    "I come to start in the middle of the board",
     "G KL",
     "S SR",
     "H PA",
     "M MU",
-    "hunters are poos",
+    "+++Oneoneoneoneoneoneone+++",
     "G KL",
     "S SR",
     "H PA",
     "M MU",
-    "hunters are poos",
+    "+++MELON MELON MELON+++",
     "G KL",
     "S SR",
     "H PA"
@@ -729,7 +717,7 @@ Program Output:
 Move:  {
   "move": "MU",
   "message": "M MU",
-  "timer": 63
+  "timer": 65
 }
 > Moving from: MU
 > Life Points: 9
@@ -737,84 +725,61 @@ Move:  {
 > +++
   move: MU
   message: M MU
-  timer: 63
+  timer: 65
 > ---
 --------------------------------------------------------------------------
-> Running player 4... 
-/tmp/dryrun4769/dracula
-Running with input:  {
-  "pastPlays": "GKL.... SSR.... HPA.... MMU.... DMU.V.. GKL.... SSR.... HPA.... MMUVD.. DAS.... GKL.... SSR.... HPA.... MMU.... DVET... GKL.... SSR.... HPA.... MMU....",
-  "messages": [
-    "G KL",
-    "S SR",
-    "H PA",
-    "M MU",
-    "I come to suck your blood",
-    "G KL",
-    "S SR",
-    "H PA",
-    "M MU",
-    "hunters are poos",
-    "G KL",
-    "S SR",
-    "H PA",
-    "M MU",
-    "hunters are poos",
-    "G KL",
-    "S SR",
-    "H PA",
-    "M MU"
-  ]
-}
-Program Output: 
-Move:  {
-  "move": "MI",
-  "message": "hunters are poos",
-  "timer": 6318
-}
-> Moving from: VE
-> Blood Points: 28
-> Player 4 made move:
-> +++
-  move: MI
-  message: hunters are poos
-  timer: 6318
-> ---
+Player is currently disqualified. Making a move on their behalf.4
+generating default dracula move
+VE illegal
+Location VE already in trail
+undefined illegal
+Move undefined
+D1 illegal
+Illegal double-back: not adjacent or is already in trail
+D2 illegal
+Illegal double-back: not adjacent or is already in trail
+D3 illegal
+Illegal double-back: not adjacent or is already in trail
+D4 illegal
+Illegal double-back: not adjacent or is already in trail
+D5 illegal
+Illegal double-back: not adjacent or is already in trail
+Default Dracula Move: "NU"
 > End of Round:  3
 > Starting Round:  4
 --------------------------------------------------------------------------
 > Running player 0... 
-/tmp/dryrun4769/hunter
+/tmp/dryrun10700/hunter
 Running with input:  {
-  "pastPlays": "GKL.... SSR.... HPA.... MMU.... DMU.V.. GKL.... SSR.... HPA.... MMUVD.. DS?.... GKL.... SSR.... HPA.... MMU.... DC?T... GKL.... SSR.... HPA.... MMU.... DC?T...",
+  "pastPlays": "GKL.... SSR.... HPA.... MMU.... DMU.V.. GKL.... SSR.... HPA.... MMUVD.. DC?T... GKL.... SSR.... HPA.... MMU.... DD2T... GKL.... SSR.... HPA.... MMUTD.. DC?T...",
   "messages": [
     "G KL",
     "S SR",
     "H PA",
     "M MU",
-    "I come to suck your blood",
+    "I come to start in the middle of the board",
     "G KL",
     "S SR",
     "H PA",
     "M MU",
-    "hunters are poos",
+    "+++Oneoneoneoneoneoneone+++",
     "G KL",
     "S SR",
     "H PA",
     "M MU",
-    "hunters are poos",
+    "+++MELON MELON MELON+++",
     "G KL",
     "S SR",
     "H PA",
     "M MU",
-    "hunters are poos"
+    "+++Out Of Cheese Error+++"
   ]
 }
 Program Output: 
 Move:  {
   "move": "KL",
   "message": "G KL",
-  "timer": 67
+  "timer": 41
 }
 > Moving from: KL
 > Life Points: 9
@@ -822,34 +787,34 @@ Move:  {
 > +++
   move: KL
   message: G KL
-  timer: 67
+  timer: 41
 > ---
 --------------------------------------------------------------------------
 > Running player 1... 
-/tmp/dryrun4769/hunter
+/tmp/dryrun10700/hunter
 Running with input:  {
-  "pastPlays": "GKL.... SSR.... HPA.... MMU.... DMU.V.. GKL.... SSR.... HPA.... MMUVD.. DS?.... GKL.... SSR.... HPA.... MMU.... DC?T... GKL.... SSR.... HPA.... MMU.... DC?T... GKL....",
+  "pastPlays": "GKL.... SSR.... HPA.... MMU.... DMU.V.. GKL.... SSR.... HPA.... MMUVD.. DC?T... GKL.... SSR.... HPA.... MMU.... DD2T... GKL.... SSR.... HPA.... MMUTD.. DC?T... GKL....",
   "messages": [
     "G KL",
     "S SR",
     "H PA",
     "M MU",
-    "I come to suck your blood",
+    "I come to start in the middle of the board",
     "G KL",
     "S SR",
     "H PA",
     "M MU",
-    "hunters are poos",
+    "+++Oneoneoneoneoneoneone+++",
     "G KL",
     "S SR",
     "H PA",
     "M MU",
-    "hunters are poos",
+    "+++MELON MELON MELON+++",
     "G KL",
     "S SR",
     "H PA",
     "M MU",
-    "hunters are poos",
+    "+++Out Of Cheese Error+++",
     "G KL"
   ]
 }
@@ -857,7 +822,7 @@ Program Output:
 Move:  {
   "move": "SR",
   "message": "S SR",
-  "timer": 71
+  "timer": 36
 }
 > Moving from: SR
 > Life Points: 9
@@ -865,34 +830,34 @@ Move:  {
 > +++
   move: SR
   message: S SR
-  timer: 71
+  timer: 36
 > ---
 --------------------------------------------------------------------------
 > Running player 2... 
-/tmp/dryrun4769/hunter
+/tmp/dryrun10700/hunter
 Running with input:  {
-  "pastPlays": "GKL.... SSR.... HPA.... MMU.... DMU.V.. GKL.... SSR.... HPA.... MMUVD.. DS?.... GKL.... SSR.... HPA.... MMU.... DC?T... GKL.... SSR.... HPA.... MMU.... DC?T... GKL.... SSR....",
+  "pastPlays": "GKL.... SSR.... HPA.... MMU.... DMU.V.. GKL.... SSR.... HPA.... MMUVD.. DC?T... GKL.... SSR.... HPA.... MMU.... DD2T... GKL.... SSR.... HPA.... MMUTD.. DC?T... GKL.... SSR....",
   "messages": [
     "G KL",
     "S SR",
     "H PA",
     "M MU",
-    "I come to suck your blood",
+    "I come to start in the middle of the board",
     "G KL",
     "S SR",
     "H PA",
     "M MU",
-    "hunters are poos",
+    "+++Oneoneoneoneoneoneone+++",
     "G KL",
     "S SR",
     "H PA",
     "M MU",
-    "hunters are poos",
+    "+++MELON MELON MELON+++",
     "G KL",
     "S SR",
     "H PA",
     "M MU",
-    "hunters are poos",
+    "+++Out Of Cheese Error+++",
     "G KL",
     "S SR"
   ]
@@ -901,7 +866,7 @@ Program Output:
 Move:  {
   "move": "PA",
   "message": "H PA",
-  "timer": 71
+  "timer": 93
 }
 > Moving from: PA
 > Life Points: 9
@@ -909,34 +874,34 @@ Move:  {
 > +++
   move: PA
   message: H PA
-  timer: 71
+  timer: 93
 > ---
 --------------------------------------------------------------------------
 > Running player 3... 
-/tmp/dryrun4769/hunter
+/tmp/dryrun10700/hunter
 Running with input:  {
-  "pastPlays": "GKL.... SSR.... HPA.... MMU.... DMU.V.. GKL.... SSR.... HPA.... MMUVD.. DS?.... GKL.... SSR.... HPA.... MMU.... DC?T... GKL.... SSR.... HPA.... MMU.... DC?T... GKL.... SSR.... HPA....",
+  "pastPlays": "GKL.... SSR.... HPA.... MMU.... DMU.V.. GKL.... SSR.... HPA.... MMUVD.. DC?T... GKL.... SSR.... HPA.... MMU.... DD2T... GKL.... SSR.... HPA.... MMUTD.. DC?T... GKL.... SSR.... HPA....",
   "messages": [
     "G KL",
     "S SR",
     "H PA",
     "M MU",
-    "I come to suck your blood",
+    "I come to start in the middle of the board",
     "G KL",
     "S SR",
     "H PA",
     "M MU",
-    "hunters are poos",
+    "+++Oneoneoneoneoneoneone+++",
     "G KL",
     "S SR",
     "H PA",
     "M MU",
-    "hunters are poos",
+    "+++MELON MELON MELON+++",
     "G KL",
     "S SR",
     "H PA",
     "M MU",
-    "hunters are poos",
+    "+++Out Of Cheese Error+++",
     "G KL",
     "S SR",
     "H PA"
@@ -946,102 +911,74 @@ Program Output:
 Move:  {
   "move": "MU",
   "message": "M MU",
-  "timer": 87
+  "timer": 74
 }
 > Moving from: MU
-> Life Points: 9
+> Life Points: 6
 > Player 3 made move:
 > +++
   move: MU
   message: M MU
-  timer: 87
+  timer: 74
 > ---
 --------------------------------------------------------------------------
-> Running player 4... 
-/tmp/dryrun4769/dracula
-Running with input:  {
-  "pastPlays": "GKL.... SSR.... HPA.... MMU.... DMU.V.. GKL.... SSR.... HPA.... MMUVD.. DAS.... GKL.... SSR.... HPA.... MMU.... DVET... GKL.... SSR.... HPA.... MMU.... DMIT... GKL.... SSR.... HPA.... MMU....",
-  "messages": [
-    "G KL",
-    "S SR",
-    "H PA",
-    "M MU",
-    "I come to suck your blood",
-    "G KL",
-    "S SR",
-    "H PA",
-    "M MU",
-    "hunters are poos",
-    "G KL",
-    "S SR",
-    "H PA",
-    "M MU",
-    "hunters are poos",
-    "G KL",
-    "S SR",
-    "H PA",
-    "M MU",
-    "hunters are poos",
-    "G KL",
-    "S SR",
-    "H PA",
-    "M MU"
-  ]
-}
-Program Output: 
-Move:  {
-  "move": "ZU",
-  "message": "hunters are poos",
-  "timer": 6426
-}
-> Moving from: MI
-> Blood Points: 28
-> Player 4 made move:
-> +++
-  move: ZU
-  message: hunters are poos
-  timer: 6426
-> ---
+Player is currently disqualified. Making a move on their behalf.4
+generating default dracula move
+MU illegal
+Location MU already in trail
+undefined illegal
+Move undefined
+D1 illegal
+Illegal double-back: not adjacent or is already in trail
+D2 illegal
+Illegal double-back: not adjacent or is already in trail
+D3 illegal
+Illegal double-back: not adjacent or is already in trail
+D4 illegal
+Illegal double-back: not adjacent or is already in trail
+D5 illegal
+Illegal double-back: not adjacent or is already in trail
+Default Dracula Move: "ST"
 > End of Round:  4
 > Starting Round:  5
 --------------------------------------------------------------------------
 > Running player 0... 
-/tmp/dryrun4769/hunter
+/tmp/dryrun10700/hunter
 Running with input:  {
-  "pastPlays": "GKL.... SSR.... HPA.... MMU.... DMU.V.. GKL.... SSR.... HPA.... MMUVD.. DS?.... GKL.... SSR.... HPA.... MMU.... DC?T... GKL.... SSR.... HPA.... MMU.... DC?T... GKL.... SSR.... HPA.... MMU.... DC?T...",
+  "pastPlays": "GKL.... SSR.... HPA.... MMU.... DMU.V.. GKL.... SSR.... HPA.... MMUVD.. DC?T... GKL.... SSR.... HPA.... MMU.... DD2T... GKL.... SSR.... HPA.... MMUTD.. DC?T... GKL.... SSR.... HPA.... MMU.... DC?T...",
   "messages": [
     "G KL",
     "S SR",
     "H PA",
     "M MU",
-    "I come to suck your blood",
+    "I come to start in the middle of the board",
     "G KL",
     "S SR",
     "H PA",
     "M MU",
-    "hunters are poos",
+    "+++Oneoneoneoneoneoneone+++",
     "G KL",
     "S SR",
     "H PA",
     "M MU",
-    "hunters are poos",
+    "+++MELON MELON MELON+++",
     "G KL",
     "S SR",
     "H PA",
     "M MU",
-    "hunters are poos",
+    "+++Out Of Cheese Error+++",
     "G KL",
     "S SR",
     "H PA",
     "M MU",
-    "hunters are poos"
+    "+++Whoops! Here Comes The Cheese!+++"
   ]
 }
 Program Output: 
 Move:  {
   "move": "KL",
   "message": "G KL",
-  "timer": 80
+  "timer": 43
 }
 > Moving from: KL
 > Life Points: 9
@@ -1049,39 +986,39 @@ Move:  {
 > +++
   move: KL
   message: G KL
-  timer: 80
+  timer: 43
 > ---
 --------------------------------------------------------------------------
 > Running player 1... 
-/tmp/dryrun4769/hunter
+/tmp/dryrun10700/hunter
 Running with input:  {
-  "pastPlays": "GKL.... SSR.... HPA.... MMU.... DMU.V.. GKL.... SSR.... HPA.... MMUVD.. DS?.... GKL.... SSR.... HPA.... MMU.... DC?T... GKL.... SSR.... HPA.... MMU.... DC?T... GKL.... SSR.... HPA.... MMU.... DC?T... GKL....",
+  "pastPlays": "GKL.... SSR.... HPA.... MMU.... DMU.V.. GKL.... SSR.... HPA.... MMUVD.. DC?T... GKL.... SSR.... HPA.... MMU.... DD2T... GKL.... SSR.... HPA.... MMUTD.. DC?T... GKL.... SSR.... HPA.... MMU.... DC?T... GKL....",
   "messages": [
     "G KL",
     "S SR",
     "H PA",
     "M MU",
-    "I come to suck your blood",
+    "I come to start in the middle of the board",
     "G KL",
     "S SR",
     "H PA",
     "M MU",
-    "hunters are poos",
+    "+++Oneoneoneoneoneoneone+++",
     "G KL",
     "S SR",
     "H PA",
     "M MU",
-    "hunters are poos",
+    "+++MELON MELON MELON+++",
     "G KL",
     "S SR",
     "H PA",
     "M MU",
-    "hunters are poos",
+    "+++Out Of Cheese Error+++",
     "G KL",
     "S SR",
     "H PA",
     "M MU",
-    "hunters are poos",
+    "+++Whoops! Here Comes The Cheese!+++",
     "G KL"
   ]
 }
@@ -1089,7 +1026,7 @@ Program Output:
 Move:  {
   "move": "SR",
   "message": "S SR",
-  "timer": 79
+  "timer": 42
 }
 > Moving from: SR
 > Life Points: 9
@@ -1097,39 +1034,39 @@ Move:  {
 > +++
   move: SR
   message: S SR
-  timer: 79
+  timer: 42
 > ---
 --------------------------------------------------------------------------
 > Running player 2... 
-/tmp/dryrun4769/hunter
+/tmp/dryrun10700/hunter
 Running with input:  {
-  "pastPlays": "GKL.... SSR.... HPA.... MMU.... DMU.V.. GKL.... SSR.... HPA.... MMUVD.. DS?.... GKL.... SSR.... HPA.... MMU.... DC?T... GKL.... SSR.... HPA.... MMU.... DC?T... GKL.... SSR.... HPA.... MMU.... DC?T... GKL.... SSR....",
+  "pastPlays": "GKL.... SSR.... HPA.... MMU.... DMU.V.. GKL.... SSR.... HPA.... MMUVD.. DC?T... GKL.... SSR.... HPA.... MMU.... DD2T... GKL.... SSR.... HPA.... MMUTD.. DC?T... GKL.... SSR.... HPA.... MMU.... DC?T... GKL.... SSR....",
   "messages": [
     "G KL",
     "S SR",
     "H PA",
     "M MU",
-    "I come to suck your blood",
+    "I come to start in the middle of the board",
     "G KL",
     "S SR",
     "H PA",
     "M MU",
-    "hunters are poos",
+    "+++Oneoneoneoneoneoneone+++",
     "G KL",
     "S SR",
     "H PA",
     "M MU",
-    "hunters are poos",
+    "+++MELON MELON MELON+++",
     "G KL",
     "S SR",
     "H PA",
     "M MU",
-    "hunters are poos",
+    "+++Out Of Cheese Error+++",
     "G KL",
     "S SR",
     "H PA",
     "M MU",
-    "hunters are poos",
+    "+++Whoops! Here Comes The Cheese!+++",
     "G KL",
     "S SR"
   ]
@@ -1138,7 +1075,7 @@ Program Output:
 Move:  {
   "move": "PA",
   "message": "H PA",
-  "timer": 77
+  "timer": 41
 }
 > Moving from: PA
 > Life Points: 9
@@ -1146,39 +1083,39 @@ Move:  {
 > +++
   move: PA
   message: H PA
-  timer: 77
+  timer: 41
 > ---
 --------------------------------------------------------------------------
 > Running player 3... 
-/tmp/dryrun4769/hunter
+/tmp/dryrun10700/hunter
 Running with input:  {
-  "pastPlays": "GKL.... SSR.... HPA.... MMU.... DMU.V.. GKL.... SSR.... HPA.... MMUVD.. DS?.... GKL.... SSR.... HPA.... MMU.... DC?T... GKL.... SSR.... HPA.... MMU.... DC?T... GKL.... SSR.... HPA.... MMU.... DC?T... GKL.... SSR.... HPA....",
+  "pastPlays": "GKL.... SSR.... HPA.... MMU.... DMU.V.. GKL.... SSR.... HPA.... MMUVD.. DC?T... GKL.... SSR.... HPA.... MMU.... DD2T... GKL.... SSR.... HPA.... MMUTD.. DC?T... GKL.... SSR.... HPA.... MMU.... DC?T... GKL.... SSR.... HPA....",
   "messages": [
     "G KL",
     "S SR",
     "H PA",
     "M MU",
-    "I come to suck your blood",
+    "I come to start in the middle of the board",
     "G KL",
     "S SR",
     "H PA",
     "M MU",
-    "hunters are poos",
+    "+++Oneoneoneoneoneoneone+++",
     "G KL",
     "S SR",
     "H PA",
     "M MU",
-    "hunters are poos",
+    "+++MELON MELON MELON+++",
     "G KL",
     "S SR",
     "H PA",
     "M MU",
-    "hunters are poos",
+    "+++Out Of Cheese Error+++",
     "G KL",
     "S SR",
     "H PA",
     "M MU",
-    "hunters are poos",
+    "+++Whoops! Here Comes The Cheese!+++",
     "G KL",
     "S SR",
     "H PA"
@@ -1188,7 +1125,7 @@ Program Output:
 Move:  {
   "move": "MU",
   "message": "M MU",
-  "timer": 110
+  "timer": 76
 }
 > Moving from: MU
 > Life Points: 9
@@ -1196,104 +1133,73 @@ Move:  {
 > +++
   move: MU
   message: M MU
-  timer: 110
+  timer: 76
 > ---
 --------------------------------------------------------------------------
-> Running player 4... 
-/tmp/dryrun4769/dracula
-Running with input:  {
-  "pastPlays": "GKL.... SSR.... HPA.... MMU.... DMU.V.. GKL.... SSR.... HPA.... MMUVD.. DAS.... GKL.... SSR.... HPA.... MMU.... DVET... GKL.... SSR.... HPA.... MMU.... DMIT... GKL.... SSR.... HPA.... MMU.... DZUT... GKL.... SSR.... HPA.... MMU....",
-  "messages": [
-    "G KL",
-    "S SR",
-    "H PA",
-    "M MU",
-    "I come to suck your blood",
-    "G KL",
-    "S SR",
-    "H PA",
-    "M MU",
-    "hunters are poos",
-    "G KL",
-    "S SR",
-    "H PA",
-    "M MU",
-    "hunters are poos",
-    "G KL",
-    "S SR",
-    "H PA",
-    "M MU",
-    "hunters are poos",
-    "G KL",
-    "S SR",
-    "H PA",
-    "M MU",
-    "hunters are poos",
-    "G KL",
-    "S SR",
-    "H PA",
-    "M MU"
-  ]
-}
-Program Output: 
-Move:  {
-  "move": "ST",
-  "message": "hunters are poos",
-  "timer": 6325
-}
-> Moving from: ZU
-> Blood Points: 28
-> Player 4 made move:
-> +++
-  move: ST
-  message: hunters are poos
-  timer: 6325
-> ---
+Player is currently disqualified. Making a move on their behalf.4
+generating default dracula move
+MU illegal
+Location MU already in trail
+NU illegal
+Location NU already in trail
+undefined illegal
+Move undefined
+D1 illegal
+Illegal double-back: not adjacent or is already in trail
+D2 illegal
+Illegal double-back: not adjacent or is already in trail
+D3 illegal
+Illegal double-back: not adjacent or is already in trail
+D4 illegal
+Illegal double-back: not adjacent or is already in trail
+D5 illegal
+Illegal double-back: not adjacent or is already in trail
+Default Dracula Move: "PA"
 > End of Round:  5
 > Starting Round:  6
 --------------------------------------------------------------------------
 > Running player 0... 
-/tmp/dryrun4769/hunter
+/tmp/dryrun10700/hunter
 Running with input:  {
-  "pastPlays": "GKL.... SSR.... HPA.... MMU.... DMU.V.. GKL.... SSR.... HPA.... MMUVD.. DS?.... GKL.... SSR.... HPA.... MMU.... DC?T... GKL.... SSR.... HPA.... MMU.... DC?T... GKL.... SSR.... HPA.... MMU.... DC?T... GKL.... SSR.... HPA.... MMU.... DC?T...",
+  "pastPlays": "GKL.... SSR.... HPA.... MMU.... DMU.V.. GKL.... SSR.... HPA.... MMUVD.. DC?T... GKL.... SSR.... HPA.... MMU.... DD2T... GKL.... SSR.... HPA.... MMUTD.. DC?T... GKL.... SSR.... HPA.... MMU.... DC?T... GKL.... SSR.... HPA.... MMU.... DPAT...",
   "messages": [
     "G KL",
     "S SR",
     "H PA",
     "M MU",
-    "I come to suck your blood",
+    "I come to start in the middle of the board",
     "G KL",
     "S SR",
     "H PA",
     "M MU",
-    "hunters are poos",
+    "+++Oneoneoneoneoneoneone+++",
     "G KL",
     "S SR",
     "H PA",
     "M MU",
-    "hunters are poos",
+    "+++MELON MELON MELON+++",
     "G KL",
     "S SR",
     "H PA",
     "M MU",
-    "hunters are poos",
+    "+++Out Of Cheese Error+++",
     "G KL",
     "S SR",
     "H PA",
     "M MU",
-    "hunters are poos",
+    "+++Whoops! Here Comes The Cheese!+++",
     "G KL",
     "S SR",
     "H PA",
     "M MU",
-    "hunters are poos"
+    "+++Out Of Cheese Error+++"
   ]
 }
 Program Output: 
 Move:  {
   "move": "KL",
   "message": "G KL",
-  "timer": 79
+  "timer": 78
 }
 > Moving from: KL
 > Life Points: 9
@@ -1301,44 +1207,44 @@ Move:  {
 > +++
   move: KL
   message: G KL
-  timer: 79
+  timer: 78
 > ---
 --------------------------------------------------------------------------
 > Running player 1... 
-/tmp/dryrun4769/hunter
+/tmp/dryrun10700/hunter
 Running with input:  {
-  "pastPlays": "GKL.... SSR.... HPA.... MMU.... DMU.V.. GKL.... SSR.... HPA.... MMUVD.. DS?.... GKL.... SSR.... HPA.... MMU.... DC?T... GKL.... SSR.... HPA.... MMU.... DC?T... GKL.... SSR.... HPA.... MMU.... DC?T... GKL.... SSR.... HPA.... MMU.... DC?T... GKL....",
+  "pastPlays": "GKL.... SSR.... HPA.... MMU.... DMU.V.. GKL.... SSR.... HPA.... MMUVD.. DC?T... GKL.... SSR.... HPA.... MMU.... DD2T... GKL.... SSR.... HPA.... MMUTD.. DC?T... GKL.... SSR.... HPA.... MMU.... DC?T... GKL.... SSR.... HPA.... MMU.... DPAT... GKL....",
   "messages": [
     "G KL",
     "S SR",
     "H PA",
     "M MU",
-    "I come to suck your blood",
+    "I come to start in the middle of the board",
     "G KL",
     "S SR",
     "H PA",
     "M MU",
-    "hunters are poos",
+    "+++Oneoneoneoneoneoneone+++",
     "G KL",
     "S SR",
     "H PA",
     "M MU",
-    "hunters are poos",
+    "+++MELON MELON MELON+++",
     "G KL",
     "S SR",
     "H PA",
     "M MU",
-    "hunters are poos",
+    "+++Out Of Cheese Error+++",
     "G KL",
     "S SR",
     "H PA",
     "M MU",
-    "hunters are poos",
+    "+++Whoops! Here Comes The Cheese!+++",
     "G KL",
     "S SR",
     "H PA",
     "M MU",
-    "hunters are poos",
+    "+++Out Of Cheese Error+++",
     "G KL"
   ]
 }
@@ -1346,7 +1252,7 @@ Program Output:
 Move:  {
   "move": "SR",
   "message": "S SR",
-  "timer": 78
+  "timer": 80
 }
 > Moving from: SR
 > Life Points: 9
@@ -1354,44 +1260,44 @@ Move:  {
 > +++
   move: SR
   message: S SR
-  timer: 78
+  timer: 80
 > ---
 --------------------------------------------------------------------------
 > Running player 2... 
-/tmp/dryrun4769/hunter
+/tmp/dryrun10700/hunter
 Running with input:  {
-  "pastPlays": "GKL.... SSR.... HPA.... MMU.... DMU.V.. GKL.... SSR.... HPA.... MMUVD.. DS?.... GKL.... SSR.... HPA.... MMU.... DC?T... GKL.... SSR.... HPA.... MMU.... DC?T... GKL.... SSR.... HPA.... MMU.... DC?T... GKL.... SSR.... HPA.... MMU.... DC?T... GKL.... SSR....",
+  "pastPlays": "GKL.... SSR.... HPA.... MMU.... DMU.V.. GKL.... SSR.... HPA.... MMUVD.. DC?T... GKL.... SSR.... HPA.... MMU.... DD2T... GKL.... SSR.... HPA.... MMUTD.. DC?T... GKL.... SSR.... HPA.... MMU.... DC?T... GKL.... SSR.... HPA.... MMU.... DPAT... GKL.... SSR....",
   "messages": [
     "G KL",
     "S SR",
     "H PA",
     "M MU",
-    "I come to suck your blood",
+    "I come to start in the middle of the board",
     "G KL",
     "S SR",
     "H PA",
     "M MU",
-    "hunters are poos",
+    "+++Oneoneoneoneoneoneone+++",
     "G KL",
     "S SR",
     "H PA",
     "M MU",
-    "hunters are poos",
+    "+++MELON MELON MELON+++",
     "G KL",
     "S SR",
     "H PA",
     "M MU",
-    "hunters are poos",
+    "+++Out Of Cheese Error+++",
     "G KL",
     "S SR",
     "H PA",
     "M MU",
-    "hunters are poos",
+    "+++Whoops! Here Comes The Cheese!+++",
     "G KL",
     "S SR",
     "H PA",
     "M MU",
-    "hunters are poos",
+    "+++Out Of Cheese Error+++",
     "G KL",
     "S SR"
   ]
@@ -1400,7 +1306,7 @@ Program Output:
 Move:  {
   "move": "PA",
   "message": "H PA",
-  "timer": 81
+  "timer": 82
 }
 > Moving from: PA
 > Life Points: 9
@@ -1408,44 +1314,44 @@ Move:  {
 > +++
   move: PA
   message: H PA
-  timer: 81
+  timer: 82
 > ---
 --------------------------------------------------------------------------
 > Running player 3... 
-/tmp/dryrun4769/hunter
+/tmp/dryrun10700/hunter
 Running with input:  {
-  "pastPlays": "GKL.... SSR.... HPA.... MMU.... DMU.V.. GKL.... SSR.... HPA.... MMUVD.. DS?.... GKL.... SSR.... HPA.... MMU.... DC?T... GKL.... SSR.... HPA.... MMU.... DC?T... GKL.... SSR.... HPA.... MMU.... DC?T... GKL.... SSR.... HPA.... MMU.... DC?T... GKL.... SSR.... HPA....",
+  "pastPlays": "GKL.... SSR.... HPA.... MMU.... DMU.V.. GKL.... SSR.... HPA.... MMUVD.. DC?T... GKL.... SSR.... HPA.... MMU.... DD2T... GKL.... SSR.... HPA.... MMUTD.. DC?T... GKL.... SSR.... HPA.... MMU.... DC?T... GKL.... SSR.... HPA.... MMU.... DPAT... GKL.... SSR.... HPATD..",
   "messages": [
     "G KL",
     "S SR",
     "H PA",
     "M MU",
-    "I come to suck your blood",
+    "I come to start in the middle of the board",
     "G KL",
     "S SR",
     "H PA",
     "M MU",
-    "hunters are poos",
+    "+++Oneoneoneoneoneoneone+++",
     "G KL",
     "S SR",
     "H PA",
     "M MU",
-    "hunters are poos",
+    "+++MELON MELON MELON+++",
     "G KL",
     "S SR",
     "H PA",
     "M MU",
-    "hunters are poos",
+    "+++Out Of Cheese Error+++",
     "G KL",
     "S SR",
     "H PA",
     "M MU",
-    "hunters are poos",
+    "+++Whoops! Here Comes The Cheese!+++",
     "G KL",
     "S SR",
     "H PA",
     "M MU",
-    "hunters are poos",
+    "+++Out Of Cheese Error+++",
     "G KL",
     "S SR",
     "H PA"
@@ -1455,7 +1361,7 @@ Program Output:
 Move:  {
   "move": "MU",
   "message": "M MU",
-  "timer": 85
+  "timer": 46
 }
 > Moving from: MU
 > Life Points: 9
@@ -1463,114 +1369,76 @@ Move:  {
 > +++
   move: MU
   message: M MU
-  timer: 85
+  timer: 46
 > ---
 --------------------------------------------------------------------------
-> Running player 4... 
-/tmp/dryrun4769/dracula
-Running with input:  {
-  "pastPlays": "GKL.... SSR.... HPA.... MMU.... DMU.V.. GKL.... SSR.... HPA.... MMUVD.. DAS.... GKL.... SSR.... HPA.... MMU.... DVET... GKL.... SSR.... HPA.... MMU.... DMIT... GKL.... SSR.... HPA.... MMU.... DZUT... GKL.... SSR.... HPA.... MMU.... DSTT... GKL.... SSR.... HPA.... MMU....",
-  "messages": [
-    "G KL",
-    "S SR",
-    "H PA",
-    "M MU",
-    "I come to suck your blood",
-    "G KL",
-    "S SR",
-    "H PA",
-    "M MU",
-    "hunters are poos",
-    "G KL",
-    "S SR",
-    "H PA",
-    "M MU",
-    "hunters are poos",
-    "G KL",
-    "S SR",
-    "H PA",
-    "M MU",
-    "hunters are poos",
-    "G KL",
-    "S SR",
-    "H PA",
-    "M MU",
-    "hunters are poos",
-    "G KL",
-    "S SR",
-    "H PA",
-    "M MU",
-    "hunters are poos",
-    "G KL",
-    "S SR",
-    "H PA",
-    "M MU"
-  ]
-}
-Program Output: 
-Move:  {
-  "move": "PA",
-  "message": "hunters are poos",
-  "timer": 6381
-}
-> Moving from: ST
-> Blood Points: 28
-> Player 4 made move:
-> +++
-  move: PA
-  message: hunters are poos
-  timer: 6381
-> ---
+Player is currently disqualified. Making a move on their behalf.4
+generating default dracula move
+ST illegal
+Location ST already in trail
+undefined illegal
+Move undefined
+D1 illegal
+Illegal double-back: not adjacent or is already in trail
+D2 illegal
+Illegal double-back: not adjacent or is already in trail
+D3 illegal
+Illegal double-back: not adjacent or is already in trail
+D4 illegal
+Illegal double-back: not adjacent or is already in trail
+D5 illegal
+Illegal double-back: not adjacent or is already in trail
+Default Dracula Move: "BU"
 > End of Round:  6
 > Starting Round:  7
 --------------------------------------------------------------------------
 > Running player 0... 
-/tmp/dryrun4769/hunter
+/tmp/dryrun10700/hunter
 Running with input:  {
-  "pastPlays": "GKL.... SSR.... HPA.... MMU.... DMU.V.. GKL.... SSR.... HPA.... MMUVD.. DAS.... GKL.... SSR.... HPA.... MMU.... DC?T... GKL.... SSR.... HPA.... MMU.... DC?T... GKL.... SSR.... HPA.... MMU.... DC?T... GKL.... SSR.... HPA.... MMU.... DC?T... GKL.... SSR.... HPA.... MMU.... DPAT...",
+  "pastPlays": "GKL.... SSR.... HPA.... MMU.... DMU.V.. GKL.... SSR.... HPA.... MMUVD.. DVET... GKL.... SSR.... HPA.... MMU.... DD2T... GKL.... SSR.... HPA.... MMUTD.. DC?T... GKL.... SSR.... HPA.... MMU.... DC?T... GKL.... SSR.... HPA.... MMU.... DPAT... GKL.... SSR.... HPATD.. MMU.... DC?T...",
   "messages": [
     "G KL",
     "S SR",
     "H PA",
     "M MU",
-    "I come to suck your blood",
+    "I come to start in the middle of the board",
     "G KL",
     "S SR",
     "H PA",
     "M MU",
-    "hunters are poos",
+    "+++Oneoneoneoneoneoneone+++",
     "G KL",
     "S SR",
     "H PA",
     "M MU",
-    "hunters are poos",
+    "+++MELON MELON MELON+++",
     "G KL",
     "S SR",
     "H PA",
     "M MU",
-    "hunters are poos",
+    "+++Out Of Cheese Error+++",
     "G KL",
     "S SR",
     "H PA",
     "M MU",
-    "hunters are poos",
+    "+++Whoops! Here Comes The Cheese!+++",
     "G KL",
     "S SR",
     "H PA",
     "M MU",
-    "hunters are poos",
+    "+++Out Of Cheese Error+++",
     "G KL",
     "S SR",
     "H PA",
     "M MU",
-    "hunters are poos"
+    "+++Error At Address: 14, Treacle Mine Road, Ankh-Morpork+++"
   ]
 }
 Program Output: 
 Move:  {
   "move": "KL",
   "message": "G KL",
-  "timer": 85
+  "timer": 84
 }
 > Moving from: KL
 > Life Points: 9
@@ -1578,49 +1446,49 @@ Move:  {
 > +++
   move: KL
   message: G KL
-  timer: 85
+  timer: 84
 > ---
 --------------------------------------------------------------------------
 > Running player 1... 
-/tmp/dryrun4769/hunter
+/tmp/dryrun10700/hunter
 Running with input:  {
-  "pastPlays": "GKL.... SSR.... HPA.... MMU.... DMU.V.. GKL.... SSR.... HPA.... MMUVD.. DAS.... GKL.... SSR.... HPA.... MMU.... DC?T... GKL.... SSR.... HPA.... MMU.... DC?T... GKL.... SSR.... HPA.... MMU.... DC?T... GKL.... SSR.... HPA.... MMU.... DC?T... GKL.... SSR.... HPA.... MMU.... DPAT... GKL....",
+  "pastPlays": "GKL.... SSR.... HPA.... MMU.... DMU.V.. GKL.... SSR.... HPA.... MMUVD.. DVET... GKL.... SSR.... HPA.... MMU.... DD2T... GKL.... SSR.... HPA.... MMUTD.. DC?T... GKL.... SSR.... HPA.... MMU.... DC?T... GKL.... SSR.... HPA.... MMU.... DPAT... GKL.... SSR.... HPATD.. MMU.... DC?T... GKL....",
   "messages": [
     "G KL",
     "S SR",
     "H PA",
     "M MU",
-    "I come to suck your blood",
+    "I come to start in the middle of the board",
     "G KL",
     "S SR",
     "H PA",
     "M MU",
-    "hunters are poos",
+    "+++Oneoneoneoneoneoneone+++",
     "G KL",
     "S SR",
     "H PA",
     "M MU",
-    "hunters are poos",
+    "+++MELON MELON MELON+++",
     "G KL",
     "S SR",
     "H PA",
     "M MU",
-    "hunters are poos",
+    "+++Out Of Cheese Error+++",
     "G KL",
     "S SR",
     "H PA",
     "M MU",
-    "hunters are poos",
+    "+++Whoops! Here Comes The Cheese!+++",
     "G KL",
     "S SR",
     "H PA",
     "M MU",
-    "hunters are poos",
+    "+++Out Of Cheese Error+++",
     "G KL",
     "S SR",
     "H PA",
     "M MU",
-    "hunters are poos",
+    "+++Error At Address: 14, Treacle Mine Road, Ankh-Morpork+++",
     "G KL"
   ]
 }
@@ -1628,7 +1496,7 @@ Program Output:
 Move:  {
   "move": "SR",
   "message": "S SR",
-  "timer": 83
+  "timer": 75
 }
 > Moving from: SR
 > Life Points: 9
@@ -1636,49 +1504,49 @@ Move:  {
 > +++
   move: SR
   message: S SR
-  timer: 83
+  timer: 75
 > ---
 --------------------------------------------------------------------------
 > Running player 2... 
-/tmp/dryrun4769/hunter
+/tmp/dryrun10700/hunter
 Running with input:  {
-  "pastPlays": "GKL.... SSR.... HPA.... MMU.... DMU.V.. GKL.... SSR.... HPA.... MMUVD.. DAS.... GKL.... SSR.... HPA.... MMU.... DC?T... GKL.... SSR.... HPA.... MMU.... DC?T... GKL.... SSR.... HPA.... MMU.... DC?T... GKL.... SSR.... HPA.... MMU.... DC?T... GKL.... SSR.... HPA.... MMU.... DPAT... GKL.... SSR....",
+  "pastPlays": "GKL.... SSR.... HPA.... MMU.... DMU.V.. GKL.... SSR.... HPA.... MMUVD.. DVET... GKL.... SSR.... HPA.... MMU.... DD2T... GKL.... SSR.... HPA.... MMUTD.. DC?T... GKL.... SSR.... HPA.... MMU.... DC?T... GKL.... SSR.... HPA.... MMU.... DPAT... GKL.... SSR.... HPATD.. MMU.... DC?T... GKL.... SSR....",
   "messages": [
     "G KL",
     "S SR",
     "H PA",
     "M MU",
-    "I come to suck your blood",
+    "I come to start in the middle of the board",
     "G KL",
     "S SR",
     "H PA",
     "M MU",
-    "hunters are poos",
+    "+++Oneoneoneoneoneoneone+++",
     "G KL",
     "S SR",
     "H PA",
     "M MU",
-    "hunters are poos",
+    "+++MELON MELON MELON+++",
     "G KL",
     "S SR",
     "H PA",
     "M MU",
-    "hunters are poos",
+    "+++Out Of Cheese Error+++",
     "G KL",
     "S SR",
     "H PA",
     "M MU",
-    "hunters are poos",
+    "+++Whoops! Here Comes The Cheese!+++",
     "G KL",
     "S SR",
     "H PA",
     "M MU",
-    "hunters are poos",
+    "+++Out Of Cheese Error+++",
     "G KL",
     "S SR",
     "H PA",
     "M MU",
-    "hunters are poos",
+    "+++Error At Address: 14, Treacle Mine Road, Ankh-Morpork+++",
     "G KL",
     "S SR"
   ]
@@ -1687,319 +1555,7 @@ Program Output:
 Move:  {
   "move": "PA",
   "message": "H PA",
-  "timer": 86
-}
-> Moving from: PA
-> Life Points: 9
-> Player 2 made move:
-> +++
-  move: PA
-  message: H PA
-  timer: 86
-> ---
---------------------------------------------------------------------------
-> Running player 3... 
-/tmp/dryrun4769/hunter
-Running with input:  {
-  "pastPlays": "GKL.... SSR.... HPA.... MMU.... DMU.V.. GKL.... SSR.... HPA.... MMUVD.. DAS.... GKL.... SSR.... HPA.... MMU.... DC?T... GKL.... SSR.... HPA.... MMU.... DC?T... GKL.... SSR.... HPA.... MMU.... DC?T... GKL.... SSR.... HPA.... MMU.... DC?T... GKL.... SSR.... HPA.... MMU.... DPAT... GKL.... SSR.... HPATD..",
-  "messages": [
-    "G KL",
-    "S SR",
-    "H PA",
-    "M MU",
-    "I come to suck your blood",
-    "G KL",
-    "S SR",
-    "H PA",
-    "M MU",
-    "hunters are poos",
-    "G KL",
-    "S SR",
-    "H PA",
-    "M MU",
-    "hunters are poos",
-    "G KL",
-    "S SR",
-    "H PA",
-    "M MU",
-    "hunters are poos",
-    "G KL",
-    "S SR",
-    "H PA",
-    "M MU",
-    "hunters are poos",
-    "G KL",
-    "S SR",
-    "H PA",
-    "M MU",
-    "hunters are poos",
-    "G KL",
-    "S SR",
-    "H PA",
-    "M MU",
-    "hunters are poos",
-    "G KL",
-    "S SR",
-    "H PA"
-  ]
-}
-Program Output: 
-Move:  {
-  "move": "MU",
-  "message": "M MU",
-  "timer": 88
-}
-> Moving from: MU
-> Life Points: 9
-> Player 3 made move:
-> +++
-  move: MU
-  message: M MU
-  timer: 88
-> ---
---------------------------------------------------------------------------
-> Running player 4... 
-/tmp/dryrun4769/dracula
-Running with input:  {
-  "pastPlays": "GKL.... SSR.... HPA.... MMU.... DMU.V.. GKL.... SSR.... HPA.... MMUVD.. DAS.... GKL.... SSR.... HPA.... MMU.... DVET... GKL.... SSR.... HPA.... MMU.... DMIT... GKL.... SSR.... HPA.... MMU.... DZUT... GKL.... SSR.... HPA.... MMU.... DSTT... GKL.... SSR.... HPA.... MMU.... DPAT... GKL.... SSR.... HPATD.. MMU....",
-  "messages": [
-    "G KL",
-    "S SR",
-    "H PA",
-    "M MU",
-    "I come to suck your blood",
-    "G KL",
-    "S SR",
-    "H PA",
-    "M MU",
-    "hunters are poos",
-    "G KL",
-    "S SR",
-    "H PA",
-    "M MU",
-    "hunters are poos",
-    "G KL",
-    "S SR",
-    "H PA",
-    "M MU",
-    "hunters are poos",
-    "G KL",
-    "S SR",
-    "H PA",
-    "M MU",
-    "hunters are poos",
-    "G KL",
-    "S SR",
-    "H PA",
-    "M MU",
-    "hunters are poos",
-    "G KL",
-    "S SR",
-    "H PA",
-    "M MU",
-    "hunters are poos",
-    "G KL",
-    "S SR",
-    "H PA",
-    "M MU"
-  ]
-}
-Program Output: 
-Move:  {
-  "move": "NA",
-  "message": "hunters are poos",
-  "timer": 7150
-}
-> Moving from: PA
-> Blood Points: 18
-> Player 4 made move:
-> +++
-  move: NA
-  message: hunters are poos
-  timer: 7150
-> ---
-> End of Round:  7
-> Starting Round:  8
---------------------------------------------------------------------------
-> Running player 0... 
-/tmp/dryrun4769/hunter
-Running with input:  {
-  "pastPlays": "GKL.... SSR.... HPA.... MMU.... DMU.V.. GKL.... SSR.... HPA.... MMUVD.. DAS.... GKL.... SSR.... HPA.... MMU.... DVET... GKL.... SSR.... HPA.... MMU.... DC?T... GKL.... SSR.... HPA.... MMU.... DC?T... GKL.... SSR.... HPA.... MMU.... DC?T... GKL.... SSR.... HPA.... MMU.... DPAT... GKL.... SSR.... HPATD.. MMU.... DC?T...",
-  "messages": [
-    "G KL",
-    "S SR",
-    "H PA",
-    "M MU",
-    "I come to suck your blood",
-    "G KL",
-    "S SR",
-    "H PA",
-    "M MU",
-    "hunters are poos",
-    "G KL",
-    "S SR",
-    "H PA",
-    "M MU",
-    "hunters are poos",
-    "G KL",
-    "S SR",
-    "H PA",
-    "M MU",
-    "hunters are poos",
-    "G KL",
-    "S SR",
-    "H PA",
-    "M MU",
-    "hunters are poos",
-    "G KL",
-    "S SR",
-    "H PA",
-    "M MU",
-    "hunters are poos",
-    "G KL",
-    "S SR",
-    "H PA",
-    "M MU",
-    "hunters are poos",
-    "G KL",
-    "S SR",
-    "H PA",
-    "M MU",
-    "hunters are poos"
-  ]
-}
-Program Output: 
-Move:  {
-  "move": "KL",
-  "message": "G KL",
-  "timer": 93
-}
-> Moving from: KL
-> Life Points: 9
-> Player 0 made move:
-> +++
-  move: KL
-  message: G KL
-  timer: 93
-> ---
---------------------------------------------------------------------------
-> Running player 1... 
-/tmp/dryrun4769/hunter
-Running with input:  {
-  "pastPlays": "GKL.... SSR.... HPA.... MMU.... DMU.V.. GKL.... SSR.... HPA.... MMUVD.. DAS.... GKL.... SSR.... HPA.... MMU.... DVET... GKL.... SSR.... HPA.... MMU.... DC?T... GKL.... SSR.... HPA.... MMU.... DC?T... GKL.... SSR.... HPA.... MMU.... DC?T... GKL.... SSR.... HPA.... MMU.... DPAT... GKL.... SSR.... HPATD.. MMU.... DC?T... GKL....",
-  "messages": [
-    "G KL",
-    "S SR",
-    "H PA",
-    "M MU",
-    "I come to suck your blood",
-    "G KL",
-    "S SR",
-    "H PA",
-    "M MU",
-    "hunters are poos",
-    "G KL",
-    "S SR",
-    "H PA",
-    "M MU",
-    "hunters are poos",
-    "G KL",
-    "S SR",
-    "H PA",
-    "M MU",
-    "hunters are poos",
-    "G KL",
-    "S SR",
-    "H PA",
-    "M MU",
-    "hunters are poos",
-    "G KL",
-    "S SR",
-    "H PA",
-    "M MU",
-    "hunters are poos",
-    "G KL",
-    "S SR",
-    "H PA",
-    "M MU",
-    "hunters are poos",
-    "G KL",
-    "S SR",
-    "H PA",
-    "M MU",
-    "hunters are poos",
-    "G KL"
-  ]
-}
-Program Output: 
-Move:  {
-  "move": "SR",
-  "message": "S SR",
-  "timer": 95
-}
-> Moving from: SR
-> Life Points: 9
-> Player 1 made move:
-> +++
-  move: SR
-  message: S SR
-  timer: 95
-> ---
---------------------------------------------------------------------------
-> Running player 2... 
-/tmp/dryrun4769/hunter
-Running with input:  {
-  "pastPlays": "GKL.... SSR.... HPA.... MMU.... DMU.V.. GKL.... SSR.... HPA.... MMUVD.. DAS.... GKL.... SSR.... HPA.... MMU.... DVET... GKL.... SSR.... HPA.... MMU.... DC?T... GKL.... SSR.... HPA.... MMU.... DC?T... GKL.... SSR.... HPA.... MMU.... DC?T... GKL.... SSR.... HPA.... MMU.... DPAT... GKL.... SSR.... HPATD.. MMU.... DC?T... GKL.... SSR....",
-  "messages": [
-    "G KL",
-    "S SR",
-    "H PA",
-    "M MU",
-    "I come to suck your blood",
-    "G KL",
-    "S SR",
-    "H PA",
-    "M MU",
-    "hunters are poos",
-    "G KL",
-    "S SR",
-    "H PA",
-    "M MU",
-    "hunters are poos",
-    "G KL",
-    "S SR",
-    "H PA",
-    "M MU",
-    "hunters are poos",
-    "G KL",
-    "S SR",
-    "H PA",
-    "M MU",
-    "hunters are poos",
-    "G KL",
-    "S SR",
-    "H PA",
-    "M MU",
-    "hunters are poos",
-    "G KL",
-    "S SR",
-    "H PA",
-    "M MU",
-    "hunters are poos",
-    "G KL",
-    "S SR",
-    "H PA",
-    "M MU",
-    "hunters are poos",
-    "G KL",
-    "S SR"
-  ]
-}
-Program Output: 
-Move:  {
-  "move": "PA",
-  "message": "H PA",
-  "timer": 95
+  "timer": 90
 }
 > Moving from: PA
 > Life Points: 6
@@ -2007,54 +1563,325 @@ Move:  {
 > +++
   move: PA
   message: H PA
-  timer: 95
+  timer: 90
 > ---
 --------------------------------------------------------------------------
 > Running player 3... 
-/tmp/dryrun4769/hunter
+/tmp/dryrun10700/hunter
 Running with input:  {
-  "pastPlays": "GKL.... SSR.... HPA.... MMU.... DMU.V.. GKL.... SSR.... HPA.... MMUVD.. DAS.... GKL.... SSR.... HPA.... MMU.... DVET... GKL.... SSR.... HPA.... MMU.... DC?T... GKL.... SSR.... HPA.... MMU.... DC?T... GKL.... SSR.... HPA.... MMU.... DC?T... GKL.... SSR.... HPA.... MMU.... DPAT... GKL.... SSR.... HPATD.. MMU.... DC?T... GKL.... SSR.... HPA....",
+  "pastPlays": "GKL.... SSR.... HPA.... MMU.... DMU.V.. GKL.... SSR.... HPA.... MMUVD.. DVET... GKL.... SSR.... HPA.... MMU.... DD2T... GKL.... SSR.... HPA.... MMUTD.. DC?T... GKL.... SSR.... HPA.... MMU.... DC?T... GKL.... SSR.... HPA.... MMU.... DPAT... GKL.... SSR.... HPATD.. MMU.... DC?T... GKL.... SSR.... HPA....",
   "messages": [
     "G KL",
     "S SR",
     "H PA",
     "M MU",
-    "I come to suck your blood",
+    "I come to start in the middle of the board",
     "G KL",
     "S SR",
     "H PA",
     "M MU",
-    "hunters are poos",
+    "+++Oneoneoneoneoneoneone+++",
     "G KL",
     "S SR",
     "H PA",
     "M MU",
-    "hunters are poos",
+    "+++MELON MELON MELON+++",
     "G KL",
     "S SR",
     "H PA",
     "M MU",
-    "hunters are poos",
+    "+++Out Of Cheese Error+++",
     "G KL",
     "S SR",
     "H PA",
     "M MU",
-    "hunters are poos",
+    "+++Whoops! Here Comes The Cheese!+++",
     "G KL",
     "S SR",
     "H PA",
     "M MU",
-    "hunters are poos",
+    "+++Out Of Cheese Error+++",
     "G KL",
     "S SR",
     "H PA",
     "M MU",
-    "hunters are poos",
+    "+++Error At Address: 14, Treacle Mine Road, Ankh-Morpork+++",
+    "G KL",
+    "S SR",
+    "H PA"
+  ]
+}
+Program Output: 
+Move:  {
+  "move": "MU",
+  "message": "M MU",
+  "timer": 101
+}
+> Moving from: MU
+> Life Points: 9
+> Player 3 made move:
+> +++
+  move: MU
+  message: M MU
+  timer: 101
+> ---
+--------------------------------------------------------------------------
+Player is currently disqualified. Making a move on their behalf.4
+generating default dracula move
+PA illegal
+Location PA already in trail
+ST illegal
+Location ST already in trail
+undefined illegal
+Move undefined
+D1 illegal
+Illegal double-back: not adjacent or is already in trail
+D2 illegal
+Illegal double-back: not adjacent or is already in trail
+D3 illegal
+Illegal double-back: not adjacent or is already in trail
+D4 illegal
+Illegal double-back: not adjacent or is already in trail
+D5 illegal
+Illegal double-back: not adjacent or is already in trail
+Default Dracula Move: "HI"
+> End of Round:  7
+> Starting Round:  8
+--------------------------------------------------------------------------
+> Running player 0... 
+/tmp/dryrun10700/hunter
+Running with input:  {
+  "pastPlays": "GKL.... SSR.... HPA.... MMU.... DMU.V.. GKL.... SSR.... HPA.... MMUVD.. DVET... GKL.... SSR.... HPA.... MMU.... DD2T... GKL.... SSR.... HPA.... MMUTD.. DC?T... GKL.... SSR.... HPA.... MMU.... DC?T... GKL.... SSR.... HPA.... MMU.... DPAT... GKL.... SSR.... HPATD.. MMU.... DC?T... GKL.... SSR.... HPA.... MMU.... DC?T.M.",
+  "messages": [
     "G KL",
     "S SR",
     "H PA",
     "M MU",
-    "hunters are poos",
+    "I come to start in the middle of the board",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "+++Oneoneoneoneoneoneone+++",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "+++MELON MELON MELON+++",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "+++Out Of Cheese Error+++",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "+++Whoops! Here Comes The Cheese!+++",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "+++Out Of Cheese Error+++",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "+++Error At Address: 14, Treacle Mine Road, Ankh-Morpork+++",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "+++Whoops! Here Comes The Cheese!+++"
+  ]
+}
+Program Output: 
+Move:  {
+  "move": "KL",
+  "message": "G KL",
+  "timer": 55
+}
+> Moving from: KL
+> Life Points: 9
+> Player 0 made move:
+> +++
+  move: KL
+  message: G KL
+  timer: 55
+> ---
+--------------------------------------------------------------------------
+> Running player 1... 
+/tmp/dryrun10700/hunter
+Running with input:  {
+  "pastPlays": "GKL.... SSR.... HPA.... MMU.... DMU.V.. GKL.... SSR.... HPA.... MMUVD.. DVET... GKL.... SSR.... HPA.... MMU.... DD2T... GKL.... SSR.... HPA.... MMUTD.. DC?T... GKL.... SSR.... HPA.... MMU.... DC?T... GKL.... SSR.... HPA.... MMU.... DPAT... GKL.... SSR.... HPATD.. MMU.... DC?T... GKL.... SSR.... HPA.... MMU.... DC?T.M. GKL....",
+  "messages": [
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "I come to start in the middle of the board",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "+++Oneoneoneoneoneoneone+++",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "+++MELON MELON MELON+++",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "+++Out Of Cheese Error+++",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "+++Whoops! Here Comes The Cheese!+++",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "+++Out Of Cheese Error+++",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "+++Error At Address: 14, Treacle Mine Road, Ankh-Morpork+++",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "+++Whoops! Here Comes The Cheese!+++",
+    "G KL"
+  ]
+}
+Program Output: 
+Move:  {
+  "move": "SR",
+  "message": "S SR",
+  "timer": 96
+}
+> Moving from: SR
+> Life Points: 9
+> Player 1 made move:
+> +++
+  move: SR
+  message: S SR
+  timer: 96
+> ---
+--------------------------------------------------------------------------
+> Running player 2... 
+/tmp/dryrun10700/hunter
+Running with input:  {
+  "pastPlays": "GKL.... SSR.... HPA.... MMU.... DMU.V.. GKL.... SSR.... HPA.... MMUVD.. DVET... GKL.... SSR.... HPA.... MMU.... DD2T... GKL.... SSR.... HPA.... MMUTD.. DC?T... GKL.... SSR.... HPA.... MMU.... DC?T... GKL.... SSR.... HPA.... MMU.... DPAT... GKL.... SSR.... HPATD.. MMU.... DC?T... GKL.... SSR.... HPA.... MMU.... DC?T.M. GKL.... SSR....",
+  "messages": [
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "I come to start in the middle of the board",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "+++Oneoneoneoneoneoneone+++",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "+++MELON MELON MELON+++",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "+++Out Of Cheese Error+++",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "+++Whoops! Here Comes The Cheese!+++",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "+++Out Of Cheese Error+++",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "+++Error At Address: 14, Treacle Mine Road, Ankh-Morpork+++",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "+++Whoops! Here Comes The Cheese!+++",
+    "G KL",
+    "S SR"
+  ]
+}
+Program Output: 
+Move:  {
+  "move": "PA",
+  "message": "H PA",
+  "timer": 53
+}
+> Moving from: PA
+> Life Points: 9
+> Player 2 made move:
+> +++
+  move: PA
+  message: H PA
+  timer: 53
+> ---
+--------------------------------------------------------------------------
+> Running player 3... 
+/tmp/dryrun10700/hunter
+Running with input:  {
+  "pastPlays": "GKL.... SSR.... HPA.... MMU.... DMU.V.. GKL.... SSR.... HPA.... MMUVD.. DVET... GKL.... SSR.... HPA.... MMU.... DD2T... GKL.... SSR.... HPA.... MMUTD.. DC?T... GKL.... SSR.... HPA.... MMU.... DC?T... GKL.... SSR.... HPA.... MMU.... DPAT... GKL.... SSR.... HPATD.. MMU.... DC?T... GKL.... SSR.... HPA.... MMU.... DC?T.M. GKL.... SSR.... HPA....",
+  "messages": [
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "I come to start in the middle of the board",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "+++Oneoneoneoneoneoneone+++",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "+++MELON MELON MELON+++",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "+++Out Of Cheese Error+++",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "+++Whoops! Here Comes The Cheese!+++",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "+++Out Of Cheese Error+++",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "+++Error At Address: 14, Treacle Mine Road, Ankh-Morpork+++",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "+++Whoops! Here Comes The Cheese!+++",
     "G KL",
     "S SR",
     "H PA"
@@ -2075,131 +1902,79 @@ Move:  {
   timer: 97
 > ---
 --------------------------------------------------------------------------
-> Running player 4... 
-/tmp/dryrun4769/dracula
-Running with input:  {
-  "pastPlays": "GKL.... SSR.... HPA.... MMU.... DMU.V.. GKL.... SSR.... HPA.... MMUVD.. DAS.... GKL.... SSR.... HPA.... MMU.... DVET... GKL.... SSR.... HPA.... MMU.... DMIT... GKL.... SSR.... HPA.... MMU.... DZUT... GKL.... SSR.... HPA.... MMU.... DSTT... GKL.... SSR.... HPA.... MMU.... DPAT... GKL.... SSR.... HPATD.. MMU.... DNAT... GKL.... SSR.... HPA.... MMU....",
-  "messages": [
-    "G KL",
-    "S SR",
-    "H PA",
-    "M MU",
-    "I come to suck your blood",
-    "G KL",
-    "S SR",
-    "H PA",
-    "M MU",
-    "hunters are poos",
-    "G KL",
-    "S SR",
-    "H PA",
-    "M MU",
-    "hunters are poos",
-    "G KL",
-    "S SR",
-    "H PA",
-    "M MU",
-    "hunters are poos",
-    "G KL",
-    "S SR",
-    "H PA",
-    "M MU",
-    "hunters are poos",
-    "G KL",
-    "S SR",
-    "H PA",
-    "M MU",
-    "hunters are poos",
-    "G KL",
-    "S SR",
-    "H PA",
-    "M MU",
-    "hunters are poos",
-    "G KL",
-    "S SR",
-    "H PA",
-    "M MU",
-    "hunters are poos",
-    "G KL",
-    "S SR",
-    "H PA",
-    "M MU"
-  ]
-}
-Program Output: 
-Move:  {
-  "move": "AS",
-  "message": "hunters are poos",
-  "timer": 6382
-}
-> Moving from: NA
-> Blood Points: 18
-> Player 4 made move:
-> +++
-  move: AS
-  message: hunters are poos
-  timer: 6382
-> ---
+Player is currently disqualified. Making a move on their behalf.4
+generating default dracula move
+PA illegal
+Location PA already in trail
+ST illegal
+Location ST already in trail
+undefined illegal
+Move undefined
+D5 illegal
+Illegal double-back: not adjacent or is already in trail
+HI illegal
+Already made a hide
+Default Dracula Move: "D4"
 > End of Round:  8
 > Starting Round:  9
 --------------------------------------------------------------------------
 > Running player 0... 
-/tmp/dryrun4769/hunter
+/tmp/dryrun10700/hunter
 Running with input:  {
-  "pastPlays": "GKL.... SSR.... HPA.... MMU.... DMU.V.. GKL.... SSR.... HPA.... MMUVD.. DAS.... GKL.... SSR.... HPA.... MMU.... DVET... GKL.... SSR.... HPA.... MMU.... DMIT... GKL.... SSR.... HPA.... MMU.... DC?T... GKL.... SSR.... HPA.... MMU.... DC?T... GKL.... SSR.... HPA.... MMU.... DPAT... GKL.... SSR.... HPATD.. MMU.... DC?T... GKL.... SSR.... HPA.... MMU.... DS?..M.",
+  "pastPlays": "GKL.... SSR.... HPA.... MMU.... DMU.V.. GKL.... SSR.... HPA.... MMUVD.. DVET... GKL.... SSR.... HPA.... MMU.... DD2T... GKL.... SSR.... HPA.... MMUTD.. DNUT... GKL.... SSR.... HPA.... MMU.... DC?T... GKL.... SSR.... HPA.... MMU.... DPAT... GKL.... SSR.... HPATD.. MMU.... DC?T... GKL.... SSR.... HPA.... MMU.... DC?T.M. GKL.... SSR.... HPA.... MMU.... DD4T...",
   "messages": [
     "G KL",
     "S SR",
     "H PA",
     "M MU",
-    "I come to suck your blood",
+    "I come to start in the middle of the board",
     "G KL",
     "S SR",
     "H PA",
     "M MU",
-    "hunters are poos",
+    "+++Oneoneoneoneoneoneone+++",
     "G KL",
     "S SR",
     "H PA",
     "M MU",
-    "hunters are poos",
+    "+++MELON MELON MELON+++",
     "G KL",
     "S SR",
     "H PA",
     "M MU",
-    "hunters are poos",
+    "+++Out Of Cheese Error+++",
     "G KL",
     "S SR",
     "H PA",
     "M MU",
-    "hunters are poos",
+    "+++Whoops! Here Comes The Cheese!+++",
     "G KL",
     "S SR",
     "H PA",
     "M MU",
-    "hunters are poos",
+    "+++Out Of Cheese Error+++",
     "G KL",
     "S SR",
     "H PA",
     "M MU",
-    "hunters are poos",
+    "+++Error At Address: 14, Treacle Mine Road, Ankh-Morpork+++",
     "G KL",
     "S SR",
     "H PA",
     "M MU",
-    "hunters are poos",
+    "+++Whoops! Here Comes The Cheese!+++",
     "G KL",
     "S SR",
     "H PA",
     "M MU",
-    "hunters are poos"
+    "+++Mr. Jelly! Mr. Jelly!+++"
   ]
 }
 Program Output: 
 Move:  {
   "move": "KL",
   "message": "G KL",
-  "timer": 98
+  "timer": 100
 }
 > Moving from: KL
 > Life Points: 9
@@ -2207,59 +1982,59 @@ Move:  {
 > +++
   move: KL
   message: G KL
-  timer: 98
+  timer: 100
 > ---
 --------------------------------------------------------------------------
 > Running player 1... 
-/tmp/dryrun4769/hunter
+/tmp/dryrun10700/hunter
 Running with input:  {
-  "pastPlays": "GKL.... SSR.... HPA.... MMU.... DMU.V.. GKL.... SSR.... HPA.... MMUVD.. DAS.... GKL.... SSR.... HPA.... MMU.... DVET... GKL.... SSR.... HPA.... MMU.... DMIT... GKL.... SSR.... HPA.... MMU.... DC?T... GKL.... SSR.... HPA.... MMU.... DC?T... GKL.... SSR.... HPA.... MMU.... DPAT... GKL.... SSR.... HPATD.. MMU.... DC?T... GKL.... SSR.... HPA.... MMU.... DS?..M. GKL....",
+  "pastPlays": "GKL.... SSR.... HPA.... MMU.... DMU.V.. GKL.... SSR.... HPA.... MMUVD.. DVET... GKL.... SSR.... HPA.... MMU.... DD2T... GKL.... SSR.... HPA.... MMUTD.. DNUT... GKL.... SSR.... HPA.... MMU.... DC?T... GKL.... SSR.... HPA.... MMU.... DPAT... GKL.... SSR.... HPATD.. MMU.... DC?T... GKL.... SSR.... HPA.... MMU.... DC?T.M. GKL.... SSR.... HPA.... MMU.... DD4T... GKL....",
   "messages": [
     "G KL",
     "S SR",
     "H PA",
     "M MU",
-    "I come to suck your blood",
+    "I come to start in the middle of the board",
     "G KL",
     "S SR",
     "H PA",
     "M MU",
-    "hunters are poos",
+    "+++Oneoneoneoneoneoneone+++",
     "G KL",
     "S SR",
     "H PA",
     "M MU",
-    "hunters are poos",
+    "+++MELON MELON MELON+++",
     "G KL",
     "S SR",
     "H PA",
     "M MU",
-    "hunters are poos",
+    "+++Out Of Cheese Error+++",
     "G KL",
     "S SR",
     "H PA",
     "M MU",
-    "hunters are poos",
+    "+++Whoops! Here Comes The Cheese!+++",
     "G KL",
     "S SR",
     "H PA",
     "M MU",
-    "hunters are poos",
+    "+++Out Of Cheese Error+++",
     "G KL",
     "S SR",
     "H PA",
     "M MU",
-    "hunters are poos",
+    "+++Error At Address: 14, Treacle Mine Road, Ankh-Morpork+++",
     "G KL",
     "S SR",
     "H PA",
     "M MU",
-    "hunters are poos",
+    "+++Whoops! Here Comes The Cheese!+++",
     "G KL",
     "S SR",
     "H PA",
     "M MU",
-    "hunters are poos",
+    "+++Mr. Jelly! Mr. Jelly!+++",
     "G KL"
   ]
 }
@@ -2267,7 +2042,7 @@ Program Output:
 Move:  {
   "move": "SR",
   "message": "S SR",
-  "timer": 102
+  "timer": 101
 }
 > Moving from: SR
 > Life Points: 9
@@ -2275,59 +2050,59 @@ Move:  {
 > +++
   move: SR
   message: S SR
-  timer: 102
+  timer: 101
 > ---
 --------------------------------------------------------------------------
 > Running player 2... 
-/tmp/dryrun4769/hunter
+/tmp/dryrun10700/hunter
 Running with input:  {
-  "pastPlays": "GKL.... SSR.... HPA.... MMU.... DMU.V.. GKL.... SSR.... HPA.... MMUVD.. DAS.... GKL.... SSR.... HPA.... MMU.... DVET... GKL.... SSR.... HPA.... MMU.... DMIT... GKL.... SSR.... HPA.... MMU.... DC?T... GKL.... SSR.... HPA.... MMU.... DC?T... GKL.... SSR.... HPA.... MMU.... DPAT... GKL.... SSR.... HPATD.. MMU.... DC?T... GKL.... SSR.... HPA.... MMU.... DS?..M. GKL.... SSR....",
+  "pastPlays": "GKL.... SSR.... HPA.... MMU.... DMU.V.. GKL.... SSR.... HPA.... MMUVD.. DVET... GKL.... SSR.... HPA.... MMU.... DD2T... GKL.... SSR.... HPA.... MMUTD.. DNUT... GKL.... SSR.... HPA.... MMU.... DC?T... GKL.... SSR.... HPA.... MMU.... DPAT... GKL.... SSR.... HPATD.. MMU.... DC?T... GKL.... SSR.... HPA.... MMU.... DC?T.M. GKL.... SSR.... HPA.... MMU.... DD4T... GKL.... SSR....",
   "messages": [
     "G KL",
     "S SR",
     "H PA",
     "M MU",
-    "I come to suck your blood",
+    "I come to start in the middle of the board",
     "G KL",
     "S SR",
     "H PA",
     "M MU",
-    "hunters are poos",
+    "+++Oneoneoneoneoneoneone+++",
     "G KL",
     "S SR",
     "H PA",
     "M MU",
-    "hunters are poos",
+    "+++MELON MELON MELON+++",
     "G KL",
     "S SR",
     "H PA",
     "M MU",
-    "hunters are poos",
+    "+++Out Of Cheese Error+++",
     "G KL",
     "S SR",
     "H PA",
     "M MU",
-    "hunters are poos",
+    "+++Whoops! Here Comes The Cheese!+++",
     "G KL",
     "S SR",
     "H PA",
     "M MU",
-    "hunters are poos",
+    "+++Out Of Cheese Error+++",
     "G KL",
     "S SR",
     "H PA",
     "M MU",
-    "hunters are poos",
+    "+++Error At Address: 14, Treacle Mine Road, Ankh-Morpork+++",
     "G KL",
     "S SR",
     "H PA",
     "M MU",
-    "hunters are poos",
+    "+++Whoops! Here Comes The Cheese!+++",
     "G KL",
     "S SR",
     "H PA",
     "M MU",
-    "hunters are poos",
+    "+++Mr. Jelly! Mr. Jelly!+++",
     "G KL",
     "S SR"
   ]
@@ -2336,7 +2111,7 @@ Program Output:
 Move:  {
   "move": "PA",
   "message": "H PA",
-  "timer": 99
+  "timer": 57
 }
 > Moving from: PA
 > Life Points: 9
@@ -2344,59 +2119,59 @@ Move:  {
 > +++
   move: PA
   message: H PA
-  timer: 99
+  timer: 57
 > ---
 --------------------------------------------------------------------------
 > Running player 3... 
-/tmp/dryrun4769/hunter
+/tmp/dryrun10700/hunter
 Running with input:  {
-  "pastPlays": "GKL.... SSR.... HPA.... MMU.... DMU.V.. GKL.... SSR.... HPA.... MMUVD.. DAS.... GKL.... SSR.... HPA.... MMU.... DVET... GKL.... SSR.... HPA.... MMU.... DMIT... GKL.... SSR.... HPA.... MMU.... DC?T... GKL.... SSR.... HPA.... MMU.... DC?T... GKL.... SSR.... HPA.... MMU.... DPAT... GKL.... SSR.... HPATD.. MMU.... DC?T... GKL.... SSR.... HPA.... MMU.... DS?..M. GKL.... SSR.... HPA....",
+  "pastPlays": "GKL.... SSR.... HPA.... MMU.... DMU.V.. GKL.... SSR.... HPA.... MMUVD.. DVET... GKL.... SSR.... HPA.... MMU.... DD2T... GKL.... SSR.... HPA.... MMUTD.. DNUT... GKL.... SSR.... HPA.... MMU.... DC?T... GKL.... SSR.... HPA.... MMU.... DPAT... GKL.... SSR.... HPATD.. MMU.... DC?T... GKL.... SSR.... HPA.... MMU.... DC?T.M. GKL.... SSR.... HPA.... MMU.... DD4T... GKL.... SSR.... HPA....",
   "messages": [
     "G KL",
     "S SR",
     "H PA",
     "M MU",
-    "I come to suck your blood",
+    "I come to start in the middle of the board",
     "G KL",
     "S SR",
     "H PA",
     "M MU",
-    "hunters are poos",
+    "+++Oneoneoneoneoneoneone+++",
     "G KL",
     "S SR",
     "H PA",
     "M MU",
-    "hunters are poos",
+    "+++MELON MELON MELON+++",
     "G KL",
     "S SR",
     "H PA",
     "M MU",
-    "hunters are poos",
+    "+++Out Of Cheese Error+++",
     "G KL",
     "S SR",
     "H PA",
     "M MU",
-    "hunters are poos",
+    "+++Whoops! Here Comes The Cheese!+++",
     "G KL",
     "S SR",
     "H PA",
     "M MU",
-    "hunters are poos",
+    "+++Out Of Cheese Error+++",
     "G KL",
     "S SR",
     "H PA",
     "M MU",
-    "hunters are poos",
+    "+++Error At Address: 14, Treacle Mine Road, Ankh-Morpork+++",
     "G KL",
     "S SR",
     "H PA",
     "M MU",
-    "hunters are poos",
+    "+++Whoops! Here Comes The Cheese!+++",
     "G KL",
     "S SR",
     "H PA",
     "M MU",
-    "hunters are poos",
+    "+++Mr. Jelly! Mr. Jelly!+++",
     "G KL",
     "S SR",
     "H PA"
@@ -2406,7 +2181,7 @@ Program Output:
 Move:  {
   "move": "MU",
   "message": "M MU",
-  "timer": 102
+  "timer": 106
 }
 > Moving from: MU
 > Life Points: 9
@@ -2414,144 +2189,99 @@ Move:  {
 > +++
   move: MU
   message: M MU
-  timer: 102
+  timer: 106
 > ---
 --------------------------------------------------------------------------
-> Running player 4... 
-/tmp/dryrun4769/dracula
-Running with input:  {
-  "pastPlays": "GKL.... SSR.... HPA.... MMU.... DMU.V.. GKL.... SSR.... HPA.... MMUVD.. DAS.... GKL.... SSR.... HPA.... MMU.... DVET... GKL.... SSR.... HPA.... MMU.... DMIT... GKL.... SSR.... HPA.... MMU.... DZUT... GKL.... SSR.... HPA.... MMU.... DSTT... GKL.... SSR.... HPA.... MMU.... DPAT... GKL.... SSR.... HPATD.. MMU.... DNAT... GKL.... SSR.... HPA.... MMU.... DAS..M. GKL.... SSR.... HPA.... MMU....",
-  "messages": [
-    "G KL",
-    "S SR",
-    "H PA",
-    "M MU",
-    "I come to suck your blood",
-    "G KL",
-    "S SR",
-    "H PA",
-    "M MU",
-    "hunters are poos",
-    "G KL",
-    "S SR",
-    "H PA",
-    "M MU",
-    "hunters are poos",
-    "G KL",
-    "S SR",
-    "H PA",
-    "M MU",
-    "hunters are poos",
-    "G KL",
-    "S SR",
-    "H PA",
-    "M MU",
-    "hunters are poos",
-    "G KL",
-    "S SR",
-    "H PA",
-    "M MU",
-    "hunters are poos",
-    "G KL",
-    "S SR",
-    "H PA",
-    "M MU",
-    "hunters are poos",
-    "G KL",
-    "S SR",
-    "H PA",
-    "M MU",
-    "hunters are poos",
-    "G KL",
-    "S SR",
-    "H PA",
-    "M MU",
-    "hunters are poos",
-    "G KL",
-    "S SR",
-    "H PA",
-    "M MU"
-  ]
-}
-Program Output: 
-Move:  {
-  "move": "VE",
-  "message": "hunters are poos",
-  "timer": 6419
-}
-> Moving from: AS
-> Blood Points: 16
-> Player 4 made move:
-> +++
-  move: VE
-  message: hunters are poos
-  timer: 6419
-> ---
+Player is currently disqualified. Making a move on their behalf.4
+generating default dracula move
+BU illegal
+Location BU already in trail
+BU illegal
+Location BU already in trail
+PA illegal
+Location PA already in trail
+undefined illegal
+Move undefined
+D1 illegal
+Illegal double-back: not adjacent or is already in trail
+D2 illegal
+Illegal double-back: not adjacent or is already in trail
+D3 illegal
+Illegal double-back: not adjacent or is already in trail
+D4 illegal
+Illegal double-back: not adjacent or is already in trail
+D5 illegal
+Illegal double-back: not adjacent or is already in trail
+HI illegal
+Already made a hide
+Default Dracula Move: "CO"
+BU illegal
+Location BU already in trail
 > End of Round:  9
 > Starting Round:  10
 --------------------------------------------------------------------------
 > Running player 0... 
-/tmp/dryrun4769/hunter
+/tmp/dryrun10700/hunter
 Running with input:  {
-  "pastPlays": "GKL.... SSR.... HPA.... MMU.... DMU.V.. GKL.... SSR.... HPA.... MMUVD.. DAS.... GKL.... SSR.... HPA.... MMU.... DVET... GKL.... SSR.... HPA.... MMU.... DMIT... GKL.... SSR.... HPA.... MMU.... DZUT... GKL.... SSR.... HPA.... MMU.... DC?T... GKL.... SSR.... HPA.... MMU.... DPAT... GKL.... SSR.... HPATD.. MMU.... DC?T... GKL.... SSR.... HPA.... MMU.... DS?..M. GKL.... SSR.... HPA.... MMU.... DC?T.M.",
+  "pastPlays": "GKL.... SSR.... HPA.... MMU.... DMU.V.. GKL.... SSR.... HPA.... MMUVD.. DVET... GKL.... SSR.... HPA.... MMU.... DD2T... GKL.... SSR.... HPA.... MMUTD.. DNUT... GKL.... SSR.... HPA.... MMU.... DSTT... GKL.... SSR.... HPA.... MMU.... DPAT... GKL.... SSR.... HPATD.. MMU.... DC?T... GKL.... SSR.... HPA.... MMU.... DC?T.M. GKL.... SSR.... HPA.... MMU.... DD4T... GKL.... SSR.... HPA.... MMU.... DC?T.M.",
   "messages": [
     "G KL",
     "S SR",
     "H PA",
     "M MU",
-    "I come to suck your blood",
+    "I come to start in the middle of the board",
     "G KL",
     "S SR",
     "H PA",
     "M MU",
-    "hunters are poos",
+    "+++Oneoneoneoneoneoneone+++",
     "G KL",
     "S SR",
     "H PA",
     "M MU",
-    "hunters are poos",
+    "+++MELON MELON MELON+++",
     "G KL",
     "S SR",
     "H PA",
     "M MU",
-    "hunters are poos",
+    "+++Out Of Cheese Error+++",
     "G KL",
     "S SR",
     "H PA",
     "M MU",
-    "hunters are poos",
+    "+++Whoops! Here Comes The Cheese!+++",
     "G KL",
     "S SR",
     "H PA",
     "M MU",
-    "hunters are poos",
+    "+++Out Of Cheese Error+++",
     "G KL",
     "S SR",
     "H PA",
     "M MU",
-    "hunters are poos",
+    "+++Error At Address: 14, Treacle Mine Road, Ankh-Morpork+++",
     "G KL",
     "S SR",
     "H PA",
     "M MU",
-    "hunters are poos",
+    "+++Whoops! Here Comes The Cheese!+++",
     "G KL",
     "S SR",
     "H PA",
     "M MU",
-    "hunters are poos",
+    "+++Mr. Jelly! Mr. Jelly!+++",
     "G KL",
     "S SR",
     "H PA",
     "M MU",
-    "hunters are poos"
+    "+++Divide By Cucumber Error. Please Reinstall Universe And Reboot+++"
   ]
 }
 Program Output: 
 Move:  {
   "move": "KL",
   "message": "G KL",
-  "timer": 101
+  "timer": 106
 }
 > Moving from: KL
 > Life Points: 9
@@ -2559,64 +2289,64 @@ Move:  {
 > +++
   move: KL
   message: G KL
-  timer: 101
+  timer: 106
 > ---
 --------------------------------------------------------------------------
 > Running player 1... 
-/tmp/dryrun4769/hunter
+/tmp/dryrun10700/hunter
 Running with input:  {
-  "pastPlays": "GKL.... SSR.... HPA.... MMU.... DMU.V.. GKL.... SSR.... HPA.... MMUVD.. DAS.... GKL.... SSR.... HPA.... MMU.... DVET... GKL.... SSR.... HPA.... MMU.... DMIT... GKL.... SSR.... HPA.... MMU.... DZUT... GKL.... SSR.... HPA.... MMU.... DC?T... GKL.... SSR.... HPA.... MMU.... DPAT... GKL.... SSR.... HPATD.. MMU.... DC?T... GKL.... SSR.... HPA.... MMU.... DS?..M. GKL.... SSR.... HPA.... MMU.... DC?T.M. GKL....",
+  "pastPlays": "GKL.... SSR.... HPA.... MMU.... DMU.V.. GKL.... SSR.... HPA.... MMUVD.. DVET... GKL.... SSR.... HPA.... MMU.... DD2T... GKL.... SSR.... HPA.... MMUTD.. DNUT... GKL.... SSR.... HPA.... MMU.... DSTT... GKL.... SSR.... HPA.... MMU.... DPAT... GKL.... SSR.... HPATD.. MMU.... DC?T... GKL.... SSR.... HPA.... MMU.... DC?T.M. GKL.... SSR.... HPA.... MMU.... DD4T... GKL.... SSR.... HPA.... MMU.... DC?T.M. GKL....",
   "messages": [
     "G KL",
     "S SR",
     "H PA",
     "M MU",
-    "I come to suck your blood",
+    "I come to start in the middle of the board",
     "G KL",
     "S SR",
     "H PA",
     "M MU",
-    "hunters are poos",
+    "+++Oneoneoneoneoneoneone+++",
     "G KL",
     "S SR",
     "H PA",
     "M MU",
-    "hunters are poos",
+    "+++MELON MELON MELON+++",
     "G KL",
     "S SR",
     "H PA",
     "M MU",
-    "hunters are poos",
+    "+++Out Of Cheese Error+++",
     "G KL",
     "S SR",
     "H PA",
     "M MU",
-    "hunters are poos",
+    "+++Whoops! Here Comes The Cheese!+++",
     "G KL",
     "S SR",
     "H PA",
     "M MU",
-    "hunters are poos",
+    "+++Out Of Cheese Error+++",
     "G KL",
     "S SR",
     "H PA",
     "M MU",
-    "hunters are poos",
+    "+++Error At Address: 14, Treacle Mine Road, Ankh-Morpork+++",
     "G KL",
     "S SR",
     "H PA",
     "M MU",
-    "hunters are poos",
+    "+++Whoops! Here Comes The Cheese!+++",
     "G KL",
     "S SR",
     "H PA",
     "M MU",
-    "hunters are poos",
+    "+++Mr. Jelly! Mr. Jelly!+++",
     "G KL",
     "S SR",
     "H PA",
     "M MU",
-    "hunters are poos",
+    "+++Divide By Cucumber Error. Please Reinstall Universe And Reboot+++",
     "G KL"
   ]
 }
@@ -2624,7 +2354,7 @@ Program Output:
 Move:  {
   "move": "SR",
   "message": "S SR",
-  "timer": 104
+  "timer": 57
 }
 > Moving from: SR
 > Life Points: 9
@@ -2632,64 +2362,64 @@ Move:  {
 > +++
   move: SR
   message: S SR
-  timer: 104
+  timer: 57
 > ---
 --------------------------------------------------------------------------
 > Running player 2... 
-/tmp/dryrun4769/hunter
+/tmp/dryrun10700/hunter
 Running with input:  {
-  "pastPlays": "GKL.... SSR.... HPA.... MMU.... DMU.V.. GKL.... SSR.... HPA.... MMUVD.. DAS.... GKL.... SSR.... HPA.... MMU.... DVET... GKL.... SSR.... HPA.... MMU.... DMIT... GKL.... SSR.... HPA.... MMU.... DZUT... GKL.... SSR.... HPA.... MMU.... DC?T... GKL.... SSR.... HPA.... MMU.... DPAT... GKL.... SSR.... HPATD.. MMU.... DC?T... GKL.... SSR.... HPA.... MMU.... DS?..M. GKL.... SSR.... HPA.... MMU.... DC?T.M. GKL.... SSR....",
+  "pastPlays": "GKL.... SSR.... HPA.... MMU.... DMU.V.. GKL.... SSR.... HPA.... MMUVD.. DVET... GKL.... SSR.... HPA.... MMU.... DD2T... GKL.... SSR.... HPA.... MMUTD.. DNUT... GKL.... SSR.... HPA.... MMU.... DSTT... GKL.... SSR.... HPA.... MMU.... DPAT... GKL.... SSR.... HPATD.. MMU.... DC?T... GKL.... SSR.... HPA.... MMU.... DC?T.M. GKL.... SSR.... HPA.... MMU.... DD4T... GKL.... SSR.... HPA.... MMU.... DC?T.M. GKL.... SSR....",
   "messages": [
     "G KL",
     "S SR",
     "H PA",
     "M MU",
-    "I come to suck your blood",
+    "I come to start in the middle of the board",
     "G KL",
     "S SR",
     "H PA",
     "M MU",
-    "hunters are poos",
+    "+++Oneoneoneoneoneoneone+++",
     "G KL",
     "S SR",
     "H PA",
     "M MU",
-    "hunters are poos",
+    "+++MELON MELON MELON+++",
     "G KL",
     "S SR",
     "H PA",
     "M MU",
-    "hunters are poos",
+    "+++Out Of Cheese Error+++",
     "G KL",
     "S SR",
     "H PA",
     "M MU",
-    "hunters are poos",
+    "+++Whoops! Here Comes The Cheese!+++",
     "G KL",
     "S SR",
     "H PA",
     "M MU",
-    "hunters are poos",
+    "+++Out Of Cheese Error+++",
     "G KL",
     "S SR",
     "H PA",
     "M MU",
-    "hunters are poos",
+    "+++Error At Address: 14, Treacle Mine Road, Ankh-Morpork+++",
     "G KL",
     "S SR",
     "H PA",
     "M MU",
-    "hunters are poos",
+    "+++Whoops! Here Comes The Cheese!+++",
     "G KL",
     "S SR",
     "H PA",
     "M MU",
-    "hunters are poos",
+    "+++Mr. Jelly! Mr. Jelly!+++",
     "G KL",
     "S SR",
     "H PA",
     "M MU",
-    "hunters are poos",
+    "+++Divide By Cucumber Error. Please Reinstall Universe And Reboot+++",
     "G KL",
     "S SR"
   ]
@@ -2710,452 +2440,60 @@ Move:  {
 > ---
 --------------------------------------------------------------------------
 > Running player 3... 
-/tmp/dryrun4769/hunter
+/tmp/dryrun10700/hunter
 Running with input:  {
-  "pastPlays": "GKL.... SSR.... HPA.... MMU.... DMU.V.. GKL.... SSR.... HPA.... MMUVD.. DAS.... GKL.... SSR.... HPA.... MMU.... DVET... GKL.... SSR.... HPA.... MMU.... DMIT... GKL.... SSR.... HPA.... MMU.... DZUT... GKL.... SSR.... HPA.... MMU.... DC?T... GKL.... SSR.... HPA.... MMU.... DPAT... GKL.... SSR.... HPATD.. MMU.... DC?T... GKL.... SSR.... HPA.... MMU.... DS?..M. GKL.... SSR.... HPA.... MMU.... DC?T.M. GKL.... SSR.... HPA....",
+  "pastPlays": "GKL.... SSR.... HPA.... MMU.... DMU.V.. GKL.... SSR.... HPA.... MMUVD.. DVET... GKL.... SSR.... HPA.... MMU.... DD2T... GKL.... SSR.... HPA.... MMUTD.. DNUT... GKL.... SSR.... HPA.... MMU.... DSTT... GKL.... SSR.... HPA.... MMU.... DPAT... GKL.... SSR.... HPATD.. MMU.... DC?T... GKL.... SSR.... HPA.... MMU.... DC?T.M. GKL.... SSR.... HPA.... MMU.... DD4T... GKL.... SSR.... HPA.... MMU.... DC?T.M. GKL.... SSR.... HPA....",
   "messages": [
     "G KL",
     "S SR",
     "H PA",
     "M MU",
-    "I come to suck your blood",
+    "I come to start in the middle of the board",
     "G KL",
     "S SR",
     "H PA",
     "M MU",
-    "hunters are poos",
+    "+++Oneoneoneoneoneoneone+++",
     "G KL",
     "S SR",
     "H PA",
     "M MU",
-    "hunters are poos",
+    "+++MELON MELON MELON+++",
     "G KL",
     "S SR",
     "H PA",
     "M MU",
-    "hunters are poos",
+    "+++Out Of Cheese Error+++",
     "G KL",
     "S SR",
     "H PA",
     "M MU",
-    "hunters are poos",
+    "+++Whoops! Here Comes The Cheese!+++",
     "G KL",
     "S SR",
     "H PA",
     "M MU",
-    "hunters are poos",
+    "+++Out Of Cheese Error+++",
     "G KL",
     "S SR",
     "H PA",
     "M MU",
-    "hunters are poos",
+    "+++Error At Address: 14, Treacle Mine Road, Ankh-Morpork+++",
     "G KL",
     "S SR",
     "H PA",
     "M MU",
-    "hunters are poos",
+    "+++Whoops! Here Comes The Cheese!+++",
     "G KL",
     "S SR",
     "H PA",
     "M MU",
-    "hunters are poos",
+    "+++Mr. Jelly! Mr. Jelly!+++",
     "G KL",
     "S SR",
     "H PA",
     "M MU",
-    "hunters are poos",
-    "G KL",
-    "S SR",
-    "H PA"
-  ]
-}
-Program Output: 
-Move:  {
-  "move": "MU",
-  "message": "M MU",
-  "timer": 114
-}
-> Moving from: MU
-> Life Points: 9
-> Player 3 made move:
-> +++
-  move: MU
-  message: M MU
-  timer: 114
-> ---
---------------------------------------------------------------------------
-> Running player 4... 
-/tmp/dryrun4769/dracula
-Running with input:  {
-  "pastPlays": "GKL.... SSR.... HPA.... MMU.... DMU.V.. GKL.... SSR.... HPA.... MMUVD.. DAS.... GKL.... SSR.... HPA.... MMU.... DVET... GKL.... SSR.... HPA.... MMU.... DMIT... GKL.... SSR.... HPA.... MMU.... DZUT... GKL.... SSR.... HPA.... MMU.... DSTT... GKL.... SSR.... HPA.... MMU.... DPAT... GKL.... SSR.... HPATD.. MMU.... DNAT... GKL.... SSR.... HPA.... MMU.... DAS..M. GKL.... SSR.... HPA.... MMU.... DVET.M. GKL.... SSR.... HPA.... MMU....",
-  "messages": [
-    "G KL",
-    "S SR",
-    "H PA",
-    "M MU",
-    "I come to suck your blood",
-    "G KL",
-    "S SR",
-    "H PA",
-    "M MU",
-    "hunters are poos",
-    "G KL",
-    "S SR",
-    "H PA",
-    "M MU",
-    "hunters are poos",
-    "G KL",
-    "S SR",
-    "H PA",
-    "M MU",
-    "hunters are poos",
-    "G KL",
-    "S SR",
-    "H PA",
-    "M MU",
-    "hunters are poos",
-    "G KL",
-    "S SR",
-    "H PA",
-    "M MU",
-    "hunters are poos",
-    "G KL",
-    "S SR",
-    "H PA",
-    "M MU",
-    "hunters are poos",
-    "G KL",
-    "S SR",
-    "H PA",
-    "M MU",
-    "hunters are poos",
-    "G KL",
-    "S SR",
-    "H PA",
-    "M MU",
-    "hunters are poos",
-    "G KL",
-    "S SR",
-    "H PA",
-    "M MU",
-    "hunters are poos",
-    "G KL",
-    "S SR",
-    "H PA",
-    "M MU"
-  ]
-}
-Program Output: 
-Move:  {
-  "move": "MU",
-  "message": "hunters are poos",
-  "timer": 6371
-}
-> Moving from: VE
-> Blood Points: 16
-> Player 4 made move:
-> +++
-  move: MU
-  message: hunters are poos
-  timer: 6371
-> ---
-> End of Round:  10
-> Starting Round:  11
---------------------------------------------------------------------------
-> Running player 0... 
-/tmp/dryrun4769/hunter
-Running with input:  {
-  "pastPlays": "GKL.... SSR.... HPA.... MMU.... DMU.V.. GKL.... SSR.... HPA.... MMUVD.. DAS.... GKL.... SSR.... HPA.... MMU.... DVET... GKL.... SSR.... HPA.... MMU.... DMIT... GKL.... SSR.... HPA.... MMU.... DZUT... GKL.... SSR.... HPA.... MMU.... DSTT... GKL.... SSR.... HPA.... MMU.... DPAT... GKL.... SSR.... HPATD.. MMU.... DC?T... GKL.... SSR.... HPA.... MMU.... DS?..M. GKL.... SSR.... HPA.... MMU.... DC?T.M. GKL.... SSR.... HPA.... MMU.... DMUT.M.",
-  "messages": [
-    "G KL",
-    "S SR",
-    "H PA",
-    "M MU",
-    "I come to suck your blood",
-    "G KL",
-    "S SR",
-    "H PA",
-    "M MU",
-    "hunters are poos",
-    "G KL",
-    "S SR",
-    "H PA",
-    "M MU",
-    "hunters are poos",
-    "G KL",
-    "S SR",
-    "H PA",
-    "M MU",
-    "hunters are poos",
-    "G KL",
-    "S SR",
-    "H PA",
-    "M MU",
-    "hunters are poos",
-    "G KL",
-    "S SR",
-    "H PA",
-    "M MU",
-    "hunters are poos",
-    "G KL",
-    "S SR",
-    "H PA",
-    "M MU",
-    "hunters are poos",
-    "G KL",
-    "S SR",
-    "H PA",
-    "M MU",
-    "hunters are poos",
-    "G KL",
-    "S SR",
-    "H PA",
-    "M MU",
-    "hunters are poos",
-    "G KL",
-    "S SR",
-    "H PA",
-    "M MU",
-    "hunters are poos",
-    "G KL",
-    "S SR",
-    "H PA",
-    "M MU",
-    "hunters are poos"
-  ]
-}
-Program Output: 
-Move:  {
-  "move": "KL",
-  "message": "G KL",
-  "timer": 111
-}
-> Moving from: KL
-> Life Points: 9
-> Player 0 made move:
-> +++
-  move: KL
-  message: G KL
-  timer: 111
-> ---
---------------------------------------------------------------------------
-> Running player 1... 
-/tmp/dryrun4769/hunter
-Running with input:  {
-  "pastPlays": "GKL.... SSR.... HPA.... MMU.... DMU.V.. GKL.... SSR.... HPA.... MMUVD.. DAS.... GKL.... SSR.... HPA.... MMU.... DVET... GKL.... SSR.... HPA.... MMU.... DMIT... GKL.... SSR.... HPA.... MMU.... DZUT... GKL.... SSR.... HPA.... MMU.... DSTT... GKL.... SSR.... HPA.... MMU.... DPAT... GKL.... SSR.... HPATD.. MMU.... DC?T... GKL.... SSR.... HPA.... MMU.... DS?..M. GKL.... SSR.... HPA.... MMU.... DC?T.M. GKL.... SSR.... HPA.... MMU.... DMUT.M. GKL....",
-  "messages": [
-    "G KL",
-    "S SR",
-    "H PA",
-    "M MU",
-    "I come to suck your blood",
-    "G KL",
-    "S SR",
-    "H PA",
-    "M MU",
-    "hunters are poos",
-    "G KL",
-    "S SR",
-    "H PA",
-    "M MU",
-    "hunters are poos",
-    "G KL",
-    "S SR",
-    "H PA",
-    "M MU",
-    "hunters are poos",
-    "G KL",
-    "S SR",
-    "H PA",
-    "M MU",
-    "hunters are poos",
-    "G KL",
-    "S SR",
-    "H PA",
-    "M MU",
-    "hunters are poos",
-    "G KL",
-    "S SR",
-    "H PA",
-    "M MU",
-    "hunters are poos",
-    "G KL",
-    "S SR",
-    "H PA",
-    "M MU",
-    "hunters are poos",
-    "G KL",
-    "S SR",
-    "H PA",
-    "M MU",
-    "hunters are poos",
-    "G KL",
-    "S SR",
-    "H PA",
-    "M MU",
-    "hunters are poos",
-    "G KL",
-    "S SR",
-    "H PA",
-    "M MU",
-    "hunters are poos",
-    "G KL"
-  ]
-}
-Program Output: 
-Move:  {
-  "move": "SR",
-  "message": "S SR",
-  "timer": 110
-}
-> Moving from: SR
-> Life Points: 9
-> Player 1 made move:
-> +++
-  move: SR
-  message: S SR
-  timer: 110
-> ---
---------------------------------------------------------------------------
-> Running player 2... 
-/tmp/dryrun4769/hunter
-Running with input:  {
-  "pastPlays": "GKL.... SSR.... HPA.... MMU.... DMU.V.. GKL.... SSR.... HPA.... MMUVD.. DAS.... GKL.... SSR.... HPA.... MMU.... DVET... GKL.... SSR.... HPA.... MMU.... DMIT... GKL.... SSR.... HPA.... MMU.... DZUT... GKL.... SSR.... HPA.... MMU.... DSTT... GKL.... SSR.... HPA.... MMU.... DPAT... GKL.... SSR.... HPATD.. MMU.... DC?T... GKL.... SSR.... HPA.... MMU.... DS?..M. GKL.... SSR.... HPA.... MMU.... DC?T.M. GKL.... SSR.... HPA.... MMU.... DMUT.M. GKL.... SSR....",
-  "messages": [
-    "G KL",
-    "S SR",
-    "H PA",
-    "M MU",
-    "I come to suck your blood",
-    "G KL",
-    "S SR",
-    "H PA",
-    "M MU",
-    "hunters are poos",
-    "G KL",
-    "S SR",
-    "H PA",
-    "M MU",
-    "hunters are poos",
-    "G KL",
-    "S SR",
-    "H PA",
-    "M MU",
-    "hunters are poos",
-    "G KL",
-    "S SR",
-    "H PA",
-    "M MU",
-    "hunters are poos",
-    "G KL",
-    "S SR",
-    "H PA",
-    "M MU",
-    "hunters are poos",
-    "G KL",
-    "S SR",
-    "H PA",
-    "M MU",
-    "hunters are poos",
-    "G KL",
-    "S SR",
-    "H PA",
-    "M MU",
-    "hunters are poos",
-    "G KL",
-    "S SR",
-    "H PA",
-    "M MU",
-    "hunters are poos",
-    "G KL",
-    "S SR",
-    "H PA",
-    "M MU",
-    "hunters are poos",
-    "G KL",
-    "S SR",
-    "H PA",
-    "M MU",
-    "hunters are poos",
-    "G KL",
-    "S SR"
-  ]
-}
-Program Output: 
-Move:  {
-  "move": "PA",
-  "message": "H PA",
-  "timer": 110
-}
-> Moving from: PA
-> Life Points: 9
-> Player 2 made move:
-> +++
-  move: PA
-  message: H PA
-  timer: 110
-> ---
---------------------------------------------------------------------------
-> Running player 3... 
-/tmp/dryrun4769/hunter
-Running with input:  {
-  "pastPlays": "GKL.... SSR.... HPA.... MMU.... DMU.V.. GKL.... SSR.... HPA.... MMUVD.. DAS.... GKL.... SSR.... HPA.... MMU.... DVET... GKL.... SSR.... HPA.... MMU.... DMIT... GKL.... SSR.... HPA.... MMU.... DZUT... GKL.... SSR.... HPA.... MMU.... DSTT... GKL.... SSR.... HPA.... MMU.... DPAT... GKL.... SSR.... HPATD.. MMU.... DC?T... GKL.... SSR.... HPA.... MMU.... DS?..M. GKL.... SSR.... HPA.... MMU.... DC?T.M. GKL.... SSR.... HPA.... MMU.... DMUT.M. GKL.... SSR.... HPA....",
-  "messages": [
-    "G KL",
-    "S SR",
-    "H PA",
-    "M MU",
-    "I come to suck your blood",
-    "G KL",
-    "S SR",
-    "H PA",
-    "M MU",
-    "hunters are poos",
-    "G KL",
-    "S SR",
-    "H PA",
-    "M MU",
-    "hunters are poos",
-    "G KL",
-    "S SR",
-    "H PA",
-    "M MU",
-    "hunters are poos",
-    "G KL",
-    "S SR",
-    "H PA",
-    "M MU",
-    "hunters are poos",
-    "G KL",
-    "S SR",
-    "H PA",
-    "M MU",
-    "hunters are poos",
-    "G KL",
-    "S SR",
-    "H PA",
-    "M MU",
-    "hunters are poos",
-    "G KL",
-    "S SR",
-    "H PA",
-    "M MU",
-    "hunters are poos",
-    "G KL",
-    "S SR",
-    "H PA",
-    "M MU",
-    "hunters are poos",
-    "G KL",
-    "S SR",
-    "H PA",
-    "M MU",
-    "hunters are poos",
-    "G KL",
-    "S SR",
-    "H PA",
-    "M MU",
-    "hunters are poos",
+    "+++Divide By Cucumber Error. Please Reinstall Universe And Reboot+++",
     "G KL",
     "S SR",
     "H PA"
@@ -3176,161 +2514,97 @@ Move:  {
   timer: 109
 > ---
 --------------------------------------------------------------------------
-> Running player 4... 
-/tmp/dryrun4769/dracula
-Running with input:  {
-  "pastPlays": "GKL.... SSR.... HPA.... MMU.... DMU.V.. GKL.... SSR.... HPA.... MMUVD.. DAS.... GKL.... SSR.... HPA.... MMU.... DVET... GKL.... SSR.... HPA.... MMU.... DMIT... GKL.... SSR.... HPA.... MMU.... DZUT... GKL.... SSR.... HPA.... MMU.... DSTT... GKL.... SSR.... HPA.... MMU.... DPAT... GKL.... SSR.... HPATD.. MMU.... DNAT... GKL.... SSR.... HPA.... MMU.... DAS..M. GKL.... SSR.... HPA.... MMU.... DVET.M. GKL.... SSR.... HPA.... MMU.... DMUT.M. GKL.... SSR.... HPA.... MMUTD..",
-  "messages": [
-    "G KL",
-    "S SR",
-    "H PA",
-    "M MU",
-    "I come to suck your blood",
-    "G KL",
-    "S SR",
-    "H PA",
-    "M MU",
-    "hunters are poos",
-    "G KL",
-    "S SR",
-    "H PA",
-    "M MU",
-    "hunters are poos",
-    "G KL",
-    "S SR",
-    "H PA",
-    "M MU",
-    "hunters are poos",
-    "G KL",
-    "S SR",
-    "H PA",
-    "M MU",
-    "hunters are poos",
-    "G KL",
-    "S SR",
-    "H PA",
-    "M MU",
-    "hunters are poos",
-    "G KL",
-    "S SR",
-    "H PA",
-    "M MU",
-    "hunters are poos",
-    "G KL",
-    "S SR",
-    "H PA",
-    "M MU",
-    "hunters are poos",
-    "G KL",
-    "S SR",
-    "H PA",
-    "M MU",
-    "hunters are poos",
-    "G KL",
-    "S SR",
-    "H PA",
-    "M MU",
-    "hunters are poos",
-    "G KL",
-    "S SR",
-    "H PA",
-    "M MU",
-    "hunters are poos",
-    "G KL",
-    "S SR",
-    "H PA",
-    "M MU"
-  ]
-}
-Program Output: 
-Move:  {
-  "move": "ZU",
-  "message": "hunters are poos",
-  "timer": 6387
-}
-> Moving from: MU
-> Blood Points: 6
-> Player 4 made move:
-> +++
-  move: ZU
-  message: hunters are poos
-  timer: 6387
-> ---
-> End of Round:  11
-> Starting Round:  12
+Player is currently disqualified. Making a move on their behalf.4
+generating default dracula move
+BU illegal
+Location BU already in trail
+ST illegal
+Location ST already in trail
+undefined illegal
+Move undefined
+D1 illegal
+Illegal double-back: not adjacent or is already in trail
+D2 illegal
+Illegal double-back: not adjacent or is already in trail
+D3 illegal
+Illegal double-back: not adjacent or is already in trail
+D4 illegal
+Illegal double-back: not adjacent or is already in trail
+D5 illegal
+Illegal double-back: not adjacent or is already in trail
+HI illegal
+Already made a hide
+Default Dracula Move: "FR"
+> End of Round:  10
+> Starting Round:  11
 --------------------------------------------------------------------------
 > Running player 0... 
-/tmp/dryrun4769/hunter
+/tmp/dryrun10700/hunter
 Running with input:  {
-  "pastPlays": "GKL.... SSR.... HPA.... MMU.... DMU.V.. GKL.... SSR.... HPA.... MMUVD.. DAS.... GKL.... SSR.... HPA.... MMU.... DVET... GKL.... SSR.... HPA.... MMU.... DMIT... GKL.... SSR.... HPA.... MMU.... DZUT... GKL.... SSR.... HPA.... MMU.... DSTT... GKL.... SSR.... HPA.... MMU.... DPAT... GKL.... SSR.... HPATD.. MMU.... DC?T... GKL.... SSR.... HPA.... MMU.... DS?..M. GKL.... SSR.... HPA.... MMU.... DC?T.M. GKL.... SSR.... HPA.... MMU.... DMUT.M. GKL.... SSR.... HPA.... MMUTD.. DC?T.M.",
+  "pastPlays": "GKL.... SSR.... HPA.... MMU.... DMU.V.. GKL.... SSR.... HPA.... MMUVD.. DVET... GKL.... SSR.... HPA.... MMU.... DD2T... GKL.... SSR.... HPA.... MMUTD.. DNUT... GKL.... SSR.... HPA.... MMU.... DSTT... GKL.... SSR.... HPA.... MMU.... DPAT... GKL.... SSR.... HPATD.. MMU.... DC?T... GKL.... SSR.... HPA.... MMU.... DC?T.M. GKL.... SSR.... HPA.... MMU.... DD4T... GKL.... SSR.... HPA.... MMU.... DC?T.M. GKL.... SSR.... HPA.... MMU.... DC?T.M.",
   "messages": [
     "G KL",
     "S SR",
     "H PA",
     "M MU",
-    "I come to suck your blood",
+    "I come to start in the middle of the board",
     "G KL",
     "S SR",
     "H PA",
     "M MU",
-    "hunters are poos",
+    "+++Oneoneoneoneoneoneone+++",
     "G KL",
     "S SR",
     "H PA",
     "M MU",
-    "hunters are poos",
+    "+++MELON MELON MELON+++",
     "G KL",
     "S SR",
     "H PA",
     "M MU",
-    "hunters are poos",
+    "+++Out Of Cheese Error+++",
     "G KL",
     "S SR",
     "H PA",
     "M MU",
-    "hunters are poos",
+    "+++Whoops! Here Comes The Cheese!+++",
     "G KL",
     "S SR",
     "H PA",
     "M MU",
-    "hunters are poos",
+    "+++Out Of Cheese Error+++",
     "G KL",
     "S SR",
     "H PA",
     "M MU",
-    "hunters are poos",
+    "+++Error At Address: 14, Treacle Mine Road, Ankh-Morpork+++",
     "G KL",
     "S SR",
     "H PA",
     "M MU",
-    "hunters are poos",
+    "+++Whoops! Here Comes The Cheese!+++",
     "G KL",
     "S SR",
     "H PA",
     "M MU",
-    "hunters are poos",
+    "+++Mr. Jelly! Mr. Jelly!+++",
     "G KL",
     "S SR",
     "H PA",
     "M MU",
-    "hunters are poos",
+    "+++Divide By Cucumber Error. Please Reinstall Universe And Reboot+++",
     "G KL",
     "S SR",
     "H PA",
     "M MU",
-    "hunters are poos",
-    "G KL",
-    "S SR",
-    "H PA",
-    "M MU",
-    "hunters are poos"
+    "+++MELON MELON MELON+++"
   ]
 }
 Program Output: 
 Move:  {
   "move": "KL",
   "message": "G KL",
-  "timer": 113
+  "timer": 58
 }
 > Moving from: KL
 > Life Points: 9
@@ -3338,74 +2612,69 @@ Move:  {
 > +++
   move: KL
   message: G KL
-  timer: 113
+  timer: 58
 > ---
 --------------------------------------------------------------------------
 > Running player 1... 
-/tmp/dryrun4769/hunter
+/tmp/dryrun10700/hunter
 Running with input:  {
-  "pastPlays": "GKL.... SSR.... HPA.... MMU.... DMU.V.. GKL.... SSR.... HPA.... MMUVD.. DAS.... GKL.... SSR.... HPA.... MMU.... DVET... GKL.... SSR.... HPA.... MMU.... DMIT... GKL.... SSR.... HPA.... MMU.... DZUT... GKL.... SSR.... HPA.... MMU.... DSTT... GKL.... SSR.... HPA.... MMU.... DPAT... GKL.... SSR.... HPATD.. MMU.... DC?T... GKL.... SSR.... HPA.... MMU.... DS?..M. GKL.... SSR.... HPA.... MMU.... DC?T.M. GKL.... SSR.... HPA.... MMU.... DMUT.M. GKL.... SSR.... HPA.... MMUTD.. DC?T.M. GKL....",
+  "pastPlays": "GKL.... SSR.... HPA.... MMU.... DMU.V.. GKL.... SSR.... HPA.... MMUVD.. DVET... GKL.... SSR.... HPA.... MMU.... DD2T... GKL.... SSR.... HPA.... MMUTD.. DNUT... GKL.... SSR.... HPA.... MMU.... DSTT... GKL.... SSR.... HPA.... MMU.... DPAT... GKL.... SSR.... HPATD.. MMU.... DC?T... GKL.... SSR.... HPA.... MMU.... DC?T.M. GKL.... SSR.... HPA.... MMU.... DD4T... GKL.... SSR.... HPA.... MMU.... DC?T.M. GKL.... SSR.... HPA.... MMU.... DC?T.M. GKL....",
   "messages": [
     "G KL",
     "S SR",
     "H PA",
     "M MU",
-    "I come to suck your blood",
+    "I come to start in the middle of the board",
     "G KL",
     "S SR",
     "H PA",
     "M MU",
-    "hunters are poos",
+    "+++Oneoneoneoneoneoneone+++",
     "G KL",
     "S SR",
     "H PA",
     "M MU",
-    "hunters are poos",
+    "+++MELON MELON MELON+++",
     "G KL",
     "S SR",
     "H PA",
     "M MU",
-    "hunters are poos",
+    "+++Out Of Cheese Error+++",
     "G KL",
     "S SR",
     "H PA",
     "M MU",
-    "hunters are poos",
+    "+++Whoops! Here Comes The Cheese!+++",
     "G KL",
     "S SR",
     "H PA",
     "M MU",
-    "hunters are poos",
+    "+++Out Of Cheese Error+++",
     "G KL",
     "S SR",
     "H PA",
     "M MU",
-    "hunters are poos",
+    "+++Error At Address: 14, Treacle Mine Road, Ankh-Morpork+++",
     "G KL",
     "S SR",
     "H PA",
     "M MU",
-    "hunters are poos",
+    "+++Whoops! Here Comes The Cheese!+++",
     "G KL",
     "S SR",
     "H PA",
     "M MU",
-    "hunters are poos",
+    "+++Mr. Jelly! Mr. Jelly!+++",
     "G KL",
     "S SR",
     "H PA",
     "M MU",
-    "hunters are poos",
+    "+++Divide By Cucumber Error. Please Reinstall Universe And Reboot+++",
     "G KL",
     "S SR",
     "H PA",
     "M MU",
-    "hunters are poos",
-    "G KL",
-    "S SR",
-    "H PA",
-    "M MU",
-    "hunters are poos",
+    "+++MELON MELON MELON+++",
     "G KL"
   ]
 }
@@ -3413,7 +2682,7 @@ Program Output:
 Move:  {
   "move": "SR",
   "message": "S SR",
-  "timer": 115
+  "timer": 112
 }
 > Moving from: SR
 > Life Points: 9
@@ -3421,74 +2690,69 @@ Move:  {
 > +++
   move: SR
   message: S SR
-  timer: 115
+  timer: 112
 > ---
 --------------------------------------------------------------------------
 > Running player 2... 
-/tmp/dryrun4769/hunter
+/tmp/dryrun10700/hunter
 Running with input:  {
-  "pastPlays": "GKL.... SSR.... HPA.... MMU.... DMU.V.. GKL.... SSR.... HPA.... MMUVD.. DAS.... GKL.... SSR.... HPA.... MMU.... DVET... GKL.... SSR.... HPA.... MMU.... DMIT... GKL.... SSR.... HPA.... MMU.... DZUT... GKL.... SSR.... HPA.... MMU.... DSTT... GKL.... SSR.... HPA.... MMU.... DPAT... GKL.... SSR.... HPATD.. MMU.... DC?T... GKL.... SSR.... HPA.... MMU.... DS?..M. GKL.... SSR.... HPA.... MMU.... DC?T.M. GKL.... SSR.... HPA.... MMU.... DMUT.M. GKL.... SSR.... HPA.... MMUTD.. DC?T.M. GKL.... SSR....",
+  "pastPlays": "GKL.... SSR.... HPA.... MMU.... DMU.V.. GKL.... SSR.... HPA.... MMUVD.. DVET... GKL.... SSR.... HPA.... MMU.... DD2T... GKL.... SSR.... HPA.... MMUTD.. DNUT... GKL.... SSR.... HPA.... MMU.... DSTT... GKL.... SSR.... HPA.... MMU.... DPAT... GKL.... SSR.... HPATD.. MMU.... DC?T... GKL.... SSR.... HPA.... MMU.... DC?T.M. GKL.... SSR.... HPA.... MMU.... DD4T... GKL.... SSR.... HPA.... MMU.... DC?T.M. GKL.... SSR.... HPA.... MMU.... DC?T.M. GKL.... SSR....",
   "messages": [
     "G KL",
     "S SR",
     "H PA",
     "M MU",
-    "I come to suck your blood",
+    "I come to start in the middle of the board",
     "G KL",
     "S SR",
     "H PA",
     "M MU",
-    "hunters are poos",
+    "+++Oneoneoneoneoneoneone+++",
     "G KL",
     "S SR",
     "H PA",
     "M MU",
-    "hunters are poos",
+    "+++MELON MELON MELON+++",
     "G KL",
     "S SR",
     "H PA",
     "M MU",
-    "hunters are poos",
+    "+++Out Of Cheese Error+++",
     "G KL",
     "S SR",
     "H PA",
     "M MU",
-    "hunters are poos",
+    "+++Whoops! Here Comes The Cheese!+++",
     "G KL",
     "S SR",
     "H PA",
     "M MU",
-    "hunters are poos",
+    "+++Out Of Cheese Error+++",
     "G KL",
     "S SR",
     "H PA",
     "M MU",
-    "hunters are poos",
+    "+++Error At Address: 14, Treacle Mine Road, Ankh-Morpork+++",
     "G KL",
     "S SR",
     "H PA",
     "M MU",
-    "hunters are poos",
+    "+++Whoops! Here Comes The Cheese!+++",
     "G KL",
     "S SR",
     "H PA",
     "M MU",
-    "hunters are poos",
+    "+++Mr. Jelly! Mr. Jelly!+++",
     "G KL",
     "S SR",
     "H PA",
     "M MU",
-    "hunters are poos",
+    "+++Divide By Cucumber Error. Please Reinstall Universe And Reboot+++",
     "G KL",
     "S SR",
     "H PA",
     "M MU",
-    "hunters are poos",
-    "G KL",
-    "S SR",
-    "H PA",
-    "M MU",
-    "hunters are poos",
+    "+++MELON MELON MELON+++",
     "G KL",
     "S SR"
   ]
@@ -3497,7 +2761,7 @@ Program Output:
 Move:  {
   "move": "PA",
   "message": "H PA",
-  "timer": 116
+  "timer": 114
 }
 > Moving from: PA
 > Life Points: 9
@@ -3505,74 +2769,69 @@ Move:  {
 > +++
   move: PA
   message: H PA
-  timer: 116
+  timer: 114
 > ---
 --------------------------------------------------------------------------
 > Running player 3... 
-/tmp/dryrun4769/hunter
+/tmp/dryrun10700/hunter
 Running with input:  {
-  "pastPlays": "GKL.... SSR.... HPA.... MMU.... DMU.V.. GKL.... SSR.... HPA.... MMUVD.. DAS.... GKL.... SSR.... HPA.... MMU.... DVET... GKL.... SSR.... HPA.... MMU.... DMIT... GKL.... SSR.... HPA.... MMU.... DZUT... GKL.... SSR.... HPA.... MMU.... DSTT... GKL.... SSR.... HPA.... MMU.... DPAT... GKL.... SSR.... HPATD.. MMU.... DC?T... GKL.... SSR.... HPA.... MMU.... DS?..M. GKL.... SSR.... HPA.... MMU.... DC?T.M. GKL.... SSR.... HPA.... MMU.... DMUT.M. GKL.... SSR.... HPA.... MMUTD.. DC?T.M. GKL.... SSR.... HPA....",
+  "pastPlays": "GKL.... SSR.... HPA.... MMU.... DMU.V.. GKL.... SSR.... HPA.... MMUVD.. DVET... GKL.... SSR.... HPA.... MMU.... DD2T... GKL.... SSR.... HPA.... MMUTD.. DNUT... GKL.... SSR.... HPA.... MMU.... DSTT... GKL.... SSR.... HPA.... MMU.... DPAT... GKL.... SSR.... HPATD.. MMU.... DC?T... GKL.... SSR.... HPA.... MMU.... DC?T.M. GKL.... SSR.... HPA.... MMU.... DD4T... GKL.... SSR.... HPA.... MMU.... DC?T.M. GKL.... SSR.... HPA.... MMU.... DC?T.M. GKL.... SSR.... HPA....",
   "messages": [
     "G KL",
     "S SR",
     "H PA",
     "M MU",
-    "I come to suck your blood",
+    "I come to start in the middle of the board",
     "G KL",
     "S SR",
     "H PA",
     "M MU",
-    "hunters are poos",
+    "+++Oneoneoneoneoneoneone+++",
     "G KL",
     "S SR",
     "H PA",
     "M MU",
-    "hunters are poos",
+    "+++MELON MELON MELON+++",
     "G KL",
     "S SR",
     "H PA",
     "M MU",
-    "hunters are poos",
+    "+++Out Of Cheese Error+++",
     "G KL",
     "S SR",
     "H PA",
     "M MU",
-    "hunters are poos",
+    "+++Whoops! Here Comes The Cheese!+++",
     "G KL",
     "S SR",
     "H PA",
     "M MU",
-    "hunters are poos",
+    "+++Out Of Cheese Error+++",
     "G KL",
     "S SR",
     "H PA",
     "M MU",
-    "hunters are poos",
+    "+++Error At Address: 14, Treacle Mine Road, Ankh-Morpork+++",
     "G KL",
     "S SR",
     "H PA",
     "M MU",
-    "hunters are poos",
+    "+++Whoops! Here Comes The Cheese!+++",
     "G KL",
     "S SR",
     "H PA",
     "M MU",
-    "hunters are poos",
+    "+++Mr. Jelly! Mr. Jelly!+++",
     "G KL",
     "S SR",
     "H PA",
     "M MU",
-    "hunters are poos",
+    "+++Divide By Cucumber Error. Please Reinstall Universe And Reboot+++",
     "G KL",
     "S SR",
     "H PA",
     "M MU",
-    "hunters are poos",
-    "G KL",
-    "S SR",
-    "H PA",
-    "M MU",
-    "hunters are poos",
+    "+++MELON MELON MELON+++",
     "G KL",
     "S SR",
     "H PA"
@@ -3582,182 +2841,117 @@ Program Output:
 Move:  {
   "move": "MU",
   "message": "M MU",
-  "timer": 117
+  "timer": 113
 }
 > Moving from: MU
-> Life Points: 6
+> Life Points: 9
 > Player 3 made move:
 > +++
   move: MU
   message: M MU
-  timer: 117
+  timer: 113
 > ---
 --------------------------------------------------------------------------
-> Running player 4... 
-/tmp/dryrun4769/dracula
-Running with input:  {
-  "pastPlays": "GKL.... SSR.... HPA.... MMU.... DMU.V.. GKL.... SSR.... HPA.... MMUVD.. DAS.... GKL.... SSR.... HPA.... MMU.... DVET... GKL.... SSR.... HPA.... MMU.... DMIT... GKL.... SSR.... HPA.... MMU.... DZUT... GKL.... SSR.... HPA.... MMU.... DSTT... GKL.... SSR.... HPA.... MMU.... DPAT... GKL.... SSR.... HPATD.. MMU.... DNAT... GKL.... SSR.... HPA.... MMU.... DAS..M. GKL.... SSR.... HPA.... MMU.... DVET.M. GKL.... SSR.... HPA.... MMU.... DMUT.M. GKL.... SSR.... HPA.... MMUTD.. DZUT.M. GKL.... SSR.... HPA.... MMU....",
-  "messages": [
-    "G KL",
-    "S SR",
-    "H PA",
-    "M MU",
-    "I come to suck your blood",
-    "G KL",
-    "S SR",
-    "H PA",
-    "M MU",
-    "hunters are poos",
-    "G KL",
-    "S SR",
-    "H PA",
-    "M MU",
-    "hunters are poos",
-    "G KL",
-    "S SR",
-    "H PA",
-    "M MU",
-    "hunters are poos",
-    "G KL",
-    "S SR",
-    "H PA",
-    "M MU",
-    "hunters are poos",
-    "G KL",
-    "S SR",
-    "H PA",
-    "M MU",
-    "hunters are poos",
-    "G KL",
-    "S SR",
-    "H PA",
-    "M MU",
-    "hunters are poos",
-    "G KL",
-    "S SR",
-    "H PA",
-    "M MU",
-    "hunters are poos",
-    "G KL",
-    "S SR",
-    "H PA",
-    "M MU",
-    "hunters are poos",
-    "G KL",
-    "S SR",
-    "H PA",
-    "M MU",
-    "hunters are poos",
-    "G KL",
-    "S SR",
-    "H PA",
-    "M MU",
-    "hunters are poos",
-    "G KL",
-    "S SR",
-    "H PA",
-    "M MU",
-    "hunters are poos",
-    "G KL",
-    "S SR",
-    "H PA",
-    "M MU"
-  ]
-}
-Program Output: 
-Move:  {
-  "move": "ST",
-  "message": "hunters are poos",
-  "timer": 6387
-}
-> Moving from: ZU
-> Blood Points: 6
-> Player 4 made move:
-> +++
-  move: ST
-  message: hunters are poos
-  timer: 6387
-> ---
-> End of Round:  12
-> Starting Round:  13
+Player is currently disqualified. Making a move on their behalf.4
+generating default dracula move
+CO illegal
+Location CO already in trail
+CO illegal
+Location CO already in trail
+ST illegal
+Location ST already in trail
+undefined illegal
+Move undefined
+D1 illegal
+Illegal double-back: not adjacent or is already in trail
+D2 illegal
+Illegal double-back: not adjacent or is already in trail
+D3 illegal
+Illegal double-back: not adjacent or is already in trail
+D4 illegal
+Illegal double-back: not adjacent or is already in trail
+D5 illegal
+Illegal double-back: not adjacent or is already in trail
+HI illegal
+Already made a hide
+Default Dracula Move: "NU"
+CO illegal
+Location CO already in trail
+> End of Round:  11
+> Starting Round:  12
 --------------------------------------------------------------------------
 > Running player 0... 
-/tmp/dryrun4769/hunter
+/tmp/dryrun10700/hunter
 Running with input:  {
-  "pastPlays": "GKL.... SSR.... HPA.... MMU.... DMU.V.. GKL.... SSR.... HPA.... MMUVD.. DAS.... GKL.... SSR.... HPA.... MMU.... DVET... GKL.... SSR.... HPA.... MMU.... DMIT... GKL.... SSR.... HPA.... MMU.... DZUT... GKL.... SSR.... HPA.... MMU.... DSTT... GKL.... SSR.... HPA.... MMU.... DPAT... GKL.... SSR.... HPATD.. MMU.... DNAT... GKL.... SSR.... HPA.... MMU.... DS?..M. GKL.... SSR.... HPA.... MMU.... DC?T.M. GKL.... SSR.... HPA.... MMU.... DMUT.M. GKL.... SSR.... HPA.... MMUTD.. DC?T.M. GKL.... SSR.... HPA.... MMU.... DC?T...",
+  "pastPlays": "GKL.... SSR.... HPA.... MMU.... DMU.V.. GKL.... SSR.... HPA.... MMUVD.. DVET... GKL.... SSR.... HPA.... MMU.... DD2T... GKL.... SSR.... HPA.... MMUTD.. DNUT... GKL.... SSR.... HPA.... MMU.... DSTT... GKL.... SSR.... HPA.... MMU.... DPAT... GKL.... SSR.... HPATD.. MMU.... DBUT... GKL.... SSR.... HPA.... MMU.... DC?T.M. GKL.... SSR.... HPA.... MMU.... DD4T... GKL.... SSR.... HPA.... MMU.... DC?T.M. GKL.... SSR.... HPA.... MMU.... DC?T.M. GKL.... SSR.... HPA.... MMU.... DC?T...",
   "messages": [
     "G KL",
     "S SR",
     "H PA",
     "M MU",
-    "I come to suck your blood",
+    "I come to start in the middle of the board",
     "G KL",
     "S SR",
     "H PA",
     "M MU",
-    "hunters are poos",
+    "+++Oneoneoneoneoneoneone+++",
     "G KL",
     "S SR",
     "H PA",
     "M MU",
-    "hunters are poos",
+    "+++MELON MELON MELON+++",
     "G KL",
     "S SR",
     "H PA",
     "M MU",
-    "hunters are poos",
+    "+++Out Of Cheese Error+++",
     "G KL",
     "S SR",
     "H PA",
     "M MU",
-    "hunters are poos",
+    "+++Whoops! Here Comes The Cheese!+++",
     "G KL",
     "S SR",
     "H PA",
     "M MU",
-    "hunters are poos",
+    "+++Out Of Cheese Error+++",
     "G KL",
     "S SR",
     "H PA",
     "M MU",
-    "hunters are poos",
+    "+++Error At Address: 14, Treacle Mine Road, Ankh-Morpork+++",
     "G KL",
     "S SR",
     "H PA",
     "M MU",
-    "hunters are poos",
+    "+++Whoops! Here Comes The Cheese!+++",
     "G KL",
     "S SR",
     "H PA",
     "M MU",
-    "hunters are poos",
+    "+++Mr. Jelly! Mr. Jelly!+++",
     "G KL",
     "S SR",
     "H PA",
     "M MU",
-    "hunters are poos",
+    "+++Divide By Cucumber Error. Please Reinstall Universe And Reboot+++",
     "G KL",
     "S SR",
     "H PA",
     "M MU",
-    "hunters are poos",
+    "+++MELON MELON MELON+++",
     "G KL",
     "S SR",
     "H PA",
     "M MU",
-    "hunters are poos",
-    "G KL",
-    "S SR",
-    "H PA",
-    "M MU",
-    "hunters are poos"
+    "+++Mr. Jelly! Mr. Jelly!+++"
   ]
 }
 Program Output: 
 Move:  {
   "move": "KL",
   "message": "G KL",
-  "timer": 120
+  "timer": 61
 }
 > Moving from: KL
 > Life Points: 9
@@ -3765,79 +2959,446 @@ Move:  {
 > +++
   move: KL
   message: G KL
-  timer: 120
+  timer: 61
 > ---
 --------------------------------------------------------------------------
 > Running player 1... 
-/tmp/dryrun4769/hunter
+/tmp/dryrun10700/hunter
 Running with input:  {
-  "pastPlays": "GKL.... SSR.... HPA.... MMU.... DMU.V.. GKL.... SSR.... HPA.... MMUVD.. DAS.... GKL.... SSR.... HPA.... MMU.... DVET... GKL.... SSR.... HPA.... MMU.... DMIT... GKL.... SSR.... HPA.... MMU.... DZUT... GKL.... SSR.... HPA.... MMU.... DSTT... GKL.... SSR.... HPA.... MMU.... DPAT... GKL.... SSR.... HPATD.. MMU.... DNAT... GKL.... SSR.... HPA.... MMU.... DS?..M. GKL.... SSR.... HPA.... MMU.... DC?T.M. GKL.... SSR.... HPA.... MMU.... DMUT.M. GKL.... SSR.... HPA.... MMUTD.. DC?T.M. GKL.... SSR.... HPA.... MMU.... DC?T... GKL....",
+  "pastPlays": "GKL.... SSR.... HPA.... MMU.... DMU.V.. GKL.... SSR.... HPA.... MMUVD.. DVET... GKL.... SSR.... HPA.... MMU.... DD2T... GKL.... SSR.... HPA.... MMUTD.. DNUT... GKL.... SSR.... HPA.... MMU.... DSTT... GKL.... SSR.... HPA.... MMU.... DPAT... GKL.... SSR.... HPATD.. MMU.... DBUT... GKL.... SSR.... HPA.... MMU.... DC?T.M. GKL.... SSR.... HPA.... MMU.... DD4T... GKL.... SSR.... HPA.... MMU.... DC?T.M. GKL.... SSR.... HPA.... MMU.... DC?T.M. GKL.... SSR.... HPA.... MMU.... DC?T... GKL....",
   "messages": [
     "G KL",
     "S SR",
     "H PA",
     "M MU",
-    "I come to suck your blood",
+    "I come to start in the middle of the board",
     "G KL",
     "S SR",
     "H PA",
     "M MU",
-    "hunters are poos",
+    "+++Oneoneoneoneoneoneone+++",
     "G KL",
     "S SR",
     "H PA",
     "M MU",
-    "hunters are poos",
+    "+++MELON MELON MELON+++",
     "G KL",
     "S SR",
     "H PA",
     "M MU",
-    "hunters are poos",
+    "+++Out Of Cheese Error+++",
     "G KL",
     "S SR",
     "H PA",
     "M MU",
-    "hunters are poos",
+    "+++Whoops! Here Comes The Cheese!+++",
     "G KL",
     "S SR",
     "H PA",
     "M MU",
-    "hunters are poos",
+    "+++Out Of Cheese Error+++",
     "G KL",
     "S SR",
     "H PA",
     "M MU",
-    "hunters are poos",
+    "+++Error At Address: 14, Treacle Mine Road, Ankh-Morpork+++",
     "G KL",
     "S SR",
     "H PA",
     "M MU",
-    "hunters are poos",
+    "+++Whoops! Here Comes The Cheese!+++",
     "G KL",
     "S SR",
     "H PA",
     "M MU",
-    "hunters are poos",
+    "+++Mr. Jelly! Mr. Jelly!+++",
     "G KL",
     "S SR",
     "H PA",
     "M MU",
-    "hunters are poos",
+    "+++Divide By Cucumber Error. Please Reinstall Universe And Reboot+++",
     "G KL",
     "S SR",
     "H PA",
     "M MU",
-    "hunters are poos",
+    "+++MELON MELON MELON+++",
     "G KL",
     "S SR",
     "H PA",
     "M MU",
-    "hunters are poos",
+    "+++Mr. Jelly! Mr. Jelly!+++",
+    "G KL"
+  ]
+}
+Program Output: 
+Move:  {
+  "move": "SR",
+  "message": "S SR",
+  "timer": 116
+}
+> Moving from: SR
+> Life Points: 9
+> Player 1 made move:
+> +++
+  move: SR
+  message: S SR
+  timer: 116
+> ---
+--------------------------------------------------------------------------
+> Running player 2... 
+/tmp/dryrun10700/hunter
+Running with input:  {
+  "pastPlays": "GKL.... SSR.... HPA.... MMU.... DMU.V.. GKL.... SSR.... HPA.... MMUVD.. DVET... GKL.... SSR.... HPA.... MMU.... DD2T... GKL.... SSR.... HPA.... MMUTD.. DNUT... GKL.... SSR.... HPA.... MMU.... DSTT... GKL.... SSR.... HPA.... MMU.... DPAT... GKL.... SSR.... HPATD.. MMU.... DBUT... GKL.... SSR.... HPA.... MMU.... DC?T.M. GKL.... SSR.... HPA.... MMU.... DD4T... GKL.... SSR.... HPA.... MMU.... DC?T.M. GKL.... SSR.... HPA.... MMU.... DC?T.M. GKL.... SSR.... HPA.... MMU.... DC?T... GKL.... SSR....",
+  "messages": [
     "G KL",
     "S SR",
     "H PA",
     "M MU",
-    "hunters are poos",
+    "I come to start in the middle of the board",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "+++Oneoneoneoneoneoneone+++",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "+++MELON MELON MELON+++",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "+++Out Of Cheese Error+++",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "+++Whoops! Here Comes The Cheese!+++",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "+++Out Of Cheese Error+++",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "+++Error At Address: 14, Treacle Mine Road, Ankh-Morpork+++",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "+++Whoops! Here Comes The Cheese!+++",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "+++Mr. Jelly! Mr. Jelly!+++",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "+++Divide By Cucumber Error. Please Reinstall Universe And Reboot+++",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "+++MELON MELON MELON+++",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "+++Mr. Jelly! Mr. Jelly!+++",
+    "G KL",
+    "S SR"
+  ]
+}
+Program Output: 
+Move:  {
+  "move": "PA",
+  "message": "H PA",
+  "timer": 67
+}
+> Moving from: PA
+> Life Points: 9
+> Player 2 made move:
+> +++
+  move: PA
+  message: H PA
+  timer: 67
+> ---
+--------------------------------------------------------------------------
+> Running player 3... 
+/tmp/dryrun10700/hunter
+Running with input:  {
+  "pastPlays": "GKL.... SSR.... HPA.... MMU.... DMU.V.. GKL.... SSR.... HPA.... MMUVD.. DVET... GKL.... SSR.... HPA.... MMU.... DD2T... GKL.... SSR.... HPA.... MMUTD.. DNUT... GKL.... SSR.... HPA.... MMU.... DSTT... GKL.... SSR.... HPA.... MMU.... DPAT... GKL.... SSR.... HPATD.. MMU.... DBUT... GKL.... SSR.... HPA.... MMU.... DC?T.M. GKL.... SSR.... HPA.... MMU.... DD4T... GKL.... SSR.... HPA.... MMU.... DC?T.M. GKL.... SSR.... HPA.... MMU.... DC?T.M. GKL.... SSR.... HPA.... MMU.... DC?T... GKL.... SSR.... HPA....",
+  "messages": [
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "I come to start in the middle of the board",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "+++Oneoneoneoneoneoneone+++",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "+++MELON MELON MELON+++",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "+++Out Of Cheese Error+++",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "+++Whoops! Here Comes The Cheese!+++",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "+++Out Of Cheese Error+++",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "+++Error At Address: 14, Treacle Mine Road, Ankh-Morpork+++",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "+++Whoops! Here Comes The Cheese!+++",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "+++Mr. Jelly! Mr. Jelly!+++",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "+++Divide By Cucumber Error. Please Reinstall Universe And Reboot+++",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "+++MELON MELON MELON+++",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "+++Mr. Jelly! Mr. Jelly!+++",
+    "G KL",
+    "S SR",
+    "H PA"
+  ]
+}
+Program Output: 
+Move:  {
+  "move": "MU",
+  "message": "M MU",
+  "timer": 65
+}
+> Moving from: MU
+> Life Points: 9
+> Player 3 made move:
+> +++
+  move: MU
+  message: M MU
+  timer: 65
+> ---
+--------------------------------------------------------------------------
+Player is currently disqualified. Making a move on their behalf.4
+generating default dracula move
+FR illegal
+Location FR already in trail
+FR illegal
+Location FR already in trail
+ST illegal
+Location ST already in trail
+undefined illegal
+Move undefined
+D1 illegal
+Illegal double-back: not adjacent or is already in trail
+D2 illegal
+Illegal double-back: not adjacent or is already in trail
+D3 illegal
+Illegal double-back: not adjacent or is already in trail
+D4 illegal
+Illegal double-back: not adjacent or is already in trail
+D5 illegal
+Illegal double-back: not adjacent or is already in trail
+HI illegal
+Already made a hide
+Default Dracula Move: "PR"
+FR illegal
+Location FR already in trail
+> End of Round:  12
+> Starting Round:  13
+--------------------------------------------------------------------------
+> Running player 0... 
+/tmp/dryrun10700/hunter
+Running with input:  {
+  "pastPlays": "GKL.... SSR.... HPA.... MMU.... DMU.V.. GKL.... SSR.... HPA.... MMUVD.. DVET... GKL.... SSR.... HPA.... MMU.... DD2T... GKL.... SSR.... HPA.... MMUTD.. DNUT... GKL.... SSR.... HPA.... MMU.... DSTT... GKL.... SSR.... HPA.... MMU.... DPAT... GKL.... SSR.... HPATD.. MMU.... DBUT... GKL.... SSR.... HPA.... MMU.... DHIT.M. GKL.... SSR.... HPA.... MMU.... DD4T... GKL.... SSR.... HPA.... MMU.... DC?T.M. GKL.... SSR.... HPA.... MMU.... DC?T.M. GKL.... SSR.... HPA.... MMU.... DC?T... GKL.... SSR.... HPA.... MMU.... DC?T.M.",
+  "messages": [
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "I come to start in the middle of the board",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "+++Oneoneoneoneoneoneone+++",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "+++MELON MELON MELON+++",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "+++Out Of Cheese Error+++",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "+++Whoops! Here Comes The Cheese!+++",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "+++Out Of Cheese Error+++",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "+++Error At Address: 14, Treacle Mine Road, Ankh-Morpork+++",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "+++Whoops! Here Comes The Cheese!+++",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "+++Mr. Jelly! Mr. Jelly!+++",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "+++Divide By Cucumber Error. Please Reinstall Universe And Reboot+++",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "+++MELON MELON MELON+++",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "+++Mr. Jelly! Mr. Jelly!+++",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "+++Out Of Cheese Error+++"
+  ]
+}
+Program Output: 
+Move:  {
+  "move": "KL",
+  "message": "G KL",
+  "timer": 126
+}
+> Moving from: KL
+> Life Points: 9
+> Player 0 made move:
+> +++
+  move: KL
+  message: G KL
+  timer: 126
+> ---
+--------------------------------------------------------------------------
+> Running player 1... 
+/tmp/dryrun10700/hunter
+Running with input:  {
+  "pastPlays": "GKL.... SSR.... HPA.... MMU.... DMU.V.. GKL.... SSR.... HPA.... MMUVD.. DVET... GKL.... SSR.... HPA.... MMU.... DD2T... GKL.... SSR.... HPA.... MMUTD.. DNUT... GKL.... SSR.... HPA.... MMU.... DSTT... GKL.... SSR.... HPA.... MMU.... DPAT... GKL.... SSR.... HPATD.. MMU.... DBUT... GKL.... SSR.... HPA.... MMU.... DHIT.M. GKL.... SSR.... HPA.... MMU.... DD4T... GKL.... SSR.... HPA.... MMU.... DC?T.M. GKL.... SSR.... HPA.... MMU.... DC?T.M. GKL.... SSR.... HPA.... MMU.... DC?T... GKL.... SSR.... HPA.... MMU.... DC?T.M. GKL....",
+  "messages": [
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "I come to start in the middle of the board",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "+++Oneoneoneoneoneoneone+++",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "+++MELON MELON MELON+++",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "+++Out Of Cheese Error+++",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "+++Whoops! Here Comes The Cheese!+++",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "+++Out Of Cheese Error+++",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "+++Error At Address: 14, Treacle Mine Road, Ankh-Morpork+++",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "+++Whoops! Here Comes The Cheese!+++",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "+++Mr. Jelly! Mr. Jelly!+++",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "+++Divide By Cucumber Error. Please Reinstall Universe And Reboot+++",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "+++MELON MELON MELON+++",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "+++Mr. Jelly! Mr. Jelly!+++",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "+++Out Of Cheese Error+++",
     "G KL"
   ]
 }
@@ -3857,75 +3418,75 @@ Move:  {
 > ---
 --------------------------------------------------------------------------
 > Running player 2... 
-/tmp/dryrun4769/hunter
+/tmp/dryrun10700/hunter
 Running with input:  {
-  "pastPlays": "GKL.... SSR.... HPA.... MMU.... DMU.V.. GKL.... SSR.... HPA.... MMUVD.. DAS.... GKL.... SSR.... HPA.... MMU.... DVET... GKL.... SSR.... HPA.... MMU.... DMIT... GKL.... SSR.... HPA.... MMU.... DZUT... GKL.... SSR.... HPA.... MMU.... DSTT... GKL.... SSR.... HPA.... MMU.... DPAT... GKL.... SSR.... HPATD.. MMU.... DNAT... GKL.... SSR.... HPA.... MMU.... DS?..M. GKL.... SSR.... HPA.... MMU.... DC?T.M. GKL.... SSR.... HPA.... MMU.... DMUT.M. GKL.... SSR.... HPA.... MMUTD.. DC?T.M. GKL.... SSR.... HPA.... MMU.... DC?T... GKL.... SSR....",
+  "pastPlays": "GKL.... SSR.... HPA.... MMU.... DMU.V.. GKL.... SSR.... HPA.... MMUVD.. DVET... GKL.... SSR.... HPA.... MMU.... DD2T... GKL.... SSR.... HPA.... MMUTD.. DNUT... GKL.... SSR.... HPA.... MMU.... DSTT... GKL.... SSR.... HPA.... MMU.... DPAT... GKL.... SSR.... HPATD.. MMU.... DBUT... GKL.... SSR.... HPA.... MMU.... DHIT.M. GKL.... SSR.... HPA.... MMU.... DD4T... GKL.... SSR.... HPA.... MMU.... DC?T.M. GKL.... SSR.... HPA.... MMU.... DC?T.M. GKL.... SSR.... HPA.... MMU.... DC?T... GKL.... SSR.... HPA.... MMU.... DC?T.M. GKL.... SSR....",
   "messages": [
     "G KL",
     "S SR",
     "H PA",
     "M MU",
-    "I come to suck your blood",
+    "I come to start in the middle of the board",
     "G KL",
     "S SR",
     "H PA",
     "M MU",
-    "hunters are poos",
+    "+++Oneoneoneoneoneoneone+++",
     "G KL",
     "S SR",
     "H PA",
     "M MU",
-    "hunters are poos",
+    "+++MELON MELON MELON+++",
     "G KL",
     "S SR",
     "H PA",
     "M MU",
-    "hunters are poos",
+    "+++Out Of Cheese Error+++",
     "G KL",
     "S SR",
     "H PA",
     "M MU",
-    "hunters are poos",
+    "+++Whoops! Here Comes The Cheese!+++",
     "G KL",
     "S SR",
     "H PA",
     "M MU",
-    "hunters are poos",
+    "+++Out Of Cheese Error+++",
     "G KL",
     "S SR",
     "H PA",
     "M MU",
-    "hunters are poos",
+    "+++Error At Address: 14, Treacle Mine Road, Ankh-Morpork+++",
     "G KL",
     "S SR",
     "H PA",
     "M MU",
-    "hunters are poos",
+    "+++Whoops! Here Comes The Cheese!+++",
     "G KL",
     "S SR",
     "H PA",
     "M MU",
-    "hunters are poos",
+    "+++Mr. Jelly! Mr. Jelly!+++",
     "G KL",
     "S SR",
     "H PA",
     "M MU",
-    "hunters are poos",
+    "+++Divide By Cucumber Error. Please Reinstall Universe And Reboot+++",
     "G KL",
     "S SR",
     "H PA",
     "M MU",
-    "hunters are poos",
+    "+++MELON MELON MELON+++",
     "G KL",
     "S SR",
     "H PA",
     "M MU",
-    "hunters are poos",
+    "+++Mr. Jelly! Mr. Jelly!+++",
     "G KL",
     "S SR",
     "H PA",
     "M MU",
-    "hunters are poos",
+    "+++Out Of Cheese Error+++",
     "G KL",
     "S SR"
   ]
@@ -3934,7 +3495,7 @@ Program Output:
 Move:  {
   "move": "PA",
   "message": "H PA",
-  "timer": 128
+  "timer": 68
 }
 > Moving from: PA
 > Life Points: 9
@@ -3942,79 +3503,79 @@ Move:  {
 > +++
   move: PA
   message: H PA
-  timer: 128
+  timer: 68
 > ---
 --------------------------------------------------------------------------
 > Running player 3... 
-/tmp/dryrun4769/hunter
+/tmp/dryrun10700/hunter
 Running with input:  {
-  "pastPlays": "GKL.... SSR.... HPA.... MMU.... DMU.V.. GKL.... SSR.... HPA.... MMUVD.. DAS.... GKL.... SSR.... HPA.... MMU.... DVET... GKL.... SSR.... HPA.... MMU.... DMIT... GKL.... SSR.... HPA.... MMU.... DZUT... GKL.... SSR.... HPA.... MMU.... DSTT... GKL.... SSR.... HPA.... MMU.... DPAT... GKL.... SSR.... HPATD.. MMU.... DNAT... GKL.... SSR.... HPA.... MMU.... DS?..M. GKL.... SSR.... HPA.... MMU.... DC?T.M. GKL.... SSR.... HPA.... MMU.... DMUT.M. GKL.... SSR.... HPA.... MMUTD.. DC?T.M. GKL.... SSR.... HPA.... MMU.... DC?T... GKL.... SSR.... HPA....",
+  "pastPlays": "GKL.... SSR.... HPA.... MMU.... DMU.V.. GKL.... SSR.... HPA.... MMUVD.. DVET... GKL.... SSR.... HPA.... MMU.... DD2T... GKL.... SSR.... HPA.... MMUTD.. DNUT... GKL.... SSR.... HPA.... MMU.... DSTT... GKL.... SSR.... HPA.... MMU.... DPAT... GKL.... SSR.... HPATD.. MMU.... DBUT... GKL.... SSR.... HPA.... MMU.... DHIT.M. GKL.... SSR.... HPA.... MMU.... DD4T... GKL.... SSR.... HPA.... MMU.... DC?T.M. GKL.... SSR.... HPA.... MMU.... DC?T.M. GKL.... SSR.... HPA.... MMU.... DC?T... GKL.... SSR.... HPA.... MMU.... DC?T.M. GKL.... SSR.... HPA....",
   "messages": [
     "G KL",
     "S SR",
     "H PA",
     "M MU",
-    "I come to suck your blood",
+    "I come to start in the middle of the board",
     "G KL",
     "S SR",
     "H PA",
     "M MU",
-    "hunters are poos",
+    "+++Oneoneoneoneoneoneone+++",
     "G KL",
     "S SR",
     "H PA",
     "M MU",
-    "hunters are poos",
+    "+++MELON MELON MELON+++",
     "G KL",
     "S SR",
     "H PA",
     "M MU",
-    "hunters are poos",
+    "+++Out Of Cheese Error+++",
     "G KL",
     "S SR",
     "H PA",
     "M MU",
-    "hunters are poos",
+    "+++Whoops! Here Comes The Cheese!+++",
     "G KL",
     "S SR",
     "H PA",
     "M MU",
-    "hunters are poos",
+    "+++Out Of Cheese Error+++",
     "G KL",
     "S SR",
     "H PA",
     "M MU",
-    "hunters are poos",
+    "+++Error At Address: 14, Treacle Mine Road, Ankh-Morpork+++",
     "G KL",
     "S SR",
     "H PA",
     "M MU",
-    "hunters are poos",
+    "+++Whoops! Here Comes The Cheese!+++",
     "G KL",
     "S SR",
     "H PA",
     "M MU",
-    "hunters are poos",
+    "+++Mr. Jelly! Mr. Jelly!+++",
     "G KL",
     "S SR",
     "H PA",
     "M MU",
-    "hunters are poos",
+    "+++Divide By Cucumber Error. Please Reinstall Universe And Reboot+++",
     "G KL",
     "S SR",
     "H PA",
     "M MU",
-    "hunters are poos",
+    "+++MELON MELON MELON+++",
     "G KL",
     "S SR",
     "H PA",
     "M MU",
-    "hunters are poos",
+    "+++Mr. Jelly! Mr. Jelly!+++",
     "G KL",
     "S SR",
     "H PA",
     "M MU",
-    "hunters are poos",
+    "+++Out Of Cheese Error+++",
     "G KL",
     "S SR",
     "H PA"
@@ -4024,7 +3585,7 @@ Program Output:
 Move:  {
   "move": "MU",
   "message": "M MU",
-  "timer": 128
+  "timer": 69
 }
 > Moving from: MU
 > Life Points: 9
@@ -4032,184 +3593,111 @@ Move:  {
 > +++
   move: MU
   message: M MU
-  timer: 128
+  timer: 69
 > ---
 --------------------------------------------------------------------------
-> Running player 4... 
-/tmp/dryrun4769/dracula
-Running with input:  {
-  "pastPlays": "GKL.... SSR.... HPA.... MMU.... DMU.V.. GKL.... SSR.... HPA.... MMUVD.. DAS.... GKL.... SSR.... HPA.... MMU.... DVET... GKL.... SSR.... HPA.... MMU.... DMIT... GKL.... SSR.... HPA.... MMU.... DZUT... GKL.... SSR.... HPA.... MMU.... DSTT... GKL.... SSR.... HPA.... MMU.... DPAT... GKL.... SSR.... HPATD.. MMU.... DNAT... GKL.... SSR.... HPA.... MMU.... DAS..M. GKL.... SSR.... HPA.... MMU.... DVET.M. GKL.... SSR.... HPA.... MMU.... DMUT.M. GKL.... SSR.... HPA.... MMUTD.. DZUT.M. GKL.... SSR.... HPA.... MMU.... DSTT... GKL.... SSR.... HPA.... MMU....",
-  "messages": [
-    "G KL",
-    "S SR",
-    "H PA",
-    "M MU",
-    "I come to suck your blood",
-    "G KL",
-    "S SR",
-    "H PA",
-    "M MU",
-    "hunters are poos",
-    "G KL",
-    "S SR",
-    "H PA",
-    "M MU",
-    "hunters are poos",
-    "G KL",
-    "S SR",
-    "H PA",
-    "M MU",
-    "hunters are poos",
-    "G KL",
-    "S SR",
-    "H PA",
-    "M MU",
-    "hunters are poos",
-    "G KL",
-    "S SR",
-    "H PA",
-    "M MU",
-    "hunters are poos",
-    "G KL",
-    "S SR",
-    "H PA",
-    "M MU",
-    "hunters are poos",
-    "G KL",
-    "S SR",
-    "H PA",
-    "M MU",
-    "hunters are poos",
-    "G KL",
-    "S SR",
-    "H PA",
-    "M MU",
-    "hunters are poos",
-    "G KL",
-    "S SR",
-    "H PA",
-    "M MU",
-    "hunters are poos",
-    "G KL",
-    "S SR",
-    "H PA",
-    "M MU",
-    "hunters are poos",
-    "G KL",
-    "S SR",
-    "H PA",
-    "M MU",
-    "hunters are poos",
-    "G KL",
-    "S SR",
-    "H PA",
-    "M MU",
-    "hunters are poos",
-    "G KL",
-    "S SR",
-    "H PA",
-    "M MU"
-  ]
-}
-Program Output: 
-Move:  {
-  "move": "PA",
-  "message": "hunters are poos",
-  "timer": 6494
-}
-> Moving from: ST
-> Blood Points: 6
-> Player 4 made move:
-> +++
-  move: PA
-  message: hunters are poos
-  timer: 6494
-> ---
+Player is currently disqualified. Making a move on their behalf.4
+generating default dracula move
+NU illegal
+Location NU already in trail
+undefined illegal
+Move undefined
+D1 illegal
+Illegal double-back: not adjacent or is already in trail
+D2 illegal
+Illegal double-back: not adjacent or is already in trail
+D3 illegal
+Illegal double-back: not adjacent or is already in trail
+D4 illegal
+Illegal double-back: not adjacent or is already in trail
+D5 illegal
+Illegal double-back: not adjacent or is already in trail
+Default Dracula Move: "HI"
 > End of Round:  13
 > Starting Round:  14
 --------------------------------------------------------------------------
 > Running player 0... 
-/tmp/dryrun4769/hunter
+/tmp/dryrun10700/hunter
 Running with input:  {
-  "pastPlays": "GKL.... SSR.... HPA.... MMU.... DMU.V.. GKL.... SSR.... HPA.... MMUVD.. DAS.... GKL.... SSR.... HPA.... MMU.... DVET... GKL.... SSR.... HPA.... MMU.... DMIT... GKL.... SSR.... HPA.... MMU.... DZUT... GKL.... SSR.... HPA.... MMU.... DSTT... GKL.... SSR.... HPA.... MMU.... DPAT... GKL.... SSR.... HPATD.. MMU.... DNAT... GKL.... SSR.... HPA.... MMU.... DAS..M. GKL.... SSR.... HPA.... MMU.... DC?T.M. GKL.... SSR.... HPA.... MMU.... DMUT.M. GKL.... SSR.... HPA.... MMUTD.. DC?T.M. GKL.... SSR.... HPA.... MMU.... DC?T... GKL.... SSR.... HPA.... MMU.... DPA.VM.",
+  "pastPlays": "GKL.... SSR.... HPA.... MMU.... DMU.V.. GKL.... SSR.... HPA.... MMUVD.. DVET... GKL.... SSR.... HPA.... MMU.... DD2T... GKL.... SSR.... HPA.... MMUTD.. DNUT... GKL.... SSR.... HPA.... MMU.... DSTT... GKL.... SSR.... HPA.... MMU.... DPAT... GKL.... SSR.... HPATD.. MMU.... DBUT... GKL.... SSR.... HPA.... MMU.... DHIT.M. GKL.... SSR.... HPA.... MMU.... DD4T... GKL.... SSR.... HPA.... MMU.... DC?T.M. GKL.... SSR.... HPA.... MMU.... DC?T.M. GKL.... SSR.... HPA.... MMU.... DC?T... GKL.... SSR.... HPA.... MMU.... DC?T.M. GKL.... SSR.... HPA.... MMU.... DC?.VM.",
   "messages": [
     "G KL",
     "S SR",
     "H PA",
     "M MU",
-    "I come to suck your blood",
+    "I come to start in the middle of the board",
     "G KL",
     "S SR",
     "H PA",
     "M MU",
-    "hunters are poos",
+    "+++Oneoneoneoneoneoneone+++",
     "G KL",
     "S SR",
     "H PA",
     "M MU",
-    "hunters are poos",
+    "+++MELON MELON MELON+++",
     "G KL",
     "S SR",
     "H PA",
     "M MU",
-    "hunters are poos",
+    "+++Out Of Cheese Error+++",
     "G KL",
     "S SR",
     "H PA",
     "M MU",
-    "hunters are poos",
+    "+++Whoops! Here Comes The Cheese!+++",
     "G KL",
     "S SR",
     "H PA",
     "M MU",
-    "hunters are poos",
+    "+++Out Of Cheese Error+++",
     "G KL",
     "S SR",
     "H PA",
     "M MU",
-    "hunters are poos",
+    "+++Error At Address: 14, Treacle Mine Road, Ankh-Morpork+++",
     "G KL",
     "S SR",
     "H PA",
     "M MU",
-    "hunters are poos",
+    "+++Whoops! Here Comes The Cheese!+++",
     "G KL",
     "S SR",
     "H PA",
     "M MU",
-    "hunters are poos",
+    "+++Mr. Jelly! Mr. Jelly!+++",
     "G KL",
     "S SR",
     "H PA",
     "M MU",
-    "hunters are poos",
+    "+++Divide By Cucumber Error. Please Reinstall Universe And Reboot+++",
     "G KL",
     "S SR",
     "H PA",
     "M MU",
-    "hunters are poos",
+    "+++MELON MELON MELON+++",
     "G KL",
     "S SR",
     "H PA",
     "M MU",
-    "hunters are poos",
+    "+++Mr. Jelly! Mr. Jelly!+++",
     "G KL",
     "S SR",
     "H PA",
     "M MU",
-    "hunters are poos",
+    "+++Out Of Cheese Error+++",
     "G KL",
     "S SR",
     "H PA",
     "M MU",
-    "hunters are poos"
+    "+++Whoops! Here Comes The Cheese!+++"
   ]
 }
 Program Output: 
 Move:  {
   "move": "KL",
   "message": "G KL",
-  "timer": 130
+  "timer": 135
 }
 > Moving from: KL
 > Life Points: 9
@@ -4217,84 +3705,84 @@ Move:  {
 > +++
   move: KL
   message: G KL
-  timer: 130
+  timer: 135
 > ---
 --------------------------------------------------------------------------
 > Running player 1... 
-/tmp/dryrun4769/hunter
+/tmp/dryrun10700/hunter
 Running with input:  {
-  "pastPlays": "GKL.... SSR.... HPA.... MMU.... DMU.V.. GKL.... SSR.... HPA.... MMUVD.. DAS.... GKL.... SSR.... HPA.... MMU.... DVET... GKL.... SSR.... HPA.... MMU.... DMIT... GKL.... SSR.... HPA.... MMU.... DZUT... GKL.... SSR.... HPA.... MMU.... DSTT... GKL.... SSR.... HPA.... MMU.... DPAT... GKL.... SSR.... HPATD.. MMU.... DNAT... GKL.... SSR.... HPA.... MMU.... DAS..M. GKL.... SSR.... HPA.... MMU.... DC?T.M. GKL.... SSR.... HPA.... MMU.... DMUT.M. GKL.... SSR.... HPA.... MMUTD.. DC?T.M. GKL.... SSR.... HPA.... MMU.... DC?T... GKL.... SSR.... HPA.... MMU.... DPA.VM. GKL....",
+  "pastPlays": "GKL.... SSR.... HPA.... MMU.... DMU.V.. GKL.... SSR.... HPA.... MMUVD.. DVET... GKL.... SSR.... HPA.... MMU.... DD2T... GKL.... SSR.... HPA.... MMUTD.. DNUT... GKL.... SSR.... HPA.... MMU.... DSTT... GKL.... SSR.... HPA.... MMU.... DPAT... GKL.... SSR.... HPATD.. MMU.... DBUT... GKL.... SSR.... HPA.... MMU.... DHIT.M. GKL.... SSR.... HPA.... MMU.... DD4T... GKL.... SSR.... HPA.... MMU.... DC?T.M. GKL.... SSR.... HPA.... MMU.... DC?T.M. GKL.... SSR.... HPA.... MMU.... DC?T... GKL.... SSR.... HPA.... MMU.... DC?T.M. GKL.... SSR.... HPA.... MMU.... DC?.VM. GKL....",
   "messages": [
     "G KL",
     "S SR",
     "H PA",
     "M MU",
-    "I come to suck your blood",
+    "I come to start in the middle of the board",
     "G KL",
     "S SR",
     "H PA",
     "M MU",
-    "hunters are poos",
+    "+++Oneoneoneoneoneoneone+++",
     "G KL",
     "S SR",
     "H PA",
     "M MU",
-    "hunters are poos",
+    "+++MELON MELON MELON+++",
     "G KL",
     "S SR",
     "H PA",
     "M MU",
-    "hunters are poos",
+    "+++Out Of Cheese Error+++",
     "G KL",
     "S SR",
     "H PA",
     "M MU",
-    "hunters are poos",
+    "+++Whoops! Here Comes The Cheese!+++",
     "G KL",
     "S SR",
     "H PA",
     "M MU",
-    "hunters are poos",
+    "+++Out Of Cheese Error+++",
     "G KL",
     "S SR",
     "H PA",
     "M MU",
-    "hunters are poos",
+    "+++Error At Address: 14, Treacle Mine Road, Ankh-Morpork+++",
     "G KL",
     "S SR",
     "H PA",
     "M MU",
-    "hunters are poos",
+    "+++Whoops! Here Comes The Cheese!+++",
     "G KL",
     "S SR",
     "H PA",
     "M MU",
-    "hunters are poos",
+    "+++Mr. Jelly! Mr. Jelly!+++",
     "G KL",
     "S SR",
     "H PA",
     "M MU",
-    "hunters are poos",
+    "+++Divide By Cucumber Error. Please Reinstall Universe And Reboot+++",
     "G KL",
     "S SR",
     "H PA",
     "M MU",
-    "hunters are poos",
+    "+++MELON MELON MELON+++",
     "G KL",
     "S SR",
     "H PA",
     "M MU",
-    "hunters are poos",
+    "+++Mr. Jelly! Mr. Jelly!+++",
     "G KL",
     "S SR",
     "H PA",
     "M MU",
-    "hunters are poos",
+    "+++Out Of Cheese Error+++",
     "G KL",
     "S SR",
     "H PA",
     "M MU",
-    "hunters are poos",
+    "+++Whoops! Here Comes The Cheese!+++",
     "G KL"
   ]
 }
@@ -4302,7 +3790,7 @@ Program Output:
 Move:  {
   "move": "SR",
   "message": "S SR",
-  "timer": 131
+  "timer": 72
 }
 > Moving from: SR
 > Life Points: 9
@@ -4310,84 +3798,84 @@ Move:  {
 > +++
   move: SR
   message: S SR
-  timer: 131
+  timer: 72
 > ---
 --------------------------------------------------------------------------
 > Running player 2... 
-/tmp/dryrun4769/hunter
+/tmp/dryrun10700/hunter
 Running with input:  {
-  "pastPlays": "GKL.... SSR.... HPA.... MMU.... DMU.V.. GKL.... SSR.... HPA.... MMUVD.. DAS.... GKL.... SSR.... HPA.... MMU.... DVET... GKL.... SSR.... HPA.... MMU.... DMIT... GKL.... SSR.... HPA.... MMU.... DZUT... GKL.... SSR.... HPA.... MMU.... DSTT... GKL.... SSR.... HPA.... MMU.... DPAT... GKL.... SSR.... HPATD.. MMU.... DNAT... GKL.... SSR.... HPA.... MMU.... DAS..M. GKL.... SSR.... HPA.... MMU.... DC?T.M. GKL.... SSR.... HPA.... MMU.... DMUT.M. GKL.... SSR.... HPA.... MMUTD.. DC?T.M. GKL.... SSR.... HPA.... MMU.... DC?T... GKL.... SSR.... HPA.... MMU.... DPA.VM. GKL.... SSR....",
+  "pastPlays": "GKL.... SSR.... HPA.... MMU.... DMU.V.. GKL.... SSR.... HPA.... MMUVD.. DVET... GKL.... SSR.... HPA.... MMU.... DD2T... GKL.... SSR.... HPA.... MMUTD.. DNUT... GKL.... SSR.... HPA.... MMU.... DSTT... GKL.... SSR.... HPA.... MMU.... DPAT... GKL.... SSR.... HPATD.. MMU.... DBUT... GKL.... SSR.... HPA.... MMU.... DHIT.M. GKL.... SSR.... HPA.... MMU.... DD4T... GKL.... SSR.... HPA.... MMU.... DC?T.M. GKL.... SSR.... HPA.... MMU.... DC?T.M. GKL.... SSR.... HPA.... MMU.... DC?T... GKL.... SSR.... HPA.... MMU.... DC?T.M. GKL.... SSR.... HPA.... MMU.... DC?.VM. GKL.... SSR....",
   "messages": [
     "G KL",
     "S SR",
     "H PA",
     "M MU",
-    "I come to suck your blood",
+    "I come to start in the middle of the board",
     "G KL",
     "S SR",
     "H PA",
     "M MU",
-    "hunters are poos",
+    "+++Oneoneoneoneoneoneone+++",
     "G KL",
     "S SR",
     "H PA",
     "M MU",
-    "hunters are poos",
+    "+++MELON MELON MELON+++",
     "G KL",
     "S SR",
     "H PA",
     "M MU",
-    "hunters are poos",
+    "+++Out Of Cheese Error+++",
     "G KL",
     "S SR",
     "H PA",
     "M MU",
-    "hunters are poos",
+    "+++Whoops! Here Comes The Cheese!+++",
     "G KL",
     "S SR",
     "H PA",
     "M MU",
-    "hunters are poos",
+    "+++Out Of Cheese Error+++",
     "G KL",
     "S SR",
     "H PA",
     "M MU",
-    "hunters are poos",
+    "+++Error At Address: 14, Treacle Mine Road, Ankh-Morpork+++",
     "G KL",
     "S SR",
     "H PA",
     "M MU",
-    "hunters are poos",
+    "+++Whoops! Here Comes The Cheese!+++",
     "G KL",
     "S SR",
     "H PA",
     "M MU",
-    "hunters are poos",
+    "+++Mr. Jelly! Mr. Jelly!+++",
     "G KL",
     "S SR",
     "H PA",
     "M MU",
-    "hunters are poos",
+    "+++Divide By Cucumber Error. Please Reinstall Universe And Reboot+++",
     "G KL",
     "S SR",
     "H PA",
     "M MU",
-    "hunters are poos",
+    "+++MELON MELON MELON+++",
     "G KL",
     "S SR",
     "H PA",
     "M MU",
-    "hunters are poos",
+    "+++Mr. Jelly! Mr. Jelly!+++",
     "G KL",
     "S SR",
     "H PA",
     "M MU",
-    "hunters are poos",
+    "+++Out Of Cheese Error+++",
     "G KL",
     "S SR",
     "H PA",
     "M MU",
-    "hunters are poos",
+    "+++Whoops! Here Comes The Cheese!+++",
     "G KL",
     "S SR"
   ]
@@ -4396,7 +3884,7 @@ Program Output:
 Move:  {
   "move": "PA",
   "message": "H PA",
-  "timer": 136
+  "timer": 69
 }
 > Moving from: PA
 > Life Points: 9
@@ -4404,16 +3892,1310 @@ Move:  {
 > +++
   move: PA
   message: H PA
-  timer: 136
+  timer: 69
+> ---
+--------------------------------------------------------------------------
+> Running player 3... 
+/tmp/dryrun10700/hunter
+Running with input:  {
+  "pastPlays": "GKL.... SSR.... HPA.... MMU.... DMU.V.. GKL.... SSR.... HPA.... MMUVD.. DVET... GKL.... SSR.... HPA.... MMU.... DD2T... GKL.... SSR.... HPA.... MMUTD.. DNUT... GKL.... SSR.... HPA.... MMU.... DSTT... GKL.... SSR.... HPA.... MMU.... DPAT... GKL.... SSR.... HPATD.. MMU.... DBUT... GKL.... SSR.... HPA.... MMU.... DHIT.M. GKL.... SSR.... HPA.... MMU.... DD4T... GKL.... SSR.... HPA.... MMU.... DC?T.M. GKL.... SSR.... HPA.... MMU.... DC?T.M. GKL.... SSR.... HPA.... MMU.... DC?T... GKL.... SSR.... HPA.... MMU.... DC?T.M. GKL.... SSR.... HPA.... MMU.... DC?.VM. GKL.... SSR.... HPA....",
+  "messages": [
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "I come to start in the middle of the board",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "+++Oneoneoneoneoneoneone+++",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "+++MELON MELON MELON+++",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "+++Out Of Cheese Error+++",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "+++Whoops! Here Comes The Cheese!+++",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "+++Out Of Cheese Error+++",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "+++Error At Address: 14, Treacle Mine Road, Ankh-Morpork+++",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "+++Whoops! Here Comes The Cheese!+++",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "+++Mr. Jelly! Mr. Jelly!+++",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "+++Divide By Cucumber Error. Please Reinstall Universe And Reboot+++",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "+++MELON MELON MELON+++",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "+++Mr. Jelly! Mr. Jelly!+++",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "+++Out Of Cheese Error+++",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "+++Whoops! Here Comes The Cheese!+++",
+    "G KL",
+    "S SR",
+    "H PA"
+  ]
+}
+Program Output: 
+Move:  {
+  "move": "MU",
+  "message": "M MU",
+  "timer": 73
+}
+> Moving from: MU
+> Life Points: 9
+> Player 3 made move:
+> +++
+  move: MU
+  message: M MU
+  timer: 73
+> ---
+--------------------------------------------------------------------------
+Player is currently disqualified. Making a move on their behalf.4
+generating default dracula move
+NU illegal
+Location NU already in trail
+undefined illegal
+Move undefined
+D4 illegal
+Illegal double-back: not adjacent or is already in trail
+D5 illegal
+Illegal double-back: not adjacent or is already in trail
+HI illegal
+Already made a hide
+Default Dracula Move: "D3"
+> End of Round:  14
+> Starting Round:  15
+--------------------------------------------------------------------------
+> Running player 0... 
+/tmp/dryrun10700/hunter
+Running with input:  {
+  "pastPlays": "GKL.... SSR.... HPA.... MMU.... DMU.V.. GKL.... SSR.... HPA.... MMUVD.. DVET... GKL.... SSR.... HPA.... MMU.... DD2T... GKL.... SSR.... HPA.... MMUTD.. DNUT... GKL.... SSR.... HPA.... MMU.... DSTT... GKL.... SSR.... HPA.... MMU.... DPAT... GKL.... SSR.... HPATD.. MMU.... DBUT... GKL.... SSR.... HPA.... MMU.... DHIT.M. GKL.... SSR.... HPA.... MMU.... DD4T... GKL.... SSR.... HPA.... MMU.... DCOT.M. GKL.... SSR.... HPA.... MMU.... DC?T.M. GKL.... SSR.... HPA.... MMU.... DC?T... GKL.... SSR.... HPA.... MMU.... DC?T.M. GKL.... SSR.... HPA.... MMU.... DC?.VM. GKL.... SSR.... HPA.... MMU.... DD3T.M.",
+  "messages": [
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "I come to start in the middle of the board",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "+++Oneoneoneoneoneoneone+++",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "+++MELON MELON MELON+++",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "+++Out Of Cheese Error+++",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "+++Whoops! Here Comes The Cheese!+++",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "+++Out Of Cheese Error+++",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "+++Error At Address: 14, Treacle Mine Road, Ankh-Morpork+++",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "+++Whoops! Here Comes The Cheese!+++",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "+++Mr. Jelly! Mr. Jelly!+++",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "+++Divide By Cucumber Error. Please Reinstall Universe And Reboot+++",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "+++MELON MELON MELON+++",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "+++Mr. Jelly! Mr. Jelly!+++",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "+++Out Of Cheese Error+++",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "+++Whoops! Here Comes The Cheese!+++",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "+++Error At Address: 14, Treacle Mine Road, Ankh-Morpork+++"
+  ]
+}
+Program Output: 
+Move:  {
+  "move": "KL",
+  "message": "G KL",
+  "timer": 71
+}
+> Moving from: KL
+> Life Points: 9
+> Player 0 made move:
+> +++
+  move: KL
+  message: G KL
+  timer: 71
+> ---
+--------------------------------------------------------------------------
+> Running player 1... 
+/tmp/dryrun10700/hunter
+Running with input:  {
+  "pastPlays": "GKL.... SSR.... HPA.... MMU.... DMU.V.. GKL.... SSR.... HPA.... MMUVD.. DVET... GKL.... SSR.... HPA.... MMU.... DD2T... GKL.... SSR.... HPA.... MMUTD.. DNUT... GKL.... SSR.... HPA.... MMU.... DSTT... GKL.... SSR.... HPA.... MMU.... DPAT... GKL.... SSR.... HPATD.. MMU.... DBUT... GKL.... SSR.... HPA.... MMU.... DHIT.M. GKL.... SSR.... HPA.... MMU.... DD4T... GKL.... SSR.... HPA.... MMU.... DCOT.M. GKL.... SSR.... HPA.... MMU.... DC?T.M. GKL.... SSR.... HPA.... MMU.... DC?T... GKL.... SSR.... HPA.... MMU.... DC?T.M. GKL.... SSR.... HPA.... MMU.... DC?.VM. GKL.... SSR.... HPA.... MMU.... DD3T.M. GKL....",
+  "messages": [
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "I come to start in the middle of the board",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "+++Oneoneoneoneoneoneone+++",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "+++MELON MELON MELON+++",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "+++Out Of Cheese Error+++",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "+++Whoops! Here Comes The Cheese!+++",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "+++Out Of Cheese Error+++",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "+++Error At Address: 14, Treacle Mine Road, Ankh-Morpork+++",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "+++Whoops! Here Comes The Cheese!+++",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "+++Mr. Jelly! Mr. Jelly!+++",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "+++Divide By Cucumber Error. Please Reinstall Universe And Reboot+++",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "+++MELON MELON MELON+++",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "+++Mr. Jelly! Mr. Jelly!+++",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "+++Out Of Cheese Error+++",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "+++Whoops! Here Comes The Cheese!+++",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "+++Error At Address: 14, Treacle Mine Road, Ankh-Morpork+++",
+    "G KL"
+  ]
+}
+Program Output: 
+Move:  {
+  "move": "SR",
+  "message": "S SR",
+  "timer": 135
+}
+> Moving from: SR
+> Life Points: 9
+> Player 1 made move:
+> +++
+  move: SR
+  message: S SR
+  timer: 135
+> ---
+--------------------------------------------------------------------------
+> Running player 2... 
+/tmp/dryrun10700/hunter
+Running with input:  {
+  "pastPlays": "GKL.... SSR.... HPA.... MMU.... DMU.V.. GKL.... SSR.... HPA.... MMUVD.. DVET... GKL.... SSR.... HPA.... MMU.... DD2T... GKL.... SSR.... HPA.... MMUTD.. DNUT... GKL.... SSR.... HPA.... MMU.... DSTT... GKL.... SSR.... HPA.... MMU.... DPAT... GKL.... SSR.... HPATD.. MMU.... DBUT... GKL.... SSR.... HPA.... MMU.... DHIT.M. GKL.... SSR.... HPA.... MMU.... DD4T... GKL.... SSR.... HPA.... MMU.... DCOT.M. GKL.... SSR.... HPA.... MMU.... DC?T.M. GKL.... SSR.... HPA.... MMU.... DC?T... GKL.... SSR.... HPA.... MMU.... DC?T.M. GKL.... SSR.... HPA.... MMU.... DC?.VM. GKL.... SSR.... HPA.... MMU.... DD3T.M. GKL.... SSR....",
+  "messages": [
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "I come to start in the middle of the board",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "+++Oneoneoneoneoneoneone+++",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "+++MELON MELON MELON+++",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "+++Out Of Cheese Error+++",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "+++Whoops! Here Comes The Cheese!+++",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "+++Out Of Cheese Error+++",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "+++Error At Address: 14, Treacle Mine Road, Ankh-Morpork+++",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "+++Whoops! Here Comes The Cheese!+++",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "+++Mr. Jelly! Mr. Jelly!+++",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "+++Divide By Cucumber Error. Please Reinstall Universe And Reboot+++",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "+++MELON MELON MELON+++",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "+++Mr. Jelly! Mr. Jelly!+++",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "+++Out Of Cheese Error+++",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "+++Whoops! Here Comes The Cheese!+++",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "+++Error At Address: 14, Treacle Mine Road, Ankh-Morpork+++",
+    "G KL",
+    "S SR"
+  ]
+}
+Program Output: 
+Move:  {
+  "move": "PA",
+  "message": "H PA",
+  "timer": 133
+}
+> Moving from: PA
+> Life Points: 9
+> Player 2 made move:
+> +++
+  move: PA
+  message: H PA
+  timer: 133
+> ---
+--------------------------------------------------------------------------
+> Running player 3... 
+/tmp/dryrun10700/hunter
+Running with input:  {
+  "pastPlays": "GKL.... SSR.... HPA.... MMU.... DMU.V.. GKL.... SSR.... HPA.... MMUVD.. DVET... GKL.... SSR.... HPA.... MMU.... DD2T... GKL.... SSR.... HPA.... MMUTD.. DNUT... GKL.... SSR.... HPA.... MMU.... DSTT... GKL.... SSR.... HPA.... MMU.... DPAT... GKL.... SSR.... HPATD.. MMU.... DBUT... GKL.... SSR.... HPA.... MMU.... DHIT.M. GKL.... SSR.... HPA.... MMU.... DD4T... GKL.... SSR.... HPA.... MMU.... DCOT.M. GKL.... SSR.... HPA.... MMU.... DC?T.M. GKL.... SSR.... HPA.... MMU.... DC?T... GKL.... SSR.... HPA.... MMU.... DC?T.M. GKL.... SSR.... HPA.... MMU.... DC?.VM. GKL.... SSR.... HPA.... MMU.... DD3T.M. GKL.... SSR.... HPA....",
+  "messages": [
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "I come to start in the middle of the board",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "+++Oneoneoneoneoneoneone+++",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "+++MELON MELON MELON+++",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "+++Out Of Cheese Error+++",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "+++Whoops! Here Comes The Cheese!+++",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "+++Out Of Cheese Error+++",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "+++Error At Address: 14, Treacle Mine Road, Ankh-Morpork+++",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "+++Whoops! Here Comes The Cheese!+++",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "+++Mr. Jelly! Mr. Jelly!+++",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "+++Divide By Cucumber Error. Please Reinstall Universe And Reboot+++",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "+++MELON MELON MELON+++",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "+++Mr. Jelly! Mr. Jelly!+++",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "+++Out Of Cheese Error+++",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "+++Whoops! Here Comes The Cheese!+++",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "+++Error At Address: 14, Treacle Mine Road, Ankh-Morpork+++",
+    "G KL",
+    "S SR",
+    "H PA"
+  ]
+}
+Program Output: 
+Move:  {
+  "move": "MU",
+  "message": "M MU",
+  "timer": 74
+}
+> Moving from: MU
+> Life Points: 9
+> Player 3 made move:
+> +++
+  move: MU
+  message: M MU
+  timer: 74
+> ---
+--------------------------------------------------------------------------
+Player is currently disqualified. Making a move on their behalf.4
+generating default dracula move
+FR illegal
+Location FR already in trail
+FR illegal
+Location FR already in trail
+PR illegal
+Location PR already in trail
+undefined illegal
+Move undefined
+D1 illegal
+Illegal double-back: not adjacent or is already in trail
+D2 illegal
+Illegal double-back: not adjacent or is already in trail
+D3 illegal
+Illegal double-back: not adjacent or is already in trail
+D4 illegal
+Illegal double-back: not adjacent or is already in trail
+D5 illegal
+Illegal double-back: not adjacent or is already in trail
+HI illegal
+Already made a hide
+Default Dracula Move: "ST"
+FR illegal
+Location FR already in trail
+> End of Round:  15
+> Starting Round:  16
+--------------------------------------------------------------------------
+> Running player 0... 
+/tmp/dryrun10700/hunter
+Running with input:  {
+  "pastPlays": "GKL.... SSR.... HPA.... MMU.... DMU.V.. GKL.... SSR.... HPA.... MMUVD.. DVET... GKL.... SSR.... HPA.... MMU.... DD2T... GKL.... SSR.... HPA.... MMUTD.. DNUT... GKL.... SSR.... HPA.... MMU.... DSTT... GKL.... SSR.... HPA.... MMU.... DPAT... GKL.... SSR.... HPATD.. MMU.... DBUT... GKL.... SSR.... HPA.... MMU.... DHIT.M. GKL.... SSR.... HPA.... MMU.... DD4T... GKL.... SSR.... HPA.... MMU.... DCOT.M. GKL.... SSR.... HPA.... MMU.... DFRT.M. GKL.... SSR.... HPA.... MMU.... DC?T... GKL.... SSR.... HPA.... MMU.... DC?T.M. GKL.... SSR.... HPA.... MMU.... DC?.VM. GKL.... SSR.... HPA.... MMU.... DD3T.M. GKL.... SSR.... HPA.... MMU.... DC?T.M.",
+  "messages": [
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "I come to start in the middle of the board",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "+++Oneoneoneoneoneoneone+++",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "+++MELON MELON MELON+++",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "+++Out Of Cheese Error+++",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "+++Whoops! Here Comes The Cheese!+++",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "+++Out Of Cheese Error+++",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "+++Error At Address: 14, Treacle Mine Road, Ankh-Morpork+++",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "+++Whoops! Here Comes The Cheese!+++",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "+++Mr. Jelly! Mr. Jelly!+++",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "+++Divide By Cucumber Error. Please Reinstall Universe And Reboot+++",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "+++MELON MELON MELON+++",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "+++Mr. Jelly! Mr. Jelly!+++",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "+++Out Of Cheese Error+++",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "+++Whoops! Here Comes The Cheese!+++",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "+++Error At Address: 14, Treacle Mine Road, Ankh-Morpork+++",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "+++Oneoneoneoneoneoneone+++"
+  ]
+}
+Program Output: 
+Move:  {
+  "move": "KL",
+  "message": "G KL",
+  "timer": 138
+}
+> Moving from: KL
+> Life Points: 9
+> Player 0 made move:
+> +++
+  move: KL
+  message: G KL
+  timer: 138
+> ---
+--------------------------------------------------------------------------
+> Running player 1... 
+/tmp/dryrun10700/hunter
+Running with input:  {
+  "pastPlays": "GKL.... SSR.... HPA.... MMU.... DMU.V.. GKL.... SSR.... HPA.... MMUVD.. DVET... GKL.... SSR.... HPA.... MMU.... DD2T... GKL.... SSR.... HPA.... MMUTD.. DNUT... GKL.... SSR.... HPA.... MMU.... DSTT... GKL.... SSR.... HPA.... MMU.... DPAT... GKL.... SSR.... HPATD.. MMU.... DBUT... GKL.... SSR.... HPA.... MMU.... DHIT.M. GKL.... SSR.... HPA.... MMU.... DD4T... GKL.... SSR.... HPA.... MMU.... DCOT.M. GKL.... SSR.... HPA.... MMU.... DFRT.M. GKL.... SSR.... HPA.... MMU.... DC?T... GKL.... SSR.... HPA.... MMU.... DC?T.M. GKL.... SSR.... HPA.... MMU.... DC?.VM. GKL.... SSR.... HPA.... MMU.... DD3T.M. GKL.... SSR.... HPA.... MMU.... DC?T.M. GKL....",
+  "messages": [
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "I come to start in the middle of the board",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "+++Oneoneoneoneoneoneone+++",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "+++MELON MELON MELON+++",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "+++Out Of Cheese Error+++",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "+++Whoops! Here Comes The Cheese!+++",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "+++Out Of Cheese Error+++",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "+++Error At Address: 14, Treacle Mine Road, Ankh-Morpork+++",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "+++Whoops! Here Comes The Cheese!+++",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "+++Mr. Jelly! Mr. Jelly!+++",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "+++Divide By Cucumber Error. Please Reinstall Universe And Reboot+++",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "+++MELON MELON MELON+++",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "+++Mr. Jelly! Mr. Jelly!+++",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "+++Out Of Cheese Error+++",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "+++Whoops! Here Comes The Cheese!+++",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "+++Error At Address: 14, Treacle Mine Road, Ankh-Morpork+++",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "+++Oneoneoneoneoneoneone+++",
+    "G KL"
+  ]
+}
+Program Output: 
+Move:  {
+  "move": "SR",
+  "message": "S SR",
+  "timer": 142
+}
+> Moving from: SR
+> Life Points: 9
+> Player 1 made move:
+> +++
+  move: SR
+  message: S SR
+  timer: 142
+> ---
+--------------------------------------------------------------------------
+> Running player 2... 
+/tmp/dryrun10700/hunter
+Running with input:  {
+  "pastPlays": "GKL.... SSR.... HPA.... MMU.... DMU.V.. GKL.... SSR.... HPA.... MMUVD.. DVET... GKL.... SSR.... HPA.... MMU.... DD2T... GKL.... SSR.... HPA.... MMUTD.. DNUT... GKL.... SSR.... HPA.... MMU.... DSTT... GKL.... SSR.... HPA.... MMU.... DPAT... GKL.... SSR.... HPATD.. MMU.... DBUT... GKL.... SSR.... HPA.... MMU.... DHIT.M. GKL.... SSR.... HPA.... MMU.... DD4T... GKL.... SSR.... HPA.... MMU.... DCOT.M. GKL.... SSR.... HPA.... MMU.... DFRT.M. GKL.... SSR.... HPA.... MMU.... DC?T... GKL.... SSR.... HPA.... MMU.... DC?T.M. GKL.... SSR.... HPA.... MMU.... DC?.VM. GKL.... SSR.... HPA.... MMU.... DD3T.M. GKL.... SSR.... HPA.... MMU.... DC?T.M. GKL.... SSR....",
+  "messages": [
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "I come to start in the middle of the board",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "+++Oneoneoneoneoneoneone+++",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "+++MELON MELON MELON+++",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "+++Out Of Cheese Error+++",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "+++Whoops! Here Comes The Cheese!+++",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "+++Out Of Cheese Error+++",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "+++Error At Address: 14, Treacle Mine Road, Ankh-Morpork+++",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "+++Whoops! Here Comes The Cheese!+++",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "+++Mr. Jelly! Mr. Jelly!+++",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "+++Divide By Cucumber Error. Please Reinstall Universe And Reboot+++",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "+++MELON MELON MELON+++",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "+++Mr. Jelly! Mr. Jelly!+++",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "+++Out Of Cheese Error+++",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "+++Whoops! Here Comes The Cheese!+++",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "+++Error At Address: 14, Treacle Mine Road, Ankh-Morpork+++",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "+++Oneoneoneoneoneoneone+++",
+    "G KL",
+    "S SR"
+  ]
+}
+Program Output: 
+Move:  {
+  "move": "PA",
+  "message": "H PA",
+  "timer": 144
+}
+> Moving from: PA
+> Life Points: 9
+> Player 2 made move:
+> +++
+  move: PA
+  message: H PA
+  timer: 144
+> ---
+--------------------------------------------------------------------------
+> Running player 3... 
+/tmp/dryrun10700/hunter
+Running with input:  {
+  "pastPlays": "GKL.... SSR.... HPA.... MMU.... DMU.V.. GKL.... SSR.... HPA.... MMUVD.. DVET... GKL.... SSR.... HPA.... MMU.... DD2T... GKL.... SSR.... HPA.... MMUTD.. DNUT... GKL.... SSR.... HPA.... MMU.... DSTT... GKL.... SSR.... HPA.... MMU.... DPAT... GKL.... SSR.... HPATD.. MMU.... DBUT... GKL.... SSR.... HPA.... MMU.... DHIT.M. GKL.... SSR.... HPA.... MMU.... DD4T... GKL.... SSR.... HPA.... MMU.... DCOT.M. GKL.... SSR.... HPA.... MMU.... DFRT.M. GKL.... SSR.... HPA.... MMU.... DC?T... GKL.... SSR.... HPA.... MMU.... DC?T.M. GKL.... SSR.... HPA.... MMU.... DC?.VM. GKL.... SSR.... HPA.... MMU.... DD3T.M. GKL.... SSR.... HPA.... MMU.... DC?T.M. GKL.... SSR.... HPA....",
+  "messages": [
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "I come to start in the middle of the board",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "+++Oneoneoneoneoneoneone+++",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "+++MELON MELON MELON+++",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "+++Out Of Cheese Error+++",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "+++Whoops! Here Comes The Cheese!+++",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "+++Out Of Cheese Error+++",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "+++Error At Address: 14, Treacle Mine Road, Ankh-Morpork+++",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "+++Whoops! Here Comes The Cheese!+++",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "+++Mr. Jelly! Mr. Jelly!+++",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "+++Divide By Cucumber Error. Please Reinstall Universe And Reboot+++",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "+++MELON MELON MELON+++",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "+++Mr. Jelly! Mr. Jelly!+++",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "+++Out Of Cheese Error+++",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "+++Whoops! Here Comes The Cheese!+++",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "+++Error At Address: 14, Treacle Mine Road, Ankh-Morpork+++",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "+++Oneoneoneoneoneoneone+++",
+    "G KL",
+    "S SR",
+    "H PA"
+  ]
+}
+Program Output: 
+Move:  {
+  "move": "MU",
+  "message": "M MU",
+  "timer": 78
+}
+> Moving from: MU
+> Life Points: 9
+> Player 3 made move:
+> +++
+  move: MU
+  message: M MU
+  timer: 78
+> ---
+--------------------------------------------------------------------------
+Player is currently disqualified. Making a move on their behalf.4
+generating default dracula move
+NU illegal
+Location NU already in trail
+undefined illegal
+Move undefined
+D1 illegal
+Illegal double-back: not adjacent or is already in trail
+D2 illegal
+Illegal double-back: not adjacent or is already in trail
+D3 illegal
+Illegal double-back: not adjacent or is already in trail
+D4 illegal
+Illegal double-back: not adjacent or is already in trail
+D5 illegal
+Illegal double-back: not adjacent or is already in trail
+HI illegal
+Already made a hide
+Default Dracula Move: "PA"
+> End of Round:  16
+> Starting Round:  17
+--------------------------------------------------------------------------
+> Running player 0... 
+/tmp/dryrun10700/hunter
+Running with input:  {
+  "pastPlays": "GKL.... SSR.... HPA.... MMU.... DMU.V.. GKL.... SSR.... HPA.... MMUVD.. DVET... GKL.... SSR.... HPA.... MMU.... DD2T... GKL.... SSR.... HPA.... MMUTD.. DNUT... GKL.... SSR.... HPA.... MMU.... DSTT... GKL.... SSR.... HPA.... MMU.... DPAT... GKL.... SSR.... HPATD.. MMU.... DBUT... GKL.... SSR.... HPA.... MMU.... DHIT.M. GKL.... SSR.... HPA.... MMU.... DD4T... GKL.... SSR.... HPA.... MMU.... DCOT.M. GKL.... SSR.... HPA.... MMU.... DFRT.M. GKL.... SSR.... HPA.... MMU.... DNUT... GKL.... SSR.... HPA.... MMU.... DC?T.M. GKL.... SSR.... HPA.... MMU.... DC?.VM. GKL.... SSR.... HPA.... MMU.... DD3T.M. GKL.... SSR.... HPA.... MMU.... DC?T.M. GKL.... SSR.... HPA.... MMU.... DPAT.M.",
+  "messages": [
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "I come to start in the middle of the board",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "+++Oneoneoneoneoneoneone+++",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "+++MELON MELON MELON+++",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "+++Out Of Cheese Error+++",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "+++Whoops! Here Comes The Cheese!+++",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "+++Out Of Cheese Error+++",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "+++Error At Address: 14, Treacle Mine Road, Ankh-Morpork+++",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "+++Whoops! Here Comes The Cheese!+++",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "+++Mr. Jelly! Mr. Jelly!+++",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "+++Divide By Cucumber Error. Please Reinstall Universe And Reboot+++",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "+++MELON MELON MELON+++",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "+++Mr. Jelly! Mr. Jelly!+++",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "+++Out Of Cheese Error+++",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "+++Whoops! Here Comes The Cheese!+++",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "+++Error At Address: 14, Treacle Mine Road, Ankh-Morpork+++",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "+++Oneoneoneoneoneoneone+++",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "+++Whoops! Here Comes The Cheese!+++"
+  ]
+}
+Program Output: 
+Move:  {
+  "move": "KL",
+  "message": "G KL",
+  "timer": 78
+}
+> Moving from: KL
+> Life Points: 9
+> Player 0 made move:
+> +++
+  move: KL
+  message: G KL
+  timer: 78
+> ---
+--------------------------------------------------------------------------
+> Running player 1... 
+/tmp/dryrun10700/hunter
+Running with input:  {
+  "pastPlays": "GKL.... SSR.... HPA.... MMU.... DMU.V.. GKL.... SSR.... HPA.... MMUVD.. DVET... GKL.... SSR.... HPA.... MMU.... DD2T... GKL.... SSR.... HPA.... MMUTD.. DNUT... GKL.... SSR.... HPA.... MMU.... DSTT... GKL.... SSR.... HPA.... MMU.... DPAT... GKL.... SSR.... HPATD.. MMU.... DBUT... GKL.... SSR.... HPA.... MMU.... DHIT.M. GKL.... SSR.... HPA.... MMU.... DD4T... GKL.... SSR.... HPA.... MMU.... DCOT.M. GKL.... SSR.... HPA.... MMU.... DFRT.M. GKL.... SSR.... HPA.... MMU.... DNUT... GKL.... SSR.... HPA.... MMU.... DC?T.M. GKL.... SSR.... HPA.... MMU.... DC?.VM. GKL.... SSR.... HPA.... MMU.... DD3T.M. GKL.... SSR.... HPA.... MMU.... DC?T.M. GKL.... SSR.... HPA.... MMU.... DPAT.M. GKL....",
+  "messages": [
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "I come to start in the middle of the board",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "+++Oneoneoneoneoneoneone+++",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "+++MELON MELON MELON+++",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "+++Out Of Cheese Error+++",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "+++Whoops! Here Comes The Cheese!+++",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "+++Out Of Cheese Error+++",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "+++Error At Address: 14, Treacle Mine Road, Ankh-Morpork+++",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "+++Whoops! Here Comes The Cheese!+++",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "+++Mr. Jelly! Mr. Jelly!+++",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "+++Divide By Cucumber Error. Please Reinstall Universe And Reboot+++",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "+++MELON MELON MELON+++",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "+++Mr. Jelly! Mr. Jelly!+++",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "+++Out Of Cheese Error+++",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "+++Whoops! Here Comes The Cheese!+++",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "+++Error At Address: 14, Treacle Mine Road, Ankh-Morpork+++",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "+++Oneoneoneoneoneoneone+++",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "+++Whoops! Here Comes The Cheese!+++",
+    "G KL"
+  ]
+}
+Program Output: 
+Move:  {
+  "move": "SR",
+  "message": "S SR",
+  "timer": 150
+}
+> Moving from: SR
+> Life Points: 9
+> Player 1 made move:
+> +++
+  move: SR
+  message: S SR
+  timer: 150
+> ---
+--------------------------------------------------------------------------
+> Running player 2... 
+/tmp/dryrun10700/hunter
+Running with input:  {
+  "pastPlays": "GKL.... SSR.... HPA.... MMU.... DMU.V.. GKL.... SSR.... HPA.... MMUVD.. DVET... GKL.... SSR.... HPA.... MMU.... DD2T... GKL.... SSR.... HPA.... MMUTD.. DNUT... GKL.... SSR.... HPA.... MMU.... DSTT... GKL.... SSR.... HPA.... MMU.... DPAT... GKL.... SSR.... HPATD.. MMU.... DBUT... GKL.... SSR.... HPA.... MMU.... DHIT.M. GKL.... SSR.... HPA.... MMU.... DD4T... GKL.... SSR.... HPA.... MMU.... DCOT.M. GKL.... SSR.... HPA.... MMU.... DFRT.M. GKL.... SSR.... HPA.... MMU.... DNUT... GKL.... SSR.... HPA.... MMU.... DC?T.M. GKL.... SSR.... HPA.... MMU.... DC?.VM. GKL.... SSR.... HPA.... MMU.... DD3T.M. GKL.... SSR.... HPA.... MMU.... DC?T.M. GKL.... SSR.... HPA.... MMU.... DPAT.M. GKL.... SSR....",
+  "messages": [
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "I come to start in the middle of the board",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "+++Oneoneoneoneoneoneone+++",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "+++MELON MELON MELON+++",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "+++Out Of Cheese Error+++",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "+++Whoops! Here Comes The Cheese!+++",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "+++Out Of Cheese Error+++",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "+++Error At Address: 14, Treacle Mine Road, Ankh-Morpork+++",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "+++Whoops! Here Comes The Cheese!+++",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "+++Mr. Jelly! Mr. Jelly!+++",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "+++Divide By Cucumber Error. Please Reinstall Universe And Reboot+++",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "+++MELON MELON MELON+++",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "+++Mr. Jelly! Mr. Jelly!+++",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "+++Out Of Cheese Error+++",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "+++Whoops! Here Comes The Cheese!+++",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "+++Error At Address: 14, Treacle Mine Road, Ankh-Morpork+++",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "+++Oneoneoneoneoneoneone+++",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "+++Whoops! Here Comes The Cheese!+++",
+    "G KL",
+    "S SR"
+  ]
+}
+Program Output: 
+Move:  {
+  "move": "PA",
+  "message": "H PA",
+  "timer": 79
+}
+> Moving from: PA
+> Life Points: 9
+> Player 2 made move:
+> +++
+  move: PA
+  message: H PA
+  timer: 79
 > ---
 --------------------------------------------------------------------------
 > End of game: 
 > +++
-  score: 352
-  revealedPastPlays: GKL.... SSR.... HPA.... MMU.... DMU.V.. GKL.... SSR.... HPA.... MMUVD.. DAS.... GKL.... SSR.... HPA.... MMU.... DVET... GKL.... SSR.... HPA.... MMU.... DMIT... GKL.... SSR.... HPA.... MMU.... DZUT... GKL.... SSR.... HPA.... MMU.... DSTT... GKL.... SSR.... HPA.... MMU.... DPAT... GKL.... SSR.... HPATD.. MMU.... DNAT... GKL.... SSR.... HPA.... MMU.... DAS..M. GKL.... SSR.... HPA.... MMU.... DVET.M. GKL.... SSR.... HPA.... MMU.... DMUT.M. GKL.... SSR.... HPA.... MMUTD.. DZUT.M. GKL.... SSR.... HPA.... MMU.... DSTT... GKL.... SSR.... HPA.... MMU.... DPA.VM. GKL.... SSR.... HPAVD..
-  messages: ["G KL","S SR","H PA","M MU","I come to suck your blood","G KL","S SR","H PA","M MU","hunters are poos","G KL","S SR","H PA","M MU","hunters are poos","G KL","S SR","H PA","M MU","hunters are poos","G KL","S SR","H PA","M MU","hunters are poos","G KL","S SR","H PA","M MU","hunters are poos","G KL","S SR","H PA","M MU","hunters are poos","G KL","S SR","H PA","M MU","hunters are poos","G KL","S SR","H PA","M MU","hunters are poos","G KL","S SR","H PA","M MU","hunters are poos","G KL","S SR","H PA","M MU","hunters are poos","G KL","S SR","H PA","M MU","hunters are poos","G KL","S SR","H PA","M MU","hunters are poos","G KL","S SR","H PA","M MU","hunters are poos","G KL","S SR","H PA"]
+  score: 349
+  revealedPastPlays: GKL.... SSR.... HPA.... MMU.... DMU.V.. GKL.... SSR.... HPA.... MMUVD.. DVET... GKL.... SSR.... HPA.... MMU.... DD2T... GKL.... SSR.... HPA.... MMUTD.. DNUT... GKL.... SSR.... HPA.... MMU.... DSTT... GKL.... SSR.... HPA.... MMU.... DPAT... GKL.... SSR.... HPATD.. MMU.... DBUT... GKL.... SSR.... HPA.... MMU.... DHIT.M. GKL.... SSR.... HPA.... MMU.... DD4T... GKL.... SSR.... HPA.... MMU.... DCOT.M. GKL.... SSR.... HPA.... MMU.... DFRT.M. GKL.... SSR.... HPA.... MMU.... DNUT... GKL.... SSR.... HPA.... MMU.... DPRT.M. GKL.... SSR.... HPA.... MMU.... DHI.VM. GKL.... SSR.... HPA.... MMU.... DD3T.M. GKL.... SSR.... HPA.... MMU.... DSTT.M. GKL.... SSR.... HPA.... MMU.... DPAT.M. GKL.... SSR.... HPATD..
+  messages: ["G KL","S SR","H PA","M MU","I come to start in the middle of the board","G KL","S SR","H PA","M MU","+++Oneoneoneoneoneoneone+++","G KL","S SR","H PA","M MU","+++MELON MELON MELON+++","G KL","S SR","H PA","M MU","+++Out Of Cheese Error+++","G KL","S SR","H PA","M MU","+++Whoops! Here Comes The Cheese!+++","G KL","S SR","H PA","M MU","+++Out Of Cheese Error+++","G KL","S SR","H PA","M MU","+++Error At Address: 14, Treacle Mine Road, Ankh-Morpork+++","G KL","S SR","H PA","M MU","+++Whoops! Here Comes The Cheese!+++","G KL","S SR","H PA","M MU","+++Mr. Jelly! Mr. Jelly!+++","G KL","S SR","H PA","M MU","+++Divide By Cucumber Error. Please Reinstall Universe And Reboot+++","G KL","S SR","H PA","M MU","+++MELON MELON MELON+++","G KL","S SR","H PA","M MU","+++Mr. Jelly! Mr. Jelly!+++","G KL","S SR","H PA","M MU","+++Out Of Cheese Error+++","G KL","S SR","H PA","M MU","+++Whoops! Here Comes The Cheese!+++","G KL","S SR","H PA","M MU","+++Error At Address: 14, Treacle Mine Road, Ankh-Morpork+++","G KL","S SR","H PA","M MU","+++Oneoneoneoneoneoneone+++","G KL","S SR","H PA","M MU","+++Whoops! Here Comes The Cheese!+++","G KL","S SR","H PA"]
 > ---
 > Game Over
 undefined
-14
+17
+Player 4 was disqualified? true
 
