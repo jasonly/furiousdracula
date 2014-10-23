@@ -1,0 +1,4419 @@
+
+Checking your files...
+Makefile
+
+dracula.c
+
+hunter.c
+
+GameView.c
+
+GameView.h
+
+HunterView.c
+
+HunterView.h
+
+DracView.c
+
+DracView.h
+
+Makefile
+
+DracView.c
+
+GameView.c
+
+HunterView.c
+
+Map.c
+
+Places.c
+
+dracula.c
+
+hunter.c
+
+player.c
+
+DracView.h
+
+Game.h
+
+GameView.h
+
+Globals.h
+
+HunterView.h
+
+Map.h
+
+Places.h
+
+dracula.h
+
+hunter.h
+
+Archive:  /home/cs1927ass/14s2.dracula/supplied/hunt.zip
+  inflating: DracView.c              
+  inflating: DracView.h              
+  inflating: Game.h                  
+  inflating: GameView.c              
+  inflating: GameView.h              
+  inflating: Globals.h               
+  inflating: HunterView.c            
+  inflating: HunterView.h            
+  inflating: Makefile                
+  inflating: Map.c                   
+  inflating: Map.h                   
+  inflating: Places.c                
+  inflating: Places.h                
+  inflating: dracula.c               
+  inflating: dracula.h               
+  inflating: hunter.c                
+  inflating: hunter.h                
+  inflating: player.c                
+=== Modified Makefile
+# Makefile for "Fury of Dracula": The Hunt
+
+# change these to suit your local C environment
+CC = gcc
+CFLAGS = -Wall -Werror
+# do not change the following line
+BINS = dracula hunter
+# add any other *.o files that your system requires
+# (and add their dependencies below after DracView.o)
+# if you're not using Map.o or Places.o, you can remove them
+OBJS = GameView.o Map.o Places.o
+# add whatever system libraries you need here (e.g. -lm)
+LIBS = -ljansson
+
+all : $(BINS)
+
+dracula : dracPlayer.o dracula.o DracView.o $(OBJS) $(LIBS) -ljansson
+hunter : hunterPlayer.o hunter.o HunterView.o $(OBJS) $(LIBS) -ljansson
+
+dracPlayer.o : player.c Game.h DracView.h dracula.h
+	$(CC)  -DI_AM_DRACULA -c player.c -o dracPlayer.o
+
+hunterPlayer.o : player.c Game.h HunterView.h hunter.h
+	$(CC)  -c player.c -o hunterPlayer.o
+
+dracula.o : dracula.c Game.h DracView.h
+hunter.o : hunter.c Game.h HunterView.h
+Places.o : Places.c Places.h
+Map.o : Map.c Map.h Places.h
+GameView.o : GameView.c Globals.h GameView.h
+HunterView.o : HunterView.c Globals.h HunterView.h
+DracView.o : DracView.c Globals.h DracView.h
+# if you use other ADTs, add dependencies for them here
+
+clean :
+	rm -f $(BINS) *.o core
+
+
+=== Compiling Dracula ...
+gcc -Wall -Werror   -c -o dracula.o dracula.c
+gcc  -DI_AM_DRACULA -c player.c -o dracPlayer.o
+gcc -Wall -Werror   -c -o DracView.o DracView.c
+gcc -Wall -Werror   -c -o GameView.o GameView.c
+gcc -Wall -Werror   -c -o Map.o Map.c
+gcc -Wall -Werror   -c -o Places.o Places.c
+gcc   dracula.o dracPlayer.o DracView.o GameView.o Map.o Places.o /usr/lib/libjansson.so   -o dracula
+Dracula AI compiled OK
+=== Compiling Hunter ...
+gcc -Wall -Werror   -c -o hunter.o hunter.c
+gcc  -c player.c -o hunterPlayer.o
+gcc -Wall -Werror   -c -o HunterView.o HunterView.c
+gcc   hunter.o hunterPlayer.o HunterView.o GameView.o Map.o Places.o /usr/lib/libjansson.so   -o hunter
+Hunter AI compiled OK
+
+=== Playing your Hunter against your Dracula ...
+
+   The FURY of DRACULA   
+          _..._          
+        .'     '.        
+       ; __   __ ;       
+       |/  \ /  \|       
+     |\| -- ' -- |/|     
+     |(| \o| |o/ |)|     
+     _\|    U    |/_     
+  .-'  | ,.___., |  '-.  
+  \    ;  V'-'V  ;    /  
+   `\   \       /   /`   
+     `\  '-...-'  /`     
+       `\  / \  /`       
+         `\\_//`         
+...........................
+--------------------------------------------------------------------------
+> Running player 0... 
+/tmp/dryrun4769/hunter
+Running with input:  {
+  "pastPlays": "",
+  "messages": []
+}
+Program Output: 
+Move:  {
+  "move": "KL",
+  "message": "G KL",
+  "timer": 46
+}
+> Moving from: undefined
+> Life Points: 9
+> Player 0 made move:
+> +++
+  move: KL
+  message: G KL
+  timer: 46
+> ---
+--------------------------------------------------------------------------
+> Running player 1... 
+/tmp/dryrun4769/hunter
+Running with input:  {
+  "pastPlays": "GKL....",
+  "messages": [
+    "G KL"
+  ]
+}
+Program Output: 
+Move:  {
+  "move": "SR",
+  "message": "S SR",
+  "timer": 48
+}
+> Moving from: undefined
+> Life Points: 9
+> Player 1 made move:
+> +++
+  move: SR
+  message: S SR
+  timer: 48
+> ---
+--------------------------------------------------------------------------
+> Running player 2... 
+/tmp/dryrun4769/hunter
+Running with input:  {
+  "pastPlays": "GKL.... SSR....",
+  "messages": [
+    "G KL",
+    "S SR"
+  ]
+}
+Program Output: 
+Move:  {
+  "move": "PA",
+  "message": "H PA",
+  "timer": 48
+}
+> Moving from: undefined
+> Life Points: 9
+> Player 2 made move:
+> +++
+  move: PA
+  message: H PA
+  timer: 48
+> ---
+--------------------------------------------------------------------------
+> Running player 3... 
+/tmp/dryrun4769/hunter
+Running with input:  {
+  "pastPlays": "GKL.... SSR.... HPA....",
+  "messages": [
+    "G KL",
+    "S SR",
+    "H PA"
+  ]
+}
+Program Output: 
+Move:  {
+  "move": "MU",
+  "message": "M MU",
+  "timer": 45
+}
+> Moving from: undefined
+> Life Points: 9
+> Player 3 made move:
+> +++
+  move: MU
+  message: M MU
+  timer: 45
+> ---
+--------------------------------------------------------------------------
+> Running player 4... 
+/tmp/dryrun4769/dracula
+Running with input:  {
+  "pastPlays": "GKL.... SSR.... HPA.... MMU....",
+  "messages": [
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU"
+  ]
+}
+Program Output: 
+Move:  {
+  "move": "MU",
+  "message": "I come to suck your blood",
+  "timer": 48
+}
+> Moving from: undefined
+> Blood Points: 40
+> Player 4 made move:
+> +++
+  move: MU
+  message: I come to suck your blood
+  timer: 48
+> ---
+> End of Round:  0
+> Starting Round:  1
+--------------------------------------------------------------------------
+> Running player 0... 
+/tmp/dryrun4769/hunter
+Running with input:  {
+  "pastPlays": "GKL.... SSR.... HPA.... MMU.... DMU.V..",
+  "messages": [
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "I come to suck your blood"
+  ]
+}
+Program Output: 
+Move:  {
+  "move": "KL",
+  "message": "G KL",
+  "timer": 47
+}
+> Moving from: KL
+> Life Points: 9
+> Player 0 made move:
+> +++
+  move: KL
+  message: G KL
+  timer: 47
+> ---
+--------------------------------------------------------------------------
+> Running player 1... 
+/tmp/dryrun4769/hunter
+Running with input:  {
+  "pastPlays": "GKL.... SSR.... HPA.... MMU.... DMU.V.. GKL....",
+  "messages": [
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "I come to suck your blood",
+    "G KL"
+  ]
+}
+Program Output: 
+Move:  {
+  "move": "SR",
+  "message": "S SR",
+  "timer": 46
+}
+> Moving from: SR
+> Life Points: 9
+> Player 1 made move:
+> +++
+  move: SR
+  message: S SR
+  timer: 46
+> ---
+--------------------------------------------------------------------------
+> Running player 2... 
+/tmp/dryrun4769/hunter
+Running with input:  {
+  "pastPlays": "GKL.... SSR.... HPA.... MMU.... DMU.V.. GKL.... SSR....",
+  "messages": [
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "I come to suck your blood",
+    "G KL",
+    "S SR"
+  ]
+}
+Program Output: 
+Move:  {
+  "move": "PA",
+  "message": "H PA",
+  "timer": 51
+}
+> Moving from: PA
+> Life Points: 9
+> Player 2 made move:
+> +++
+  move: PA
+  message: H PA
+  timer: 51
+> ---
+--------------------------------------------------------------------------
+> Running player 3... 
+/tmp/dryrun4769/hunter
+Running with input:  {
+  "pastPlays": "GKL.... SSR.... HPA.... MMU.... DMU.V.. GKL.... SSR.... HPA....",
+  "messages": [
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "I come to suck your blood",
+    "G KL",
+    "S SR",
+    "H PA"
+  ]
+}
+Program Output: 
+Move:  {
+  "move": "MU",
+  "message": "M MU",
+  "timer": 51
+}
+> Moving from: MU
+> Life Points: 9
+> Player 3 made move:
+> +++
+  move: MU
+  message: M MU
+  timer: 51
+> ---
+--------------------------------------------------------------------------
+> Running player 4... 
+/tmp/dryrun4769/dracula
+Running with input:  {
+  "pastPlays": "GKL.... SSR.... HPA.... MMU.... DMU.V.. GKL.... SSR.... HPA.... MMUVD..",
+  "messages": [
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "I come to suck your blood",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU"
+  ]
+}
+Program Output: 
+Move:  {
+  "move": "AS",
+  "message": "hunters are poos",
+  "timer": 6301
+}
+> Moving from: MU
+> Blood Points: 30
+> Player 4 made move:
+> +++
+  move: AS
+  message: hunters are poos
+  timer: 6301
+> ---
+> End of Round:  1
+> Starting Round:  2
+--------------------------------------------------------------------------
+> Running player 0... 
+/tmp/dryrun4769/hunter
+Running with input:  {
+  "pastPlays": "GKL.... SSR.... HPA.... MMU.... DMU.V.. GKL.... SSR.... HPA.... MMUVD.. DS?....",
+  "messages": [
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "I come to suck your blood",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "hunters are poos"
+  ]
+}
+Program Output: 
+Move:  {
+  "move": "KL",
+  "message": "G KL",
+  "timer": 54
+}
+> Moving from: KL
+> Life Points: 9
+> Player 0 made move:
+> +++
+  move: KL
+  message: G KL
+  timer: 54
+> ---
+--------------------------------------------------------------------------
+> Running player 1... 
+/tmp/dryrun4769/hunter
+Running with input:  {
+  "pastPlays": "GKL.... SSR.... HPA.... MMU.... DMU.V.. GKL.... SSR.... HPA.... MMUVD.. DS?.... GKL....",
+  "messages": [
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "I come to suck your blood",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "hunters are poos",
+    "G KL"
+  ]
+}
+Program Output: 
+Move:  {
+  "move": "SR",
+  "message": "S SR",
+  "timer": 57
+}
+> Moving from: SR
+> Life Points: 9
+> Player 1 made move:
+> +++
+  move: SR
+  message: S SR
+  timer: 57
+> ---
+--------------------------------------------------------------------------
+> Running player 2... 
+/tmp/dryrun4769/hunter
+Running with input:  {
+  "pastPlays": "GKL.... SSR.... HPA.... MMU.... DMU.V.. GKL.... SSR.... HPA.... MMUVD.. DS?.... GKL.... SSR....",
+  "messages": [
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "I come to suck your blood",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "hunters are poos",
+    "G KL",
+    "S SR"
+  ]
+}
+Program Output: 
+Move:  {
+  "move": "PA",
+  "message": "H PA",
+  "timer": 55
+}
+> Moving from: PA
+> Life Points: 9
+> Player 2 made move:
+> +++
+  move: PA
+  message: H PA
+  timer: 55
+> ---
+--------------------------------------------------------------------------
+> Running player 3... 
+/tmp/dryrun4769/hunter
+Running with input:  {
+  "pastPlays": "GKL.... SSR.... HPA.... MMU.... DMU.V.. GKL.... SSR.... HPA.... MMUVD.. DS?.... GKL.... SSR.... HPA....",
+  "messages": [
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "I come to suck your blood",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "hunters are poos",
+    "G KL",
+    "S SR",
+    "H PA"
+  ]
+}
+Program Output: 
+Move:  {
+  "move": "MU",
+  "message": "M MU",
+  "timer": 57
+}
+> Moving from: MU
+> Life Points: 8
+> Player 3 made move:
+> +++
+  move: MU
+  message: M MU
+  timer: 57
+> ---
+--------------------------------------------------------------------------
+> Running player 4... 
+/tmp/dryrun4769/dracula
+Running with input:  {
+  "pastPlays": "GKL.... SSR.... HPA.... MMU.... DMU.V.. GKL.... SSR.... HPA.... MMUVD.. DAS.... GKL.... SSR.... HPA.... MMU....",
+  "messages": [
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "I come to suck your blood",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "hunters are poos",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU"
+  ]
+}
+Program Output: 
+Move:  {
+  "move": "VE",
+  "message": "hunters are poos",
+  "timer": 6507
+}
+> Moving from: AS
+> Blood Points: 28
+> Player 4 made move:
+> +++
+  move: VE
+  message: hunters are poos
+  timer: 6507
+> ---
+> End of Round:  2
+> Starting Round:  3
+--------------------------------------------------------------------------
+> Running player 0... 
+/tmp/dryrun4769/hunter
+Running with input:  {
+  "pastPlays": "GKL.... SSR.... HPA.... MMU.... DMU.V.. GKL.... SSR.... HPA.... MMUVD.. DS?.... GKL.... SSR.... HPA.... MMU.... DC?T...",
+  "messages": [
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "I come to suck your blood",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "hunters are poos",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "hunters are poos"
+  ]
+}
+Program Output: 
+Move:  {
+  "move": "KL",
+  "message": "G KL",
+  "timer": 64
+}
+> Moving from: KL
+> Life Points: 9
+> Player 0 made move:
+> +++
+  move: KL
+  message: G KL
+  timer: 64
+> ---
+--------------------------------------------------------------------------
+> Running player 1... 
+/tmp/dryrun4769/hunter
+Running with input:  {
+  "pastPlays": "GKL.... SSR.... HPA.... MMU.... DMU.V.. GKL.... SSR.... HPA.... MMUVD.. DS?.... GKL.... SSR.... HPA.... MMU.... DC?T... GKL....",
+  "messages": [
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "I come to suck your blood",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "hunters are poos",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "hunters are poos",
+    "G KL"
+  ]
+}
+Program Output: 
+Move:  {
+  "move": "SR",
+  "message": "S SR",
+  "timer": 63
+}
+> Moving from: SR
+> Life Points: 9
+> Player 1 made move:
+> +++
+  move: SR
+  message: S SR
+  timer: 63
+> ---
+--------------------------------------------------------------------------
+> Running player 2... 
+/tmp/dryrun4769/hunter
+Running with input:  {
+  "pastPlays": "GKL.... SSR.... HPA.... MMU.... DMU.V.. GKL.... SSR.... HPA.... MMUVD.. DS?.... GKL.... SSR.... HPA.... MMU.... DC?T... GKL.... SSR....",
+  "messages": [
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "I come to suck your blood",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "hunters are poos",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "hunters are poos",
+    "G KL",
+    "S SR"
+  ]
+}
+Program Output: 
+Move:  {
+  "move": "PA",
+  "message": "H PA",
+  "timer": 64
+}
+> Moving from: PA
+> Life Points: 9
+> Player 2 made move:
+> +++
+  move: PA
+  message: H PA
+  timer: 64
+> ---
+--------------------------------------------------------------------------
+> Running player 3... 
+/tmp/dryrun4769/hunter
+Running with input:  {
+  "pastPlays": "GKL.... SSR.... HPA.... MMU.... DMU.V.. GKL.... SSR.... HPA.... MMUVD.. DS?.... GKL.... SSR.... HPA.... MMU.... DC?T... GKL.... SSR.... HPA....",
+  "messages": [
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "I come to suck your blood",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "hunters are poos",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "hunters are poos",
+    "G KL",
+    "S SR",
+    "H PA"
+  ]
+}
+Program Output: 
+Move:  {
+  "move": "MU",
+  "message": "M MU",
+  "timer": 63
+}
+> Moving from: MU
+> Life Points: 9
+> Player 3 made move:
+> +++
+  move: MU
+  message: M MU
+  timer: 63
+> ---
+--------------------------------------------------------------------------
+> Running player 4... 
+/tmp/dryrun4769/dracula
+Running with input:  {
+  "pastPlays": "GKL.... SSR.... HPA.... MMU.... DMU.V.. GKL.... SSR.... HPA.... MMUVD.. DAS.... GKL.... SSR.... HPA.... MMU.... DVET... GKL.... SSR.... HPA.... MMU....",
+  "messages": [
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "I come to suck your blood",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "hunters are poos",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "hunters are poos",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU"
+  ]
+}
+Program Output: 
+Move:  {
+  "move": "MI",
+  "message": "hunters are poos",
+  "timer": 6318
+}
+> Moving from: VE
+> Blood Points: 28
+> Player 4 made move:
+> +++
+  move: MI
+  message: hunters are poos
+  timer: 6318
+> ---
+> End of Round:  3
+> Starting Round:  4
+--------------------------------------------------------------------------
+> Running player 0... 
+/tmp/dryrun4769/hunter
+Running with input:  {
+  "pastPlays": "GKL.... SSR.... HPA.... MMU.... DMU.V.. GKL.... SSR.... HPA.... MMUVD.. DS?.... GKL.... SSR.... HPA.... MMU.... DC?T... GKL.... SSR.... HPA.... MMU.... DC?T...",
+  "messages": [
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "I come to suck your blood",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "hunters are poos",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "hunters are poos",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "hunters are poos"
+  ]
+}
+Program Output: 
+Move:  {
+  "move": "KL",
+  "message": "G KL",
+  "timer": 67
+}
+> Moving from: KL
+> Life Points: 9
+> Player 0 made move:
+> +++
+  move: KL
+  message: G KL
+  timer: 67
+> ---
+--------------------------------------------------------------------------
+> Running player 1... 
+/tmp/dryrun4769/hunter
+Running with input:  {
+  "pastPlays": "GKL.... SSR.... HPA.... MMU.... DMU.V.. GKL.... SSR.... HPA.... MMUVD.. DS?.... GKL.... SSR.... HPA.... MMU.... DC?T... GKL.... SSR.... HPA.... MMU.... DC?T... GKL....",
+  "messages": [
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "I come to suck your blood",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "hunters are poos",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "hunters are poos",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "hunters are poos",
+    "G KL"
+  ]
+}
+Program Output: 
+Move:  {
+  "move": "SR",
+  "message": "S SR",
+  "timer": 71
+}
+> Moving from: SR
+> Life Points: 9
+> Player 1 made move:
+> +++
+  move: SR
+  message: S SR
+  timer: 71
+> ---
+--------------------------------------------------------------------------
+> Running player 2... 
+/tmp/dryrun4769/hunter
+Running with input:  {
+  "pastPlays": "GKL.... SSR.... HPA.... MMU.... DMU.V.. GKL.... SSR.... HPA.... MMUVD.. DS?.... GKL.... SSR.... HPA.... MMU.... DC?T... GKL.... SSR.... HPA.... MMU.... DC?T... GKL.... SSR....",
+  "messages": [
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "I come to suck your blood",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "hunters are poos",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "hunters are poos",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "hunters are poos",
+    "G KL",
+    "S SR"
+  ]
+}
+Program Output: 
+Move:  {
+  "move": "PA",
+  "message": "H PA",
+  "timer": 71
+}
+> Moving from: PA
+> Life Points: 9
+> Player 2 made move:
+> +++
+  move: PA
+  message: H PA
+  timer: 71
+> ---
+--------------------------------------------------------------------------
+> Running player 3... 
+/tmp/dryrun4769/hunter
+Running with input:  {
+  "pastPlays": "GKL.... SSR.... HPA.... MMU.... DMU.V.. GKL.... SSR.... HPA.... MMUVD.. DS?.... GKL.... SSR.... HPA.... MMU.... DC?T... GKL.... SSR.... HPA.... MMU.... DC?T... GKL.... SSR.... HPA....",
+  "messages": [
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "I come to suck your blood",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "hunters are poos",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "hunters are poos",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "hunters are poos",
+    "G KL",
+    "S SR",
+    "H PA"
+  ]
+}
+Program Output: 
+Move:  {
+  "move": "MU",
+  "message": "M MU",
+  "timer": 87
+}
+> Moving from: MU
+> Life Points: 9
+> Player 3 made move:
+> +++
+  move: MU
+  message: M MU
+  timer: 87
+> ---
+--------------------------------------------------------------------------
+> Running player 4... 
+/tmp/dryrun4769/dracula
+Running with input:  {
+  "pastPlays": "GKL.... SSR.... HPA.... MMU.... DMU.V.. GKL.... SSR.... HPA.... MMUVD.. DAS.... GKL.... SSR.... HPA.... MMU.... DVET... GKL.... SSR.... HPA.... MMU.... DMIT... GKL.... SSR.... HPA.... MMU....",
+  "messages": [
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "I come to suck your blood",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "hunters are poos",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "hunters are poos",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "hunters are poos",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU"
+  ]
+}
+Program Output: 
+Move:  {
+  "move": "ZU",
+  "message": "hunters are poos",
+  "timer": 6426
+}
+> Moving from: MI
+> Blood Points: 28
+> Player 4 made move:
+> +++
+  move: ZU
+  message: hunters are poos
+  timer: 6426
+> ---
+> End of Round:  4
+> Starting Round:  5
+--------------------------------------------------------------------------
+> Running player 0... 
+/tmp/dryrun4769/hunter
+Running with input:  {
+  "pastPlays": "GKL.... SSR.... HPA.... MMU.... DMU.V.. GKL.... SSR.... HPA.... MMUVD.. DS?.... GKL.... SSR.... HPA.... MMU.... DC?T... GKL.... SSR.... HPA.... MMU.... DC?T... GKL.... SSR.... HPA.... MMU.... DC?T...",
+  "messages": [
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "I come to suck your blood",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "hunters are poos",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "hunters are poos",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "hunters are poos",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "hunters are poos"
+  ]
+}
+Program Output: 
+Move:  {
+  "move": "KL",
+  "message": "G KL",
+  "timer": 80
+}
+> Moving from: KL
+> Life Points: 9
+> Player 0 made move:
+> +++
+  move: KL
+  message: G KL
+  timer: 80
+> ---
+--------------------------------------------------------------------------
+> Running player 1... 
+/tmp/dryrun4769/hunter
+Running with input:  {
+  "pastPlays": "GKL.... SSR.... HPA.... MMU.... DMU.V.. GKL.... SSR.... HPA.... MMUVD.. DS?.... GKL.... SSR.... HPA.... MMU.... DC?T... GKL.... SSR.... HPA.... MMU.... DC?T... GKL.... SSR.... HPA.... MMU.... DC?T... GKL....",
+  "messages": [
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "I come to suck your blood",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "hunters are poos",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "hunters are poos",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "hunters are poos",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "hunters are poos",
+    "G KL"
+  ]
+}
+Program Output: 
+Move:  {
+  "move": "SR",
+  "message": "S SR",
+  "timer": 79
+}
+> Moving from: SR
+> Life Points: 9
+> Player 1 made move:
+> +++
+  move: SR
+  message: S SR
+  timer: 79
+> ---
+--------------------------------------------------------------------------
+> Running player 2... 
+/tmp/dryrun4769/hunter
+Running with input:  {
+  "pastPlays": "GKL.... SSR.... HPA.... MMU.... DMU.V.. GKL.... SSR.... HPA.... MMUVD.. DS?.... GKL.... SSR.... HPA.... MMU.... DC?T... GKL.... SSR.... HPA.... MMU.... DC?T... GKL.... SSR.... HPA.... MMU.... DC?T... GKL.... SSR....",
+  "messages": [
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "I come to suck your blood",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "hunters are poos",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "hunters are poos",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "hunters are poos",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "hunters are poos",
+    "G KL",
+    "S SR"
+  ]
+}
+Program Output: 
+Move:  {
+  "move": "PA",
+  "message": "H PA",
+  "timer": 77
+}
+> Moving from: PA
+> Life Points: 9
+> Player 2 made move:
+> +++
+  move: PA
+  message: H PA
+  timer: 77
+> ---
+--------------------------------------------------------------------------
+> Running player 3... 
+/tmp/dryrun4769/hunter
+Running with input:  {
+  "pastPlays": "GKL.... SSR.... HPA.... MMU.... DMU.V.. GKL.... SSR.... HPA.... MMUVD.. DS?.... GKL.... SSR.... HPA.... MMU.... DC?T... GKL.... SSR.... HPA.... MMU.... DC?T... GKL.... SSR.... HPA.... MMU.... DC?T... GKL.... SSR.... HPA....",
+  "messages": [
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "I come to suck your blood",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "hunters are poos",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "hunters are poos",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "hunters are poos",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "hunters are poos",
+    "G KL",
+    "S SR",
+    "H PA"
+  ]
+}
+Program Output: 
+Move:  {
+  "move": "MU",
+  "message": "M MU",
+  "timer": 110
+}
+> Moving from: MU
+> Life Points: 9
+> Player 3 made move:
+> +++
+  move: MU
+  message: M MU
+  timer: 110
+> ---
+--------------------------------------------------------------------------
+> Running player 4... 
+/tmp/dryrun4769/dracula
+Running with input:  {
+  "pastPlays": "GKL.... SSR.... HPA.... MMU.... DMU.V.. GKL.... SSR.... HPA.... MMUVD.. DAS.... GKL.... SSR.... HPA.... MMU.... DVET... GKL.... SSR.... HPA.... MMU.... DMIT... GKL.... SSR.... HPA.... MMU.... DZUT... GKL.... SSR.... HPA.... MMU....",
+  "messages": [
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "I come to suck your blood",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "hunters are poos",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "hunters are poos",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "hunters are poos",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "hunters are poos",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU"
+  ]
+}
+Program Output: 
+Move:  {
+  "move": "ST",
+  "message": "hunters are poos",
+  "timer": 6325
+}
+> Moving from: ZU
+> Blood Points: 28
+> Player 4 made move:
+> +++
+  move: ST
+  message: hunters are poos
+  timer: 6325
+> ---
+> End of Round:  5
+> Starting Round:  6
+--------------------------------------------------------------------------
+> Running player 0... 
+/tmp/dryrun4769/hunter
+Running with input:  {
+  "pastPlays": "GKL.... SSR.... HPA.... MMU.... DMU.V.. GKL.... SSR.... HPA.... MMUVD.. DS?.... GKL.... SSR.... HPA.... MMU.... DC?T... GKL.... SSR.... HPA.... MMU.... DC?T... GKL.... SSR.... HPA.... MMU.... DC?T... GKL.... SSR.... HPA.... MMU.... DC?T...",
+  "messages": [
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "I come to suck your blood",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "hunters are poos",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "hunters are poos",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "hunters are poos",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "hunters are poos",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "hunters are poos"
+  ]
+}
+Program Output: 
+Move:  {
+  "move": "KL",
+  "message": "G KL",
+  "timer": 79
+}
+> Moving from: KL
+> Life Points: 9
+> Player 0 made move:
+> +++
+  move: KL
+  message: G KL
+  timer: 79
+> ---
+--------------------------------------------------------------------------
+> Running player 1... 
+/tmp/dryrun4769/hunter
+Running with input:  {
+  "pastPlays": "GKL.... SSR.... HPA.... MMU.... DMU.V.. GKL.... SSR.... HPA.... MMUVD.. DS?.... GKL.... SSR.... HPA.... MMU.... DC?T... GKL.... SSR.... HPA.... MMU.... DC?T... GKL.... SSR.... HPA.... MMU.... DC?T... GKL.... SSR.... HPA.... MMU.... DC?T... GKL....",
+  "messages": [
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "I come to suck your blood",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "hunters are poos",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "hunters are poos",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "hunters are poos",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "hunters are poos",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "hunters are poos",
+    "G KL"
+  ]
+}
+Program Output: 
+Move:  {
+  "move": "SR",
+  "message": "S SR",
+  "timer": 78
+}
+> Moving from: SR
+> Life Points: 9
+> Player 1 made move:
+> +++
+  move: SR
+  message: S SR
+  timer: 78
+> ---
+--------------------------------------------------------------------------
+> Running player 2... 
+/tmp/dryrun4769/hunter
+Running with input:  {
+  "pastPlays": "GKL.... SSR.... HPA.... MMU.... DMU.V.. GKL.... SSR.... HPA.... MMUVD.. DS?.... GKL.... SSR.... HPA.... MMU.... DC?T... GKL.... SSR.... HPA.... MMU.... DC?T... GKL.... SSR.... HPA.... MMU.... DC?T... GKL.... SSR.... HPA.... MMU.... DC?T... GKL.... SSR....",
+  "messages": [
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "I come to suck your blood",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "hunters are poos",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "hunters are poos",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "hunters are poos",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "hunters are poos",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "hunters are poos",
+    "G KL",
+    "S SR"
+  ]
+}
+Program Output: 
+Move:  {
+  "move": "PA",
+  "message": "H PA",
+  "timer": 81
+}
+> Moving from: PA
+> Life Points: 9
+> Player 2 made move:
+> +++
+  move: PA
+  message: H PA
+  timer: 81
+> ---
+--------------------------------------------------------------------------
+> Running player 3... 
+/tmp/dryrun4769/hunter
+Running with input:  {
+  "pastPlays": "GKL.... SSR.... HPA.... MMU.... DMU.V.. GKL.... SSR.... HPA.... MMUVD.. DS?.... GKL.... SSR.... HPA.... MMU.... DC?T... GKL.... SSR.... HPA.... MMU.... DC?T... GKL.... SSR.... HPA.... MMU.... DC?T... GKL.... SSR.... HPA.... MMU.... DC?T... GKL.... SSR.... HPA....",
+  "messages": [
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "I come to suck your blood",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "hunters are poos",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "hunters are poos",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "hunters are poos",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "hunters are poos",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "hunters are poos",
+    "G KL",
+    "S SR",
+    "H PA"
+  ]
+}
+Program Output: 
+Move:  {
+  "move": "MU",
+  "message": "M MU",
+  "timer": 85
+}
+> Moving from: MU
+> Life Points: 9
+> Player 3 made move:
+> +++
+  move: MU
+  message: M MU
+  timer: 85
+> ---
+--------------------------------------------------------------------------
+> Running player 4... 
+/tmp/dryrun4769/dracula
+Running with input:  {
+  "pastPlays": "GKL.... SSR.... HPA.... MMU.... DMU.V.. GKL.... SSR.... HPA.... MMUVD.. DAS.... GKL.... SSR.... HPA.... MMU.... DVET... GKL.... SSR.... HPA.... MMU.... DMIT... GKL.... SSR.... HPA.... MMU.... DZUT... GKL.... SSR.... HPA.... MMU.... DSTT... GKL.... SSR.... HPA.... MMU....",
+  "messages": [
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "I come to suck your blood",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "hunters are poos",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "hunters are poos",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "hunters are poos",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "hunters are poos",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "hunters are poos",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU"
+  ]
+}
+Program Output: 
+Move:  {
+  "move": "PA",
+  "message": "hunters are poos",
+  "timer": 6381
+}
+> Moving from: ST
+> Blood Points: 28
+> Player 4 made move:
+> +++
+  move: PA
+  message: hunters are poos
+  timer: 6381
+> ---
+> End of Round:  6
+> Starting Round:  7
+--------------------------------------------------------------------------
+> Running player 0... 
+/tmp/dryrun4769/hunter
+Running with input:  {
+  "pastPlays": "GKL.... SSR.... HPA.... MMU.... DMU.V.. GKL.... SSR.... HPA.... MMUVD.. DAS.... GKL.... SSR.... HPA.... MMU.... DC?T... GKL.... SSR.... HPA.... MMU.... DC?T... GKL.... SSR.... HPA.... MMU.... DC?T... GKL.... SSR.... HPA.... MMU.... DC?T... GKL.... SSR.... HPA.... MMU.... DPAT...",
+  "messages": [
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "I come to suck your blood",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "hunters are poos",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "hunters are poos",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "hunters are poos",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "hunters are poos",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "hunters are poos",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "hunters are poos"
+  ]
+}
+Program Output: 
+Move:  {
+  "move": "KL",
+  "message": "G KL",
+  "timer": 85
+}
+> Moving from: KL
+> Life Points: 9
+> Player 0 made move:
+> +++
+  move: KL
+  message: G KL
+  timer: 85
+> ---
+--------------------------------------------------------------------------
+> Running player 1... 
+/tmp/dryrun4769/hunter
+Running with input:  {
+  "pastPlays": "GKL.... SSR.... HPA.... MMU.... DMU.V.. GKL.... SSR.... HPA.... MMUVD.. DAS.... GKL.... SSR.... HPA.... MMU.... DC?T... GKL.... SSR.... HPA.... MMU.... DC?T... GKL.... SSR.... HPA.... MMU.... DC?T... GKL.... SSR.... HPA.... MMU.... DC?T... GKL.... SSR.... HPA.... MMU.... DPAT... GKL....",
+  "messages": [
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "I come to suck your blood",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "hunters are poos",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "hunters are poos",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "hunters are poos",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "hunters are poos",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "hunters are poos",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "hunters are poos",
+    "G KL"
+  ]
+}
+Program Output: 
+Move:  {
+  "move": "SR",
+  "message": "S SR",
+  "timer": 83
+}
+> Moving from: SR
+> Life Points: 9
+> Player 1 made move:
+> +++
+  move: SR
+  message: S SR
+  timer: 83
+> ---
+--------------------------------------------------------------------------
+> Running player 2... 
+/tmp/dryrun4769/hunter
+Running with input:  {
+  "pastPlays": "GKL.... SSR.... HPA.... MMU.... DMU.V.. GKL.... SSR.... HPA.... MMUVD.. DAS.... GKL.... SSR.... HPA.... MMU.... DC?T... GKL.... SSR.... HPA.... MMU.... DC?T... GKL.... SSR.... HPA.... MMU.... DC?T... GKL.... SSR.... HPA.... MMU.... DC?T... GKL.... SSR.... HPA.... MMU.... DPAT... GKL.... SSR....",
+  "messages": [
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "I come to suck your blood",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "hunters are poos",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "hunters are poos",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "hunters are poos",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "hunters are poos",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "hunters are poos",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "hunters are poos",
+    "G KL",
+    "S SR"
+  ]
+}
+Program Output: 
+Move:  {
+  "move": "PA",
+  "message": "H PA",
+  "timer": 86
+}
+> Moving from: PA
+> Life Points: 9
+> Player 2 made move:
+> +++
+  move: PA
+  message: H PA
+  timer: 86
+> ---
+--------------------------------------------------------------------------
+> Running player 3... 
+/tmp/dryrun4769/hunter
+Running with input:  {
+  "pastPlays": "GKL.... SSR.... HPA.... MMU.... DMU.V.. GKL.... SSR.... HPA.... MMUVD.. DAS.... GKL.... SSR.... HPA.... MMU.... DC?T... GKL.... SSR.... HPA.... MMU.... DC?T... GKL.... SSR.... HPA.... MMU.... DC?T... GKL.... SSR.... HPA.... MMU.... DC?T... GKL.... SSR.... HPA.... MMU.... DPAT... GKL.... SSR.... HPATD..",
+  "messages": [
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "I come to suck your blood",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "hunters are poos",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "hunters are poos",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "hunters are poos",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "hunters are poos",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "hunters are poos",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "hunters are poos",
+    "G KL",
+    "S SR",
+    "H PA"
+  ]
+}
+Program Output: 
+Move:  {
+  "move": "MU",
+  "message": "M MU",
+  "timer": 88
+}
+> Moving from: MU
+> Life Points: 9
+> Player 3 made move:
+> +++
+  move: MU
+  message: M MU
+  timer: 88
+> ---
+--------------------------------------------------------------------------
+> Running player 4... 
+/tmp/dryrun4769/dracula
+Running with input:  {
+  "pastPlays": "GKL.... SSR.... HPA.... MMU.... DMU.V.. GKL.... SSR.... HPA.... MMUVD.. DAS.... GKL.... SSR.... HPA.... MMU.... DVET... GKL.... SSR.... HPA.... MMU.... DMIT... GKL.... SSR.... HPA.... MMU.... DZUT... GKL.... SSR.... HPA.... MMU.... DSTT... GKL.... SSR.... HPA.... MMU.... DPAT... GKL.... SSR.... HPATD.. MMU....",
+  "messages": [
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "I come to suck your blood",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "hunters are poos",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "hunters are poos",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "hunters are poos",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "hunters are poos",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "hunters are poos",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "hunters are poos",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU"
+  ]
+}
+Program Output: 
+Move:  {
+  "move": "NA",
+  "message": "hunters are poos",
+  "timer": 7150
+}
+> Moving from: PA
+> Blood Points: 18
+> Player 4 made move:
+> +++
+  move: NA
+  message: hunters are poos
+  timer: 7150
+> ---
+> End of Round:  7
+> Starting Round:  8
+--------------------------------------------------------------------------
+> Running player 0... 
+/tmp/dryrun4769/hunter
+Running with input:  {
+  "pastPlays": "GKL.... SSR.... HPA.... MMU.... DMU.V.. GKL.... SSR.... HPA.... MMUVD.. DAS.... GKL.... SSR.... HPA.... MMU.... DVET... GKL.... SSR.... HPA.... MMU.... DC?T... GKL.... SSR.... HPA.... MMU.... DC?T... GKL.... SSR.... HPA.... MMU.... DC?T... GKL.... SSR.... HPA.... MMU.... DPAT... GKL.... SSR.... HPATD.. MMU.... DC?T...",
+  "messages": [
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "I come to suck your blood",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "hunters are poos",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "hunters are poos",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "hunters are poos",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "hunters are poos",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "hunters are poos",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "hunters are poos",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "hunters are poos"
+  ]
+}
+Program Output: 
+Move:  {
+  "move": "KL",
+  "message": "G KL",
+  "timer": 93
+}
+> Moving from: KL
+> Life Points: 9
+> Player 0 made move:
+> +++
+  move: KL
+  message: G KL
+  timer: 93
+> ---
+--------------------------------------------------------------------------
+> Running player 1... 
+/tmp/dryrun4769/hunter
+Running with input:  {
+  "pastPlays": "GKL.... SSR.... HPA.... MMU.... DMU.V.. GKL.... SSR.... HPA.... MMUVD.. DAS.... GKL.... SSR.... HPA.... MMU.... DVET... GKL.... SSR.... HPA.... MMU.... DC?T... GKL.... SSR.... HPA.... MMU.... DC?T... GKL.... SSR.... HPA.... MMU.... DC?T... GKL.... SSR.... HPA.... MMU.... DPAT... GKL.... SSR.... HPATD.. MMU.... DC?T... GKL....",
+  "messages": [
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "I come to suck your blood",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "hunters are poos",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "hunters are poos",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "hunters are poos",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "hunters are poos",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "hunters are poos",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "hunters are poos",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "hunters are poos",
+    "G KL"
+  ]
+}
+Program Output: 
+Move:  {
+  "move": "SR",
+  "message": "S SR",
+  "timer": 95
+}
+> Moving from: SR
+> Life Points: 9
+> Player 1 made move:
+> +++
+  move: SR
+  message: S SR
+  timer: 95
+> ---
+--------------------------------------------------------------------------
+> Running player 2... 
+/tmp/dryrun4769/hunter
+Running with input:  {
+  "pastPlays": "GKL.... SSR.... HPA.... MMU.... DMU.V.. GKL.... SSR.... HPA.... MMUVD.. DAS.... GKL.... SSR.... HPA.... MMU.... DVET... GKL.... SSR.... HPA.... MMU.... DC?T... GKL.... SSR.... HPA.... MMU.... DC?T... GKL.... SSR.... HPA.... MMU.... DC?T... GKL.... SSR.... HPA.... MMU.... DPAT... GKL.... SSR.... HPATD.. MMU.... DC?T... GKL.... SSR....",
+  "messages": [
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "I come to suck your blood",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "hunters are poos",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "hunters are poos",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "hunters are poos",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "hunters are poos",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "hunters are poos",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "hunters are poos",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "hunters are poos",
+    "G KL",
+    "S SR"
+  ]
+}
+Program Output: 
+Move:  {
+  "move": "PA",
+  "message": "H PA",
+  "timer": 95
+}
+> Moving from: PA
+> Life Points: 6
+> Player 2 made move:
+> +++
+  move: PA
+  message: H PA
+  timer: 95
+> ---
+--------------------------------------------------------------------------
+> Running player 3... 
+/tmp/dryrun4769/hunter
+Running with input:  {
+  "pastPlays": "GKL.... SSR.... HPA.... MMU.... DMU.V.. GKL.... SSR.... HPA.... MMUVD.. DAS.... GKL.... SSR.... HPA.... MMU.... DVET... GKL.... SSR.... HPA.... MMU.... DC?T... GKL.... SSR.... HPA.... MMU.... DC?T... GKL.... SSR.... HPA.... MMU.... DC?T... GKL.... SSR.... HPA.... MMU.... DPAT... GKL.... SSR.... HPATD.. MMU.... DC?T... GKL.... SSR.... HPA....",
+  "messages": [
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "I come to suck your blood",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "hunters are poos",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "hunters are poos",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "hunters are poos",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "hunters are poos",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "hunters are poos",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "hunters are poos",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "hunters are poos",
+    "G KL",
+    "S SR",
+    "H PA"
+  ]
+}
+Program Output: 
+Move:  {
+  "move": "MU",
+  "message": "M MU",
+  "timer": 97
+}
+> Moving from: MU
+> Life Points: 9
+> Player 3 made move:
+> +++
+  move: MU
+  message: M MU
+  timer: 97
+> ---
+--------------------------------------------------------------------------
+> Running player 4... 
+/tmp/dryrun4769/dracula
+Running with input:  {
+  "pastPlays": "GKL.... SSR.... HPA.... MMU.... DMU.V.. GKL.... SSR.... HPA.... MMUVD.. DAS.... GKL.... SSR.... HPA.... MMU.... DVET... GKL.... SSR.... HPA.... MMU.... DMIT... GKL.... SSR.... HPA.... MMU.... DZUT... GKL.... SSR.... HPA.... MMU.... DSTT... GKL.... SSR.... HPA.... MMU.... DPAT... GKL.... SSR.... HPATD.. MMU.... DNAT... GKL.... SSR.... HPA.... MMU....",
+  "messages": [
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "I come to suck your blood",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "hunters are poos",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "hunters are poos",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "hunters are poos",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "hunters are poos",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "hunters are poos",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "hunters are poos",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "hunters are poos",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU"
+  ]
+}
+Program Output: 
+Move:  {
+  "move": "AS",
+  "message": "hunters are poos",
+  "timer": 6382
+}
+> Moving from: NA
+> Blood Points: 18
+> Player 4 made move:
+> +++
+  move: AS
+  message: hunters are poos
+  timer: 6382
+> ---
+> End of Round:  8
+> Starting Round:  9
+--------------------------------------------------------------------------
+> Running player 0... 
+/tmp/dryrun4769/hunter
+Running with input:  {
+  "pastPlays": "GKL.... SSR.... HPA.... MMU.... DMU.V.. GKL.... SSR.... HPA.... MMUVD.. DAS.... GKL.... SSR.... HPA.... MMU.... DVET... GKL.... SSR.... HPA.... MMU.... DMIT... GKL.... SSR.... HPA.... MMU.... DC?T... GKL.... SSR.... HPA.... MMU.... DC?T... GKL.... SSR.... HPA.... MMU.... DPAT... GKL.... SSR.... HPATD.. MMU.... DC?T... GKL.... SSR.... HPA.... MMU.... DS?..M.",
+  "messages": [
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "I come to suck your blood",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "hunters are poos",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "hunters are poos",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "hunters are poos",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "hunters are poos",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "hunters are poos",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "hunters are poos",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "hunters are poos",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "hunters are poos"
+  ]
+}
+Program Output: 
+Move:  {
+  "move": "KL",
+  "message": "G KL",
+  "timer": 98
+}
+> Moving from: KL
+> Life Points: 9
+> Player 0 made move:
+> +++
+  move: KL
+  message: G KL
+  timer: 98
+> ---
+--------------------------------------------------------------------------
+> Running player 1... 
+/tmp/dryrun4769/hunter
+Running with input:  {
+  "pastPlays": "GKL.... SSR.... HPA.... MMU.... DMU.V.. GKL.... SSR.... HPA.... MMUVD.. DAS.... GKL.... SSR.... HPA.... MMU.... DVET... GKL.... SSR.... HPA.... MMU.... DMIT... GKL.... SSR.... HPA.... MMU.... DC?T... GKL.... SSR.... HPA.... MMU.... DC?T... GKL.... SSR.... HPA.... MMU.... DPAT... GKL.... SSR.... HPATD.. MMU.... DC?T... GKL.... SSR.... HPA.... MMU.... DS?..M. GKL....",
+  "messages": [
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "I come to suck your blood",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "hunters are poos",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "hunters are poos",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "hunters are poos",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "hunters are poos",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "hunters are poos",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "hunters are poos",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "hunters are poos",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "hunters are poos",
+    "G KL"
+  ]
+}
+Program Output: 
+Move:  {
+  "move": "SR",
+  "message": "S SR",
+  "timer": 102
+}
+> Moving from: SR
+> Life Points: 9
+> Player 1 made move:
+> +++
+  move: SR
+  message: S SR
+  timer: 102
+> ---
+--------------------------------------------------------------------------
+> Running player 2... 
+/tmp/dryrun4769/hunter
+Running with input:  {
+  "pastPlays": "GKL.... SSR.... HPA.... MMU.... DMU.V.. GKL.... SSR.... HPA.... MMUVD.. DAS.... GKL.... SSR.... HPA.... MMU.... DVET... GKL.... SSR.... HPA.... MMU.... DMIT... GKL.... SSR.... HPA.... MMU.... DC?T... GKL.... SSR.... HPA.... MMU.... DC?T... GKL.... SSR.... HPA.... MMU.... DPAT... GKL.... SSR.... HPATD.. MMU.... DC?T... GKL.... SSR.... HPA.... MMU.... DS?..M. GKL.... SSR....",
+  "messages": [
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "I come to suck your blood",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "hunters are poos",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "hunters are poos",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "hunters are poos",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "hunters are poos",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "hunters are poos",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "hunters are poos",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "hunters are poos",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "hunters are poos",
+    "G KL",
+    "S SR"
+  ]
+}
+Program Output: 
+Move:  {
+  "move": "PA",
+  "message": "H PA",
+  "timer": 99
+}
+> Moving from: PA
+> Life Points: 9
+> Player 2 made move:
+> +++
+  move: PA
+  message: H PA
+  timer: 99
+> ---
+--------------------------------------------------------------------------
+> Running player 3... 
+/tmp/dryrun4769/hunter
+Running with input:  {
+  "pastPlays": "GKL.... SSR.... HPA.... MMU.... DMU.V.. GKL.... SSR.... HPA.... MMUVD.. DAS.... GKL.... SSR.... HPA.... MMU.... DVET... GKL.... SSR.... HPA.... MMU.... DMIT... GKL.... SSR.... HPA.... MMU.... DC?T... GKL.... SSR.... HPA.... MMU.... DC?T... GKL.... SSR.... HPA.... MMU.... DPAT... GKL.... SSR.... HPATD.. MMU.... DC?T... GKL.... SSR.... HPA.... MMU.... DS?..M. GKL.... SSR.... HPA....",
+  "messages": [
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "I come to suck your blood",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "hunters are poos",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "hunters are poos",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "hunters are poos",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "hunters are poos",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "hunters are poos",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "hunters are poos",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "hunters are poos",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "hunters are poos",
+    "G KL",
+    "S SR",
+    "H PA"
+  ]
+}
+Program Output: 
+Move:  {
+  "move": "MU",
+  "message": "M MU",
+  "timer": 102
+}
+> Moving from: MU
+> Life Points: 9
+> Player 3 made move:
+> +++
+  move: MU
+  message: M MU
+  timer: 102
+> ---
+--------------------------------------------------------------------------
+> Running player 4... 
+/tmp/dryrun4769/dracula
+Running with input:  {
+  "pastPlays": "GKL.... SSR.... HPA.... MMU.... DMU.V.. GKL.... SSR.... HPA.... MMUVD.. DAS.... GKL.... SSR.... HPA.... MMU.... DVET... GKL.... SSR.... HPA.... MMU.... DMIT... GKL.... SSR.... HPA.... MMU.... DZUT... GKL.... SSR.... HPA.... MMU.... DSTT... GKL.... SSR.... HPA.... MMU.... DPAT... GKL.... SSR.... HPATD.. MMU.... DNAT... GKL.... SSR.... HPA.... MMU.... DAS..M. GKL.... SSR.... HPA.... MMU....",
+  "messages": [
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "I come to suck your blood",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "hunters are poos",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "hunters are poos",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "hunters are poos",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "hunters are poos",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "hunters are poos",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "hunters are poos",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "hunters are poos",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "hunters are poos",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU"
+  ]
+}
+Program Output: 
+Move:  {
+  "move": "VE",
+  "message": "hunters are poos",
+  "timer": 6419
+}
+> Moving from: AS
+> Blood Points: 16
+> Player 4 made move:
+> +++
+  move: VE
+  message: hunters are poos
+  timer: 6419
+> ---
+> End of Round:  9
+> Starting Round:  10
+--------------------------------------------------------------------------
+> Running player 0... 
+/tmp/dryrun4769/hunter
+Running with input:  {
+  "pastPlays": "GKL.... SSR.... HPA.... MMU.... DMU.V.. GKL.... SSR.... HPA.... MMUVD.. DAS.... GKL.... SSR.... HPA.... MMU.... DVET... GKL.... SSR.... HPA.... MMU.... DMIT... GKL.... SSR.... HPA.... MMU.... DZUT... GKL.... SSR.... HPA.... MMU.... DC?T... GKL.... SSR.... HPA.... MMU.... DPAT... GKL.... SSR.... HPATD.. MMU.... DC?T... GKL.... SSR.... HPA.... MMU.... DS?..M. GKL.... SSR.... HPA.... MMU.... DC?T.M.",
+  "messages": [
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "I come to suck your blood",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "hunters are poos",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "hunters are poos",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "hunters are poos",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "hunters are poos",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "hunters are poos",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "hunters are poos",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "hunters are poos",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "hunters are poos",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "hunters are poos"
+  ]
+}
+Program Output: 
+Move:  {
+  "move": "KL",
+  "message": "G KL",
+  "timer": 101
+}
+> Moving from: KL
+> Life Points: 9
+> Player 0 made move:
+> +++
+  move: KL
+  message: G KL
+  timer: 101
+> ---
+--------------------------------------------------------------------------
+> Running player 1... 
+/tmp/dryrun4769/hunter
+Running with input:  {
+  "pastPlays": "GKL.... SSR.... HPA.... MMU.... DMU.V.. GKL.... SSR.... HPA.... MMUVD.. DAS.... GKL.... SSR.... HPA.... MMU.... DVET... GKL.... SSR.... HPA.... MMU.... DMIT... GKL.... SSR.... HPA.... MMU.... DZUT... GKL.... SSR.... HPA.... MMU.... DC?T... GKL.... SSR.... HPA.... MMU.... DPAT... GKL.... SSR.... HPATD.. MMU.... DC?T... GKL.... SSR.... HPA.... MMU.... DS?..M. GKL.... SSR.... HPA.... MMU.... DC?T.M. GKL....",
+  "messages": [
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "I come to suck your blood",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "hunters are poos",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "hunters are poos",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "hunters are poos",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "hunters are poos",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "hunters are poos",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "hunters are poos",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "hunters are poos",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "hunters are poos",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "hunters are poos",
+    "G KL"
+  ]
+}
+Program Output: 
+Move:  {
+  "move": "SR",
+  "message": "S SR",
+  "timer": 104
+}
+> Moving from: SR
+> Life Points: 9
+> Player 1 made move:
+> +++
+  move: SR
+  message: S SR
+  timer: 104
+> ---
+--------------------------------------------------------------------------
+> Running player 2... 
+/tmp/dryrun4769/hunter
+Running with input:  {
+  "pastPlays": "GKL.... SSR.... HPA.... MMU.... DMU.V.. GKL.... SSR.... HPA.... MMUVD.. DAS.... GKL.... SSR.... HPA.... MMU.... DVET... GKL.... SSR.... HPA.... MMU.... DMIT... GKL.... SSR.... HPA.... MMU.... DZUT... GKL.... SSR.... HPA.... MMU.... DC?T... GKL.... SSR.... HPA.... MMU.... DPAT... GKL.... SSR.... HPATD.. MMU.... DC?T... GKL.... SSR.... HPA.... MMU.... DS?..M. GKL.... SSR.... HPA.... MMU.... DC?T.M. GKL.... SSR....",
+  "messages": [
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "I come to suck your blood",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "hunters are poos",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "hunters are poos",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "hunters are poos",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "hunters are poos",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "hunters are poos",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "hunters are poos",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "hunters are poos",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "hunters are poos",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "hunters are poos",
+    "G KL",
+    "S SR"
+  ]
+}
+Program Output: 
+Move:  {
+  "move": "PA",
+  "message": "H PA",
+  "timer": 108
+}
+> Moving from: PA
+> Life Points: 9
+> Player 2 made move:
+> +++
+  move: PA
+  message: H PA
+  timer: 108
+> ---
+--------------------------------------------------------------------------
+> Running player 3... 
+/tmp/dryrun4769/hunter
+Running with input:  {
+  "pastPlays": "GKL.... SSR.... HPA.... MMU.... DMU.V.. GKL.... SSR.... HPA.... MMUVD.. DAS.... GKL.... SSR.... HPA.... MMU.... DVET... GKL.... SSR.... HPA.... MMU.... DMIT... GKL.... SSR.... HPA.... MMU.... DZUT... GKL.... SSR.... HPA.... MMU.... DC?T... GKL.... SSR.... HPA.... MMU.... DPAT... GKL.... SSR.... HPATD.. MMU.... DC?T... GKL.... SSR.... HPA.... MMU.... DS?..M. GKL.... SSR.... HPA.... MMU.... DC?T.M. GKL.... SSR.... HPA....",
+  "messages": [
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "I come to suck your blood",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "hunters are poos",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "hunters are poos",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "hunters are poos",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "hunters are poos",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "hunters are poos",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "hunters are poos",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "hunters are poos",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "hunters are poos",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "hunters are poos",
+    "G KL",
+    "S SR",
+    "H PA"
+  ]
+}
+Program Output: 
+Move:  {
+  "move": "MU",
+  "message": "M MU",
+  "timer": 114
+}
+> Moving from: MU
+> Life Points: 9
+> Player 3 made move:
+> +++
+  move: MU
+  message: M MU
+  timer: 114
+> ---
+--------------------------------------------------------------------------
+> Running player 4... 
+/tmp/dryrun4769/dracula
+Running with input:  {
+  "pastPlays": "GKL.... SSR.... HPA.... MMU.... DMU.V.. GKL.... SSR.... HPA.... MMUVD.. DAS.... GKL.... SSR.... HPA.... MMU.... DVET... GKL.... SSR.... HPA.... MMU.... DMIT... GKL.... SSR.... HPA.... MMU.... DZUT... GKL.... SSR.... HPA.... MMU.... DSTT... GKL.... SSR.... HPA.... MMU.... DPAT... GKL.... SSR.... HPATD.. MMU.... DNAT... GKL.... SSR.... HPA.... MMU.... DAS..M. GKL.... SSR.... HPA.... MMU.... DVET.M. GKL.... SSR.... HPA.... MMU....",
+  "messages": [
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "I come to suck your blood",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "hunters are poos",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "hunters are poos",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "hunters are poos",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "hunters are poos",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "hunters are poos",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "hunters are poos",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "hunters are poos",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "hunters are poos",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "hunters are poos",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU"
+  ]
+}
+Program Output: 
+Move:  {
+  "move": "MU",
+  "message": "hunters are poos",
+  "timer": 6371
+}
+> Moving from: VE
+> Blood Points: 16
+> Player 4 made move:
+> +++
+  move: MU
+  message: hunters are poos
+  timer: 6371
+> ---
+> End of Round:  10
+> Starting Round:  11
+--------------------------------------------------------------------------
+> Running player 0... 
+/tmp/dryrun4769/hunter
+Running with input:  {
+  "pastPlays": "GKL.... SSR.... HPA.... MMU.... DMU.V.. GKL.... SSR.... HPA.... MMUVD.. DAS.... GKL.... SSR.... HPA.... MMU.... DVET... GKL.... SSR.... HPA.... MMU.... DMIT... GKL.... SSR.... HPA.... MMU.... DZUT... GKL.... SSR.... HPA.... MMU.... DSTT... GKL.... SSR.... HPA.... MMU.... DPAT... GKL.... SSR.... HPATD.. MMU.... DC?T... GKL.... SSR.... HPA.... MMU.... DS?..M. GKL.... SSR.... HPA.... MMU.... DC?T.M. GKL.... SSR.... HPA.... MMU.... DMUT.M.",
+  "messages": [
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "I come to suck your blood",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "hunters are poos",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "hunters are poos",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "hunters are poos",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "hunters are poos",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "hunters are poos",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "hunters are poos",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "hunters are poos",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "hunters are poos",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "hunters are poos",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "hunters are poos"
+  ]
+}
+Program Output: 
+Move:  {
+  "move": "KL",
+  "message": "G KL",
+  "timer": 111
+}
+> Moving from: KL
+> Life Points: 9
+> Player 0 made move:
+> +++
+  move: KL
+  message: G KL
+  timer: 111
+> ---
+--------------------------------------------------------------------------
+> Running player 1... 
+/tmp/dryrun4769/hunter
+Running with input:  {
+  "pastPlays": "GKL.... SSR.... HPA.... MMU.... DMU.V.. GKL.... SSR.... HPA.... MMUVD.. DAS.... GKL.... SSR.... HPA.... MMU.... DVET... GKL.... SSR.... HPA.... MMU.... DMIT... GKL.... SSR.... HPA.... MMU.... DZUT... GKL.... SSR.... HPA.... MMU.... DSTT... GKL.... SSR.... HPA.... MMU.... DPAT... GKL.... SSR.... HPATD.. MMU.... DC?T... GKL.... SSR.... HPA.... MMU.... DS?..M. GKL.... SSR.... HPA.... MMU.... DC?T.M. GKL.... SSR.... HPA.... MMU.... DMUT.M. GKL....",
+  "messages": [
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "I come to suck your blood",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "hunters are poos",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "hunters are poos",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "hunters are poos",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "hunters are poos",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "hunters are poos",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "hunters are poos",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "hunters are poos",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "hunters are poos",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "hunters are poos",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "hunters are poos",
+    "G KL"
+  ]
+}
+Program Output: 
+Move:  {
+  "move": "SR",
+  "message": "S SR",
+  "timer": 110
+}
+> Moving from: SR
+> Life Points: 9
+> Player 1 made move:
+> +++
+  move: SR
+  message: S SR
+  timer: 110
+> ---
+--------------------------------------------------------------------------
+> Running player 2... 
+/tmp/dryrun4769/hunter
+Running with input:  {
+  "pastPlays": "GKL.... SSR.... HPA.... MMU.... DMU.V.. GKL.... SSR.... HPA.... MMUVD.. DAS.... GKL.... SSR.... HPA.... MMU.... DVET... GKL.... SSR.... HPA.... MMU.... DMIT... GKL.... SSR.... HPA.... MMU.... DZUT... GKL.... SSR.... HPA.... MMU.... DSTT... GKL.... SSR.... HPA.... MMU.... DPAT... GKL.... SSR.... HPATD.. MMU.... DC?T... GKL.... SSR.... HPA.... MMU.... DS?..M. GKL.... SSR.... HPA.... MMU.... DC?T.M. GKL.... SSR.... HPA.... MMU.... DMUT.M. GKL.... SSR....",
+  "messages": [
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "I come to suck your blood",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "hunters are poos",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "hunters are poos",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "hunters are poos",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "hunters are poos",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "hunters are poos",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "hunters are poos",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "hunters are poos",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "hunters are poos",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "hunters are poos",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "hunters are poos",
+    "G KL",
+    "S SR"
+  ]
+}
+Program Output: 
+Move:  {
+  "move": "PA",
+  "message": "H PA",
+  "timer": 110
+}
+> Moving from: PA
+> Life Points: 9
+> Player 2 made move:
+> +++
+  move: PA
+  message: H PA
+  timer: 110
+> ---
+--------------------------------------------------------------------------
+> Running player 3... 
+/tmp/dryrun4769/hunter
+Running with input:  {
+  "pastPlays": "GKL.... SSR.... HPA.... MMU.... DMU.V.. GKL.... SSR.... HPA.... MMUVD.. DAS.... GKL.... SSR.... HPA.... MMU.... DVET... GKL.... SSR.... HPA.... MMU.... DMIT... GKL.... SSR.... HPA.... MMU.... DZUT... GKL.... SSR.... HPA.... MMU.... DSTT... GKL.... SSR.... HPA.... MMU.... DPAT... GKL.... SSR.... HPATD.. MMU.... DC?T... GKL.... SSR.... HPA.... MMU.... DS?..M. GKL.... SSR.... HPA.... MMU.... DC?T.M. GKL.... SSR.... HPA.... MMU.... DMUT.M. GKL.... SSR.... HPA....",
+  "messages": [
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "I come to suck your blood",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "hunters are poos",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "hunters are poos",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "hunters are poos",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "hunters are poos",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "hunters are poos",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "hunters are poos",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "hunters are poos",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "hunters are poos",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "hunters are poos",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "hunters are poos",
+    "G KL",
+    "S SR",
+    "H PA"
+  ]
+}
+Program Output: 
+Move:  {
+  "move": "MU",
+  "message": "M MU",
+  "timer": 109
+}
+> Moving from: MU
+> Life Points: 9
+> Player 3 made move:
+> +++
+  move: MU
+  message: M MU
+  timer: 109
+> ---
+--------------------------------------------------------------------------
+> Running player 4... 
+/tmp/dryrun4769/dracula
+Running with input:  {
+  "pastPlays": "GKL.... SSR.... HPA.... MMU.... DMU.V.. GKL.... SSR.... HPA.... MMUVD.. DAS.... GKL.... SSR.... HPA.... MMU.... DVET... GKL.... SSR.... HPA.... MMU.... DMIT... GKL.... SSR.... HPA.... MMU.... DZUT... GKL.... SSR.... HPA.... MMU.... DSTT... GKL.... SSR.... HPA.... MMU.... DPAT... GKL.... SSR.... HPATD.. MMU.... DNAT... GKL.... SSR.... HPA.... MMU.... DAS..M. GKL.... SSR.... HPA.... MMU.... DVET.M. GKL.... SSR.... HPA.... MMU.... DMUT.M. GKL.... SSR.... HPA.... MMUTD..",
+  "messages": [
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "I come to suck your blood",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "hunters are poos",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "hunters are poos",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "hunters are poos",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "hunters are poos",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "hunters are poos",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "hunters are poos",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "hunters are poos",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "hunters are poos",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "hunters are poos",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "hunters are poos",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU"
+  ]
+}
+Program Output: 
+Move:  {
+  "move": "ZU",
+  "message": "hunters are poos",
+  "timer": 6387
+}
+> Moving from: MU
+> Blood Points: 6
+> Player 4 made move:
+> +++
+  move: ZU
+  message: hunters are poos
+  timer: 6387
+> ---
+> End of Round:  11
+> Starting Round:  12
+--------------------------------------------------------------------------
+> Running player 0... 
+/tmp/dryrun4769/hunter
+Running with input:  {
+  "pastPlays": "GKL.... SSR.... HPA.... MMU.... DMU.V.. GKL.... SSR.... HPA.... MMUVD.. DAS.... GKL.... SSR.... HPA.... MMU.... DVET... GKL.... SSR.... HPA.... MMU.... DMIT... GKL.... SSR.... HPA.... MMU.... DZUT... GKL.... SSR.... HPA.... MMU.... DSTT... GKL.... SSR.... HPA.... MMU.... DPAT... GKL.... SSR.... HPATD.. MMU.... DC?T... GKL.... SSR.... HPA.... MMU.... DS?..M. GKL.... SSR.... HPA.... MMU.... DC?T.M. GKL.... SSR.... HPA.... MMU.... DMUT.M. GKL.... SSR.... HPA.... MMUTD.. DC?T.M.",
+  "messages": [
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "I come to suck your blood",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "hunters are poos",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "hunters are poos",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "hunters are poos",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "hunters are poos",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "hunters are poos",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "hunters are poos",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "hunters are poos",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "hunters are poos",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "hunters are poos",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "hunters are poos",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "hunters are poos"
+  ]
+}
+Program Output: 
+Move:  {
+  "move": "KL",
+  "message": "G KL",
+  "timer": 113
+}
+> Moving from: KL
+> Life Points: 9
+> Player 0 made move:
+> +++
+  move: KL
+  message: G KL
+  timer: 113
+> ---
+--------------------------------------------------------------------------
+> Running player 1... 
+/tmp/dryrun4769/hunter
+Running with input:  {
+  "pastPlays": "GKL.... SSR.... HPA.... MMU.... DMU.V.. GKL.... SSR.... HPA.... MMUVD.. DAS.... GKL.... SSR.... HPA.... MMU.... DVET... GKL.... SSR.... HPA.... MMU.... DMIT... GKL.... SSR.... HPA.... MMU.... DZUT... GKL.... SSR.... HPA.... MMU.... DSTT... GKL.... SSR.... HPA.... MMU.... DPAT... GKL.... SSR.... HPATD.. MMU.... DC?T... GKL.... SSR.... HPA.... MMU.... DS?..M. GKL.... SSR.... HPA.... MMU.... DC?T.M. GKL.... SSR.... HPA.... MMU.... DMUT.M. GKL.... SSR.... HPA.... MMUTD.. DC?T.M. GKL....",
+  "messages": [
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "I come to suck your blood",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "hunters are poos",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "hunters are poos",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "hunters are poos",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "hunters are poos",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "hunters are poos",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "hunters are poos",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "hunters are poos",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "hunters are poos",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "hunters are poos",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "hunters are poos",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "hunters are poos",
+    "G KL"
+  ]
+}
+Program Output: 
+Move:  {
+  "move": "SR",
+  "message": "S SR",
+  "timer": 115
+}
+> Moving from: SR
+> Life Points: 9
+> Player 1 made move:
+> +++
+  move: SR
+  message: S SR
+  timer: 115
+> ---
+--------------------------------------------------------------------------
+> Running player 2... 
+/tmp/dryrun4769/hunter
+Running with input:  {
+  "pastPlays": "GKL.... SSR.... HPA.... MMU.... DMU.V.. GKL.... SSR.... HPA.... MMUVD.. DAS.... GKL.... SSR.... HPA.... MMU.... DVET... GKL.... SSR.... HPA.... MMU.... DMIT... GKL.... SSR.... HPA.... MMU.... DZUT... GKL.... SSR.... HPA.... MMU.... DSTT... GKL.... SSR.... HPA.... MMU.... DPAT... GKL.... SSR.... HPATD.. MMU.... DC?T... GKL.... SSR.... HPA.... MMU.... DS?..M. GKL.... SSR.... HPA.... MMU.... DC?T.M. GKL.... SSR.... HPA.... MMU.... DMUT.M. GKL.... SSR.... HPA.... MMUTD.. DC?T.M. GKL.... SSR....",
+  "messages": [
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "I come to suck your blood",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "hunters are poos",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "hunters are poos",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "hunters are poos",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "hunters are poos",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "hunters are poos",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "hunters are poos",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "hunters are poos",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "hunters are poos",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "hunters are poos",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "hunters are poos",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "hunters are poos",
+    "G KL",
+    "S SR"
+  ]
+}
+Program Output: 
+Move:  {
+  "move": "PA",
+  "message": "H PA",
+  "timer": 116
+}
+> Moving from: PA
+> Life Points: 9
+> Player 2 made move:
+> +++
+  move: PA
+  message: H PA
+  timer: 116
+> ---
+--------------------------------------------------------------------------
+> Running player 3... 
+/tmp/dryrun4769/hunter
+Running with input:  {
+  "pastPlays": "GKL.... SSR.... HPA.... MMU.... DMU.V.. GKL.... SSR.... HPA.... MMUVD.. DAS.... GKL.... SSR.... HPA.... MMU.... DVET... GKL.... SSR.... HPA.... MMU.... DMIT... GKL.... SSR.... HPA.... MMU.... DZUT... GKL.... SSR.... HPA.... MMU.... DSTT... GKL.... SSR.... HPA.... MMU.... DPAT... GKL.... SSR.... HPATD.. MMU.... DC?T... GKL.... SSR.... HPA.... MMU.... DS?..M. GKL.... SSR.... HPA.... MMU.... DC?T.M. GKL.... SSR.... HPA.... MMU.... DMUT.M. GKL.... SSR.... HPA.... MMUTD.. DC?T.M. GKL.... SSR.... HPA....",
+  "messages": [
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "I come to suck your blood",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "hunters are poos",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "hunters are poos",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "hunters are poos",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "hunters are poos",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "hunters are poos",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "hunters are poos",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "hunters are poos",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "hunters are poos",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "hunters are poos",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "hunters are poos",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "hunters are poos",
+    "G KL",
+    "S SR",
+    "H PA"
+  ]
+}
+Program Output: 
+Move:  {
+  "move": "MU",
+  "message": "M MU",
+  "timer": 117
+}
+> Moving from: MU
+> Life Points: 6
+> Player 3 made move:
+> +++
+  move: MU
+  message: M MU
+  timer: 117
+> ---
+--------------------------------------------------------------------------
+> Running player 4... 
+/tmp/dryrun4769/dracula
+Running with input:  {
+  "pastPlays": "GKL.... SSR.... HPA.... MMU.... DMU.V.. GKL.... SSR.... HPA.... MMUVD.. DAS.... GKL.... SSR.... HPA.... MMU.... DVET... GKL.... SSR.... HPA.... MMU.... DMIT... GKL.... SSR.... HPA.... MMU.... DZUT... GKL.... SSR.... HPA.... MMU.... DSTT... GKL.... SSR.... HPA.... MMU.... DPAT... GKL.... SSR.... HPATD.. MMU.... DNAT... GKL.... SSR.... HPA.... MMU.... DAS..M. GKL.... SSR.... HPA.... MMU.... DVET.M. GKL.... SSR.... HPA.... MMU.... DMUT.M. GKL.... SSR.... HPA.... MMUTD.. DZUT.M. GKL.... SSR.... HPA.... MMU....",
+  "messages": [
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "I come to suck your blood",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "hunters are poos",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "hunters are poos",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "hunters are poos",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "hunters are poos",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "hunters are poos",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "hunters are poos",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "hunters are poos",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "hunters are poos",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "hunters are poos",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "hunters are poos",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "hunters are poos",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU"
+  ]
+}
+Program Output: 
+Move:  {
+  "move": "ST",
+  "message": "hunters are poos",
+  "timer": 6387
+}
+> Moving from: ZU
+> Blood Points: 6
+> Player 4 made move:
+> +++
+  move: ST
+  message: hunters are poos
+  timer: 6387
+> ---
+> End of Round:  12
+> Starting Round:  13
+--------------------------------------------------------------------------
+> Running player 0... 
+/tmp/dryrun4769/hunter
+Running with input:  {
+  "pastPlays": "GKL.... SSR.... HPA.... MMU.... DMU.V.. GKL.... SSR.... HPA.... MMUVD.. DAS.... GKL.... SSR.... HPA.... MMU.... DVET... GKL.... SSR.... HPA.... MMU.... DMIT... GKL.... SSR.... HPA.... MMU.... DZUT... GKL.... SSR.... HPA.... MMU.... DSTT... GKL.... SSR.... HPA.... MMU.... DPAT... GKL.... SSR.... HPATD.. MMU.... DNAT... GKL.... SSR.... HPA.... MMU.... DS?..M. GKL.... SSR.... HPA.... MMU.... DC?T.M. GKL.... SSR.... HPA.... MMU.... DMUT.M. GKL.... SSR.... HPA.... MMUTD.. DC?T.M. GKL.... SSR.... HPA.... MMU.... DC?T...",
+  "messages": [
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "I come to suck your blood",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "hunters are poos",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "hunters are poos",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "hunters are poos",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "hunters are poos",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "hunters are poos",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "hunters are poos",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "hunters are poos",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "hunters are poos",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "hunters are poos",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "hunters are poos",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "hunters are poos",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "hunters are poos"
+  ]
+}
+Program Output: 
+Move:  {
+  "move": "KL",
+  "message": "G KL",
+  "timer": 120
+}
+> Moving from: KL
+> Life Points: 9
+> Player 0 made move:
+> +++
+  move: KL
+  message: G KL
+  timer: 120
+> ---
+--------------------------------------------------------------------------
+> Running player 1... 
+/tmp/dryrun4769/hunter
+Running with input:  {
+  "pastPlays": "GKL.... SSR.... HPA.... MMU.... DMU.V.. GKL.... SSR.... HPA.... MMUVD.. DAS.... GKL.... SSR.... HPA.... MMU.... DVET... GKL.... SSR.... HPA.... MMU.... DMIT... GKL.... SSR.... HPA.... MMU.... DZUT... GKL.... SSR.... HPA.... MMU.... DSTT... GKL.... SSR.... HPA.... MMU.... DPAT... GKL.... SSR.... HPATD.. MMU.... DNAT... GKL.... SSR.... HPA.... MMU.... DS?..M. GKL.... SSR.... HPA.... MMU.... DC?T.M. GKL.... SSR.... HPA.... MMU.... DMUT.M. GKL.... SSR.... HPA.... MMUTD.. DC?T.M. GKL.... SSR.... HPA.... MMU.... DC?T... GKL....",
+  "messages": [
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "I come to suck your blood",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "hunters are poos",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "hunters are poos",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "hunters are poos",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "hunters are poos",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "hunters are poos",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "hunters are poos",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "hunters are poos",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "hunters are poos",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "hunters are poos",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "hunters are poos",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "hunters are poos",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "hunters are poos",
+    "G KL"
+  ]
+}
+Program Output: 
+Move:  {
+  "move": "SR",
+  "message": "S SR",
+  "timer": 125
+}
+> Moving from: SR
+> Life Points: 9
+> Player 1 made move:
+> +++
+  move: SR
+  message: S SR
+  timer: 125
+> ---
+--------------------------------------------------------------------------
+> Running player 2... 
+/tmp/dryrun4769/hunter
+Running with input:  {
+  "pastPlays": "GKL.... SSR.... HPA.... MMU.... DMU.V.. GKL.... SSR.... HPA.... MMUVD.. DAS.... GKL.... SSR.... HPA.... MMU.... DVET... GKL.... SSR.... HPA.... MMU.... DMIT... GKL.... SSR.... HPA.... MMU.... DZUT... GKL.... SSR.... HPA.... MMU.... DSTT... GKL.... SSR.... HPA.... MMU.... DPAT... GKL.... SSR.... HPATD.. MMU.... DNAT... GKL.... SSR.... HPA.... MMU.... DS?..M. GKL.... SSR.... HPA.... MMU.... DC?T.M. GKL.... SSR.... HPA.... MMU.... DMUT.M. GKL.... SSR.... HPA.... MMUTD.. DC?T.M. GKL.... SSR.... HPA.... MMU.... DC?T... GKL.... SSR....",
+  "messages": [
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "I come to suck your blood",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "hunters are poos",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "hunters are poos",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "hunters are poos",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "hunters are poos",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "hunters are poos",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "hunters are poos",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "hunters are poos",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "hunters are poos",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "hunters are poos",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "hunters are poos",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "hunters are poos",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "hunters are poos",
+    "G KL",
+    "S SR"
+  ]
+}
+Program Output: 
+Move:  {
+  "move": "PA",
+  "message": "H PA",
+  "timer": 128
+}
+> Moving from: PA
+> Life Points: 9
+> Player 2 made move:
+> +++
+  move: PA
+  message: H PA
+  timer: 128
+> ---
+--------------------------------------------------------------------------
+> Running player 3... 
+/tmp/dryrun4769/hunter
+Running with input:  {
+  "pastPlays": "GKL.... SSR.... HPA.... MMU.... DMU.V.. GKL.... SSR.... HPA.... MMUVD.. DAS.... GKL.... SSR.... HPA.... MMU.... DVET... GKL.... SSR.... HPA.... MMU.... DMIT... GKL.... SSR.... HPA.... MMU.... DZUT... GKL.... SSR.... HPA.... MMU.... DSTT... GKL.... SSR.... HPA.... MMU.... DPAT... GKL.... SSR.... HPATD.. MMU.... DNAT... GKL.... SSR.... HPA.... MMU.... DS?..M. GKL.... SSR.... HPA.... MMU.... DC?T.M. GKL.... SSR.... HPA.... MMU.... DMUT.M. GKL.... SSR.... HPA.... MMUTD.. DC?T.M. GKL.... SSR.... HPA.... MMU.... DC?T... GKL.... SSR.... HPA....",
+  "messages": [
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "I come to suck your blood",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "hunters are poos",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "hunters are poos",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "hunters are poos",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "hunters are poos",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "hunters are poos",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "hunters are poos",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "hunters are poos",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "hunters are poos",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "hunters are poos",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "hunters are poos",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "hunters are poos",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "hunters are poos",
+    "G KL",
+    "S SR",
+    "H PA"
+  ]
+}
+Program Output: 
+Move:  {
+  "move": "MU",
+  "message": "M MU",
+  "timer": 128
+}
+> Moving from: MU
+> Life Points: 9
+> Player 3 made move:
+> +++
+  move: MU
+  message: M MU
+  timer: 128
+> ---
+--------------------------------------------------------------------------
+> Running player 4... 
+/tmp/dryrun4769/dracula
+Running with input:  {
+  "pastPlays": "GKL.... SSR.... HPA.... MMU.... DMU.V.. GKL.... SSR.... HPA.... MMUVD.. DAS.... GKL.... SSR.... HPA.... MMU.... DVET... GKL.... SSR.... HPA.... MMU.... DMIT... GKL.... SSR.... HPA.... MMU.... DZUT... GKL.... SSR.... HPA.... MMU.... DSTT... GKL.... SSR.... HPA.... MMU.... DPAT... GKL.... SSR.... HPATD.. MMU.... DNAT... GKL.... SSR.... HPA.... MMU.... DAS..M. GKL.... SSR.... HPA.... MMU.... DVET.M. GKL.... SSR.... HPA.... MMU.... DMUT.M. GKL.... SSR.... HPA.... MMUTD.. DZUT.M. GKL.... SSR.... HPA.... MMU.... DSTT... GKL.... SSR.... HPA.... MMU....",
+  "messages": [
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "I come to suck your blood",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "hunters are poos",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "hunters are poos",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "hunters are poos",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "hunters are poos",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "hunters are poos",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "hunters are poos",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "hunters are poos",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "hunters are poos",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "hunters are poos",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "hunters are poos",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "hunters are poos",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "hunters are poos",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU"
+  ]
+}
+Program Output: 
+Move:  {
+  "move": "PA",
+  "message": "hunters are poos",
+  "timer": 6494
+}
+> Moving from: ST
+> Blood Points: 6
+> Player 4 made move:
+> +++
+  move: PA
+  message: hunters are poos
+  timer: 6494
+> ---
+> End of Round:  13
+> Starting Round:  14
+--------------------------------------------------------------------------
+> Running player 0... 
+/tmp/dryrun4769/hunter
+Running with input:  {
+  "pastPlays": "GKL.... SSR.... HPA.... MMU.... DMU.V.. GKL.... SSR.... HPA.... MMUVD.. DAS.... GKL.... SSR.... HPA.... MMU.... DVET... GKL.... SSR.... HPA.... MMU.... DMIT... GKL.... SSR.... HPA.... MMU.... DZUT... GKL.... SSR.... HPA.... MMU.... DSTT... GKL.... SSR.... HPA.... MMU.... DPAT... GKL.... SSR.... HPATD.. MMU.... DNAT... GKL.... SSR.... HPA.... MMU.... DAS..M. GKL.... SSR.... HPA.... MMU.... DC?T.M. GKL.... SSR.... HPA.... MMU.... DMUT.M. GKL.... SSR.... HPA.... MMUTD.. DC?T.M. GKL.... SSR.... HPA.... MMU.... DC?T... GKL.... SSR.... HPA.... MMU.... DPA.VM.",
+  "messages": [
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "I come to suck your blood",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "hunters are poos",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "hunters are poos",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "hunters are poos",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "hunters are poos",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "hunters are poos",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "hunters are poos",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "hunters are poos",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "hunters are poos",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "hunters are poos",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "hunters are poos",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "hunters are poos",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "hunters are poos",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "hunters are poos"
+  ]
+}
+Program Output: 
+Move:  {
+  "move": "KL",
+  "message": "G KL",
+  "timer": 130
+}
+> Moving from: KL
+> Life Points: 9
+> Player 0 made move:
+> +++
+  move: KL
+  message: G KL
+  timer: 130
+> ---
+--------------------------------------------------------------------------
+> Running player 1... 
+/tmp/dryrun4769/hunter
+Running with input:  {
+  "pastPlays": "GKL.... SSR.... HPA.... MMU.... DMU.V.. GKL.... SSR.... HPA.... MMUVD.. DAS.... GKL.... SSR.... HPA.... MMU.... DVET... GKL.... SSR.... HPA.... MMU.... DMIT... GKL.... SSR.... HPA.... MMU.... DZUT... GKL.... SSR.... HPA.... MMU.... DSTT... GKL.... SSR.... HPA.... MMU.... DPAT... GKL.... SSR.... HPATD.. MMU.... DNAT... GKL.... SSR.... HPA.... MMU.... DAS..M. GKL.... SSR.... HPA.... MMU.... DC?T.M. GKL.... SSR.... HPA.... MMU.... DMUT.M. GKL.... SSR.... HPA.... MMUTD.. DC?T.M. GKL.... SSR.... HPA.... MMU.... DC?T... GKL.... SSR.... HPA.... MMU.... DPA.VM. GKL....",
+  "messages": [
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "I come to suck your blood",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "hunters are poos",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "hunters are poos",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "hunters are poos",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "hunters are poos",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "hunters are poos",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "hunters are poos",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "hunters are poos",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "hunters are poos",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "hunters are poos",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "hunters are poos",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "hunters are poos",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "hunters are poos",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "hunters are poos",
+    "G KL"
+  ]
+}
+Program Output: 
+Move:  {
+  "move": "SR",
+  "message": "S SR",
+  "timer": 131
+}
+> Moving from: SR
+> Life Points: 9
+> Player 1 made move:
+> +++
+  move: SR
+  message: S SR
+  timer: 131
+> ---
+--------------------------------------------------------------------------
+> Running player 2... 
+/tmp/dryrun4769/hunter
+Running with input:  {
+  "pastPlays": "GKL.... SSR.... HPA.... MMU.... DMU.V.. GKL.... SSR.... HPA.... MMUVD.. DAS.... GKL.... SSR.... HPA.... MMU.... DVET... GKL.... SSR.... HPA.... MMU.... DMIT... GKL.... SSR.... HPA.... MMU.... DZUT... GKL.... SSR.... HPA.... MMU.... DSTT... GKL.... SSR.... HPA.... MMU.... DPAT... GKL.... SSR.... HPATD.. MMU.... DNAT... GKL.... SSR.... HPA.... MMU.... DAS..M. GKL.... SSR.... HPA.... MMU.... DC?T.M. GKL.... SSR.... HPA.... MMU.... DMUT.M. GKL.... SSR.... HPA.... MMUTD.. DC?T.M. GKL.... SSR.... HPA.... MMU.... DC?T... GKL.... SSR.... HPA.... MMU.... DPA.VM. GKL.... SSR....",
+  "messages": [
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "I come to suck your blood",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "hunters are poos",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "hunters are poos",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "hunters are poos",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "hunters are poos",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "hunters are poos",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "hunters are poos",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "hunters are poos",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "hunters are poos",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "hunters are poos",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "hunters are poos",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "hunters are poos",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "hunters are poos",
+    "G KL",
+    "S SR",
+    "H PA",
+    "M MU",
+    "hunters are poos",
+    "G KL",
+    "S SR"
+  ]
+}
+Program Output: 
+Move:  {
+  "move": "PA",
+  "message": "H PA",
+  "timer": 136
+}
+> Moving from: PA
+> Life Points: 9
+> Player 2 made move:
+> +++
+  move: PA
+  message: H PA
+  timer: 136
+> ---
+--------------------------------------------------------------------------
+> End of game: 
+> +++
+  score: 352
+  revealedPastPlays: GKL.... SSR.... HPA.... MMU.... DMU.V.. GKL.... SSR.... HPA.... MMUVD.. DAS.... GKL.... SSR.... HPA.... MMU.... DVET... GKL.... SSR.... HPA.... MMU.... DMIT... GKL.... SSR.... HPA.... MMU.... DZUT... GKL.... SSR.... HPA.... MMU.... DSTT... GKL.... SSR.... HPA.... MMU.... DPAT... GKL.... SSR.... HPATD.. MMU.... DNAT... GKL.... SSR.... HPA.... MMU.... DAS..M. GKL.... SSR.... HPA.... MMU.... DVET.M. GKL.... SSR.... HPA.... MMU.... DMUT.M. GKL.... SSR.... HPA.... MMUTD.. DZUT.M. GKL.... SSR.... HPA.... MMU.... DSTT... GKL.... SSR.... HPA.... MMU.... DPA.VM. GKL.... SSR.... HPAVD..
+  messages: ["G KL","S SR","H PA","M MU","I come to suck your blood","G KL","S SR","H PA","M MU","hunters are poos","G KL","S SR","H PA","M MU","hunters are poos","G KL","S SR","H PA","M MU","hunters are poos","G KL","S SR","H PA","M MU","hunters are poos","G KL","S SR","H PA","M MU","hunters are poos","G KL","S SR","H PA","M MU","hunters are poos","G KL","S SR","H PA","M MU","hunters are poos","G KL","S SR","H PA","M MU","hunters are poos","G KL","S SR","H PA","M MU","hunters are poos","G KL","S SR","H PA","M MU","hunters are poos","G KL","S SR","H PA","M MU","hunters are poos","G KL","S SR","H PA","M MU","hunters are poos","G KL","S SR","H PA","M MU","hunters are poos","G KL","S SR","H PA"]
+> ---
+> Game Over
+undefined
+14
+

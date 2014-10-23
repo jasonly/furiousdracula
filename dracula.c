@@ -2,48 +2,37 @@
 // Implementation of your "Fury of Dracula" Dracula AI
 
 #include <stdlib.h>
-#include <string.h>
 #include <stdio.h>
-#include <time.h>
 #include "Game.h"
 #include "DracView.h"
-#include "Places.h"
-#include "Map.h"
 
 void decideDraculaMove(DracView gameState)
 {
-    /* things we can do:
-       - giveMeTheRound(gameState);
-       - giveMeTheScore(gameState);
-       - howHealthyIs(gameState, player);
-       - whereIs(gameState, player);
-       - lastMove(gameState, player, *start, *end);
-       - whatsThere(gameState, where, *numTraps, *numVamps);
-       - giveMeTheTrail(gameState, player, trail[TRAIL_SIZE]);
-       - *whereCanIgo(gameState, *numLocations, road, sea);
-    */
+
+    int round = giveMeTheRound(gameState);
+
+    if (round == 0) 
+    {
+        registerBestPlay("MU","I come to suck your blood");
+    } else
+    {   int numLocations;
+    //    printf("numLocations is %d", *numLocations);
+        int * locationArray;
+        locationArray = whereCanIgo(gameState,&numLocations,1, 1);
+        
+        int *dracTrail = calloc(sizeof(int),6);
        
-    LocationID *numLocations = malloc(sizeof(LocationID));
-    
-    LocationID *moveArray = whereCanIgo(gameState,numLocations,TRUE,FALSE);
-    
-    int numMoves = sizeof(moveArray)/sizeof(LocationID);
-    time_t t;
-   
-    /* Intializes random number generator */
-    srand((unsigned) time(&t));
-
-    int moveIndex = rand() % numMoves;
-    printf("I want to move to location %d\n",moveIndex);
-    
-    printf("The value in the moveArray is %d\n",moveArray[moveIndex]);
-    LocationID Move = moveArray[moveIndex];
-    
-    //printf("%d\n",Move);
-    
-    
-
-    registerBestPlay(idToAbbrev(Move),"I come to suck your blood");
-
-    
+        giveMeTheTrail(gameState, 4, dracTrail);
+        
+        int count = 0;
+        while (count < 6) {
+            if (dracTrail[count] == locationArray[numLocations]) {
+                numLocations--;
+                count = 0;
+            }
+            else count++;
+        }
+            
+        registerBestPlay(idToAbbrev(locationArray[numLocations]),"hunters are poos");
+    }
 }
