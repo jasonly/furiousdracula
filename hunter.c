@@ -23,9 +23,16 @@ void decideHunterMove(HunterView gameState)
         }
         
     }else{
-        int *numLocations = NULL;
-        int * locationArray;
-        locationArray = whereCanIgo(gameState,numLocations,1, 1, 1);
-        registerBestPlay(idToAbbrev(locationArray[1]),"going");
-    }
+   
+     LocationID *numLocations = malloc(sizeof(LocationID));
+     LocationID *moveArray = whereCanIgo(gameState,numLocations,1,1, 1);
+
+     int moveIndex = 54;
+     printf("I want to move to location %d\n",moveIndex);
+     printf("The value in the moveArray is %d\n",moveArray[moveIndex]);
+     LocationID Move = moveArray[moveIndex];
+      //printf("%d\n",Move);
+     registerBestPlay(idToAbbrev(Move),"moving");
+                                     
+     }
 }
