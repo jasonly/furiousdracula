@@ -13,7 +13,7 @@ void decideDraculaMove(DracView gameState)
 
     if (round == 0) 
     {
-        registerBestPlay("CD","I come to start in the middle of the board");
+        registerBestPlay("CD","1I come to start in the middle of the board");
     } else
     {   int numLocations;
         int *locationArray;
