@@ -7,8 +7,26 @@
 
 void decideHunterMove(HunterView gameState)
 {
-        if(whoAmI(gameState) == 0) registerBestPlay("KL","G KL");
-        if(whoAmI(gameState) == 1) registerBestPlay("SR","S SR");
-        if(whoAmI(gameState) == 2) registerBestPlay("PA","H PA");
-        if(whoAmI(gameState) == 3) registerBestPlay("MU","M MU");
+    if(giveMeTheRound(gameState) == 0){
+        if(whoAmI(gameState) == 0){
+            registerBestPlay("KL","G KL");
+        }
+        if(whoAmI(gameState) == 1){
+            registerBestPlay("SR","Strasbourg"); // messages could be to long
+        }
+        if(whoAmI(gameState) == 2){
+            registerBestPlay("PA","Paris");
+        }
+        if(whoAmI(gameState) == 3){
+            registerBestPlay("MU","Munich");
+        }
+    }else{
+        
+        int numLocations;
+        int *moveArray;
+        moveArray = whereCanIgo(gameState,&numLocations,1,1,0);
+        int moveIndex = numLocations/2;
+        
+        registerBestPlay(idToAbbrev(moveArray[moveIndex]),"Yes, we are moving!");
+    }
 }

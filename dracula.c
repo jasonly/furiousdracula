@@ -13,12 +13,14 @@ void decideDraculaMove(DracView gameState)
 
     if (round == 0) 
     {
-        registerBestPlay("MU","I come to start in the middle of the board");
+        registerBestPlay("CD","I come to start in the middle of the board");
     } else
     {   int numLocations;
         int *locationArray;
         locationArray = whereCanIgo(gameState,&numLocations,1, 0);
-
+        printf("Number of places around me: %d\n",numLocations);
+        printf("%d\n",locationArray[0]);
+        
         int *dracTrail = calloc(sizeof(int),6);
        
         giveMeTheTrail(gameState, 4, dracTrail);
@@ -26,10 +28,26 @@ void decideDraculaMove(DracView gameState)
         //this but works out if we have already gone through a place in our
         //trail, meaning that we do not get disqualified
         int count = 0;
-        int Move = 0;
-        int i = 0;
+        int Move = locationArray[0];
+        //int i = 0;
         int possLength = 0;
-        int x = numLocations;
+        int x = 0;
+        //int reference = 0;
+        
+        while(x < numLocations){
+            while(count < 6){
+                if(dracTrail[count] == locationArray[x]){
+                    locationArray[x] = -1;
+                    count = 8;
+                }else count++;
+            }
+            if(count == 6){
+                Move = locationArray[x];
+            }
+            x++;
+            count = 0;
+        }
+        /*
         while(i < numLocations){
              while (count < 6) {
                  if (dracTrail[count] == locationArray[x]) {
@@ -38,11 +56,16 @@ void decideDraculaMove(DracView gameState)
                      count = 0;
                  }else count++;
              }
-            Move = locationArray[x];
+            if(reference == 0){
+                Move = locationArray[x];
+                reference++;
+            }
             possLength++;
             x--;
             i++;
-        }
+        }*/
+        
+        printf("I think my best move will be: %d\n",Move);
         registerBestPlay(idToAbbrev(Move),"Ooh, wasn't that well thought out");
         
         //attempting to determine the next move by working out
@@ -70,46 +93,50 @@ void decideDraculaMove(DracView gameState)
                 b++;
             }else a++;
         }
-        a = 0; b = 0;
-        int c = 0; int d = 0; int e = 0;
-        int ref = e;
+        
+        int hunter0Count = 0; int hunter1Count = 0;
+        int hunter2Count = 0; int hunter3Count = 0; int dracCount = 0;
+        int ref = dracCount;
         
         //checking whether the possible moves for Dracula are possible moves for the hunters
-        while(e < possLength){
-            while(a < hunter0Locations){
-                if(hunter0Moves[a] == possibleMoves[e]){
-                    e++;
+        while(dracCount < possLength){
+            while(hunter0Count < hunter0Locations){
+                if(hunter0Moves[hunter0Count] == possibleMoves[dracCount]){
+                    dracCount++;
                     a = hunter0Locations;
-                }else a++;
+                }else hunter0Count++;
             }
-            while(b < hunter1Locations){
-                if(hunter1Moves[b] == possibleMoves[e]){
-                    e++;
-                    b = hunter1Locations;
-                }else b++;
+            while(hunter1Count < hunter1Locations){
+                if(hunter1Moves[hunter1Count] == possibleMoves[dracCount]){
+                    dracCount++;
+                    hunter1Count = hunter1Locations;
+                }else hunter1Count++;
             }
-            while(c < hunter2Locations){
-                if(hunter2Moves[c] == possibleMoves[e]){
-                    e++;
-                    c = hunter2Locations;
-                }else c++;
+            while(hunter2Count < hunter2Locations){
+                if(hunter2Moves[hunter2Count] == possibleMoves[dracCount]){
+                    dracCount++;
+                    hunter2Count = hunter2Locations;
+                }else hunter2Count++;
             }
-            while(d < hunter3Locations){
-                if(hunter3Moves[d] == possibleMoves[e]){
-                    e++;
-                    d = hunter3Locations;
-                }else d++;
+            while(hunter3Count < hunter3Locations){
+                if(hunter3Moves[hunter3Count] == possibleMoves[dracCount]){
+                    dracCount++;
+                    hunter3Count = hunter3Locations;
+                }else hunter3Count++;
             }
-            if((d == hunter3Locations) && (ref == e)){
-                registerBestPlay(idToAbbrev(possibleMoves[e]),"What a Clever Move");
+            if((hunter3Count == hunter3Locations - 1) && (ref == dracCount)){
+                registerBestPlay(idToAbbrev(possibleMoves[dracCount]),"What a Clever Move");
             }
-            a = 0; b = 0; c = 0; d = 0;
-            e++;
-            ref = e;
+            hunter0Count = 0; hunter1Count = 0; hunter2Count = 0; hunter3Count = 0;
+            if(ref == dracCount){
+                dracCount++;
+                ref = dracCount;
+            }
         }
-        if(e == possLength) registerBestPlay(idToAbbrev(Move),"Well this is unfortunate");
+        if(dracCount == possLength) registerBestPlay(idToAbbrev(Move),"Well this is unfortunate");
 
     
+        
     }
     
     
