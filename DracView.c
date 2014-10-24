@@ -310,7 +310,7 @@ LocationID *whereCanIgo(DracView currentView, int *numLocations, int road, int s
 {
     assert(currentView != NULL);
     assert(numLocations != NULL);
-    //printf("gg\n");
+
     int i, j;
 
     // output array

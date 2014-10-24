@@ -1,6 +1,5 @@
 // hunter.c
 // Implementation of your "Fury of Dracula" hunter AI
-
 #include <stdlib.h>
 #include <stdio.h>
 #include "Game.h"
@@ -21,18 +20,13 @@ void decideHunterMove(HunterView gameState)
         if(whoAmI(gameState) == 3){
             registerBestPlay("MU","Munich");
         }
-        
     }else{
-   
-     LocationID *numLocations = malloc(sizeof(LocationID));
-     LocationID *moveArray = whereCanIgo(gameState,numLocations,1,1, 1);
-
-     int moveIndex = 54;
-     printf("I want to move to location %d\n",moveIndex);
-     printf("The value in the moveArray is %d\n",moveArray[moveIndex]);
-     LocationID Move = moveArray[moveIndex];
-      //printf("%d\n",Move);
-     registerBestPlay(idToAbbrev(Move),"moving");
-                                     
-     }
+        
+        int numLocations;
+        int *moveArray;
+        moveArray = whereCanIgo(gameState,&numLocations,1,1,0);
+        int moveIndex = numLocations/2;
+        
+        registerBestPlay(idToAbbrev(moveArray[moveIndex]),"Yes, we are moving!");
+    }
 }
