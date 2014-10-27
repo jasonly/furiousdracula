@@ -7,6 +7,9 @@
 #include <stdlib.h>
 #include "Map.h"
 #include "Places.h"
+#include "Queue.h"
+#include "Queue.c"
+#include "Graph.h"
 
 typedef struct vNode *VList;
 
@@ -26,7 +29,9 @@ struct MapRep {
 };
 
 static void addConnections(Map);
+static int checkEdge(Map map, LocationID x, LocationID y);
 
+static int connections(Map g, LocationID start, LocationID end);
 // Create a new empty graph (for a map)
 // #Vertices always same as NUM_PLACES
 Map newMap()
@@ -70,6 +75,32 @@ void destroyMap(Map g)
         }
     }
     free(g);
+}
+
+int checkEdge(Map map, LocationID x, LocationID y){
+    int isEdge=0;
+    VList curr = malloc(sizeof(struct vNode));
+    for (curr = map->connections[x]; curr != NULL; curr=curr->next){
+        if (curr->v==y){
+            isEdge=1;
+        }
+    }
+    return isEdge;
+    
+}
+
+int connections(Map g, LocationID start, LocationID end)
+{
+    int connection=UNKNOWN;
+    VList curr = malloc(sizeof(struct vNode));
+    
+    for(curr = g->connections[start]; curr!=NULL; curr=curr->next){
+        if (curr->v == end){
+            connection=curr->type;
+            return connection;
+        }
+    }
+    return connection;
 }
 
 static VList insertVList(VList L, LocationID v, TransportID type)
@@ -161,6 +192,69 @@ int  getDist(Map g, TransportID t, LocationID a, LocationID b) {
     return g->adjmat[t][a][b];
 }
 
+int shortestPath(Map g, LocationID start, LocationID end, LocationID path[], TransportID trans[])
+{
+    //initialise stuff
+    int *visited = malloc(g->nV*sizeof(int));
+    int i=0;
+    int count = 0;
+    while (i < g->nV){ visited[i] = -1; i++;}
+    Queue q = newQueue();
+    QueueJoin(q,start);
+    visited[start] = start;
+    int isFound = 0;
+    
+    //BFS
+    while (!QueueIsEmpty(q) && !isFound) {
+        Vertex y, x = QueueLeave(q);
+        for (y = 0; y < g->nV; y++) {
+            if (!checkEdge(g,x,y)) continue;
+            if (visited[y]==-1){
+                QueueJoin(q,y);
+                visited[y] = x;
+            }
+            if (y == end) { isFound = 1; break; }
+        }
+    }
+    
+    //record path
+    Vertex current = end;
+    i = 0;
+    while (current != start){
+        path[i] = current;
+        current = visited[current];
+        count++;
+        i++;
+    }
+    path[i] = start;
+    count ++;
+    
+    //flip path
+    i = 0;
+    int temp;
+    while (i < count/2){
+        temp = path[i];
+        path[i] = path[count - (1 + i)];
+        path[count - (1 + i)] = temp;
+        i++;
+    }
+    
+    //make trans array
+    trans[0] = ANY;
+    for (i=1; i<count; i++){
+        trans[i]=connections(g,path[i],path[i-1]);
+    }
+    
+    return count;
+
+	// a valid path from London to Paris
+	// just to show what kinds of values are in the arrays
+   /*path[0] = LONDON; trans[0] = ANY;
+   path[1] = PLYMOUTH; trans[1] = ROAD;
+   path[2] = LE_HAVRE; trans[2] = BOAT;
+   path[3] = PARIS; trans[3] = RAIL;
+   return 4;*/
+}
 // Add edges to Graph representing map of Europe
 static void addConnections(Map g)
 {

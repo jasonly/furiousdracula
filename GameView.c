@@ -482,7 +482,7 @@ LocationID *connectedLocations(GameView currentView, int *numLocations,
         int road, int rail, int sea)
 {
     assert(currentView != NULL);
-    assert(numLocations != NULL);
+  //  assert(numLocations != NULL);
     assert(validPlace(from));
     assert(0 <= player && player < NUM_PLAYERS);
     

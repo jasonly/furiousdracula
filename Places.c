@@ -97,7 +97,6 @@ char *idToName(LocationID p)
    assert(validPlace(p));
    return places[p].name;
 }
-
 char *idToAbbrev(LocationID p)
 {
    assert(validPlace(p));
