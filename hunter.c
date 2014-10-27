@@ -8,6 +8,7 @@
 
 void decideHunterMove(HunterView gameState)
 {
+<<<<<<< HEAD
 if(giveMeTheRound(gameState) == 0){
 if(whoAmI(gameState) == 0){
 registerBestPlay("KL","G KL");
@@ -39,4 +40,28 @@ shortestPath(g, 19, 45, path, trans);
 printf("%d",path[1]);
 
 }
+=======
+    if(giveMeTheRound(gameState) == 0){
+        if(whoAmI(gameState) == 0){
+            registerBestPlay("KL","G KL");
+        }
+        if(whoAmI(gameState) == 1){
+            registerBestPlay("SR","Strasbourg"); // messages could be to long
+        }
+        if(whoAmI(gameState) == 2){
+            registerBestPlay("PA","Paris");
+        }
+        if(whoAmI(gameState) == 3){
+            registerBestPlay("MU","Munich");
+        }
+    }else{
+        
+        int numLocations;
+        int *moveArray;
+        moveArray = whereCanIgo(gameState,&numLocations,1,1,0);
+        int moveIndex = numLocations/2;
+        
+        registerBestPlay(idToAbbrev(moveArray[moveIndex]),"Yes, we are moving!");
+    }
+>>>>>>> d5085a87d112a0839c7528e72806fd398b4fc69f
 }

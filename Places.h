@@ -119,7 +119,12 @@ typedef int LocationID;
 
 // given a Place number, return its name
 char *idToName(int place);
+<<<<<<< HEAD
 // given a Place number return its Abbrev
+=======
+
+// given a Place number, return its name
+>>>>>>> d5085a87d112a0839c7528e72806fd398b4fc69f
 char *idToAbbrev(int place);
 
 // given a Place number, return its type

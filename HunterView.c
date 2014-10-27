@@ -48,7 +48,10 @@ struct hunterView {
      
 // helper functions
 static void pushOnTrailLocs (HunterView d, LocationID placeID);
+<<<<<<< HEAD
 Map  newMap();  
+=======
+>>>>>>> d5085a87d112a0839c7528e72806fd398b4fc69f
 
 // Creates a new HunterView to summarise the current state of the game
 HunterView newHunterView(char *pastPlays, PlayerMessage messages[])
@@ -211,14 +214,21 @@ void giveMeTheTrail(HunterView currentView, PlayerID player,
 LocationID *whereCanIgo(HunterView currentView, int *numLocations, int road, int rail, int sea)
 {
     assert(currentView != NULL);
+<<<<<<< HEAD
     //assert(numLocations != NULL);
+=======
+    assert(numLocations != NULL);
+>>>>>>> d5085a87d112a0839c7528e72806fd398b4fc69f
 
     // return value
     LocationID *ret;
 
     // check if first round
     if(getRound(currentView->g) == FIRST_ROUND) {
+<<<<<<< HEAD
          printf("in here!");
+=======
+>>>>>>> d5085a87d112a0839c7528e72806fd398b4fc69f
         // everywhere!
         ret = (LocationID *)(malloc(sizeof(LocationID)*NUM_MAP_LOCATIONS));
         (*numLocations) = 0;
@@ -306,7 +316,11 @@ LocationID *whereCanTheyGo(HunterView currentView, int *numLocations,
 
     return ret;
 }
+<<<<<<< HEAD
   
+=======
+
+>>>>>>> d5085a87d112a0839c7528e72806fd398b4fc69f
 static void pushOnTrailLocs (HunterView h, LocationID placeID) {
     assert(h != NULL);
 
