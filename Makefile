@@ -24,20 +24,13 @@ hunterPlayer.o : player.c Game.h HunterView.h hunter.h
 	$(CC) $(CFLAGS) -c player.c -o hunterPlayer.o
 
 dracula.o : dracula.c Game.h DracView.h
-<<<<<<< HEAD
 hunter.o : hunter.c Game.h HunterView.h 
-=======
-hunter.o : hunter.c Game.h HunterView.h
->>>>>>> d5085a87d112a0839c7528e72806fd398b4fc69f
 Places.o : Places.c Places.h
 Map.o : Map.c Map.h Places.h 
 GameView.o : GameView.c Globals.h GameView.h
 HunterView.o : HunterView.c Globals.h HunterView.h
 DracView.o : DracView.c Globals.h DracView.h
-<<<<<<< HEAD
 Graph.o : Graph.c Graph.h Item.h 
-=======
->>>>>>> d5085a87d112a0839c7528e72806fd398b4fc69f
 # if you use other ADTs, add dependencies for them here
 
 clean :
